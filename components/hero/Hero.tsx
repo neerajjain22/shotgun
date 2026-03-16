@@ -26,9 +26,10 @@ type HeroProps = {
   secondaryCta?: HeroAction;
   ctaMicrocopy?: string;
   image?: HeroImage;
+  mediaSlot?: ReactNode;
 };
 
-export function Hero({ headline, subheadline, primaryCta, secondaryCta, ctaMicrocopy, image }: HeroProps) {
+export function Hero({ headline, subheadline, primaryCta, secondaryCta, ctaMicrocopy, image, mediaSlot }: HeroProps) {
   return (
     <Section>
       <div className={styles.grid}>
@@ -49,7 +50,7 @@ export function Hero({ headline, subheadline, primaryCta, secondaryCta, ctaMicro
         </div>
 
         <div className={styles.media}>
-          <HeroWorkflow fallbackImage={image} />
+          {mediaSlot ?? <HeroWorkflow fallbackImage={image} />}
         </div>
       </div>
     </Section>

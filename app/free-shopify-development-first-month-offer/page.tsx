@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { LeadCaptureForm } from "@/components/forms/LeadCaptureForm";
 import { Hero } from "@/components/hero/Hero";
 import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection } from "@/components/sections/FAQSection";
@@ -86,6 +87,15 @@ export default function FreeShopifyDevelopmentFirstMonthOfferPage() {
           src: heroImage,
           alt: "Shopify development execution visual"
         }}
+        mediaSlot={
+          <Card as="section" className={styles.heroFormCard}>
+            <h2 className={styles.heroFormTitle}>Start your free month</h2>
+            <p className={styles.heroFormDescription}>
+              Share your first task details and we will handle implementation.
+            </p>
+            <LeadCaptureForm />
+          </Card>
+        }
       />
 
       <Section>
