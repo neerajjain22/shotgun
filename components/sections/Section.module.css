@@ -1,0 +1,7 @@
+.section {
+  padding-block: var(--section-space-y);
+}
+
+.center {
+  text-align: center;
+}

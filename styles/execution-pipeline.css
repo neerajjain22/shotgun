@@ -1,0 +1,124 @@
+.execution-pipeline {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.execution-pipeline__header {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.execution-pipeline__title {
+  margin: 0;
+}
+
+.execution-pipeline__subtitle {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.execution-pipeline__flow {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) auto minmax(0, 1.2fr) auto minmax(0, 1.2fr) auto minmax(
+      0,
+      1.2fr
+    ) auto minmax(0, 1.05fr);
+  align-items: stretch;
+  gap: 0.7rem;
+}
+
+.execution-pipeline__stage {
+  background: var(--color-white);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--color-neutral-200);
+  width: 100%;
+  min-height: 13rem;
+  display: grid;
+  align-content: start;
+  gap: 0.65rem;
+  transition: transform 200ms ease;
+  overflow-wrap: anywhere;
+}
+
+.execution-pipeline__stage:hover {
+  transform: translateY(-4px);
+}
+
+.execution-pipeline__icon {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.execution-pipeline__stage-title {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.execution-pipeline__stage-text {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #334155;
+  line-height: 1.5;
+}
+
+.execution-pipeline__rows {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.execution-pipeline__row {
+  margin: 0;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.execution-pipeline__row--ai {
+  background: #eef0ff;
+}
+
+.execution-pipeline__row--human {
+  background: #e8f7ef;
+}
+
+.execution-pipeline__arrow {
+  align-self: center;
+  justify-self: center;
+  color: var(--color-muted);
+  font-size: 1rem;
+}
+
+@media (max-width: 88rem) {
+  .execution-pipeline__flow {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .execution-pipeline__stage {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .execution-pipeline__arrow {
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 75rem) {
+  .execution-pipeline__flow {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .execution-pipeline__stage {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .execution-pipeline__arrow {
+    transform: rotate(90deg);
+  }
+}

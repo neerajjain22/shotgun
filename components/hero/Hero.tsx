@@ -1,0 +1,55 @@
+import type { ReactNode } from "react";
+
+import { Button } from "@/components/ui/Button";
+
+import { Section } from "@/components/sections/Section";
+
+import { HeroWorkflow } from "./HeroWorkflow";
+import styles from "./Hero.module.css";
+
+type HeroAction = {
+  label: string;
+  href: string;
+};
+
+type HeroImage = {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+};
+
+type HeroProps = {
+  headline: ReactNode;
+  subheadline: string;
+  primaryCta: HeroAction;
+  secondaryCta?: HeroAction;
+  image?: HeroImage;
+};
+
+export function Hero({ headline, subheadline, primaryCta, secondaryCta, image }: HeroProps) {
+  return (
+    <Section>
+      <div className={styles.grid}>
+        <div className={styles.content}>
+          <h1 className={styles.headline}>{headline}</h1>
+          <p className={styles.subheadline}>{subheadline}</p>
+          <div className={styles.actions}>
+            <Button href={primaryCta.href} variant="primary">
+              {primaryCta.label}
+            </Button>
+            {secondaryCta ? (
+              <Button href={secondaryCta.href} variant="secondary">
+                {secondaryCta.label}
+              </Button>
+            ) : null}
+          </div>
+        </div>
+
+        <div className={styles.media}>
+          <HeroWorkflow fallbackImage={image} />
+        </div>
+      </div>
+    </Section>
+  );
+}

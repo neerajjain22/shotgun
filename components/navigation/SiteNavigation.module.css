@@ -1,0 +1,17 @@
+.nav {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.list {
+  width: min(100% - 2rem, var(--container-max));
+  margin: 0 auto;
+  padding: var(--space-4) 0;
+  display: flex;
+  gap: var(--space-4);
+  list-style: none;
+}
+
+.link {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}

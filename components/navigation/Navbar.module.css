@@ -1,0 +1,134 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(8px);
+  background: rgba(247, 248, 252, 0.88);
+  border-bottom: 1px solid rgba(229, 231, 235, 0.9);
+}
+
+.row {
+  min-height: 4.5rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.logo {
+  font-family: var(--font-secondary);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-neutral-900);
+}
+
+.desktopNav {
+  justify-self: center;
+}
+
+.linkList {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin: 0;
+  padding: 0;
+}
+
+.link,
+.mobileLink {
+  font-size: var(--text-small);
+  color: var(--color-muted);
+}
+
+.link:hover,
+.mobileLink:hover {
+  color: var(--color-text-primary);
+}
+
+.active {
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+.desktopCtas {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.mobileToggle {
+  display: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: var(--border-subtle);
+  border-radius: var(--radius-md);
+  background: var(--color-white);
+  padding: 0;
+  cursor: pointer;
+}
+
+.mobileToggle span {
+  display: block;
+  width: 1rem;
+  height: 1.5px;
+  background: var(--color-neutral-900);
+  margin: 0.26rem auto;
+}
+
+.mobilePanel {
+  display: none;
+}
+
+.mobileList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-3);
+}
+
+.mobileLink {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.mobileCtas {
+  margin-top: var(--space-4);
+  display: grid;
+  gap: var(--space-2);
+}
+
+.mobileCta {
+  width: 100%;
+}
+
+@media (max-width: 72rem) {
+  .row {
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .desktopNav,
+  .desktopCtas {
+    display: none;
+  }
+
+  .mobileToggle {
+    display: inline-block;
+    justify-self: end;
+  }
+
+  .mobilePanel {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height var(--motion-duration) var(--motion-ease);
+    border-top: 1px solid transparent;
+  }
+
+  .mobileOpen {
+    display: block;
+    max-height: 28rem;
+    padding-block: var(--space-4);
+    border-top-color: var(--color-neutral-200);
+  }
+}

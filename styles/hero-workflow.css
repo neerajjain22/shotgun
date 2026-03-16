@@ -1,0 +1,410 @@
+.hero-workflow {
+  width: 100%;
+}
+
+.hero-workflow__animated,
+.hero-workflow__static {
+  width: 100%;
+}
+
+.hero-workflow__static {
+  display: none;
+}
+
+.hero-workflow__frame {
+  position: relative;
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 1rem;
+  border: 1px solid var(--color-neutral-200);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.hero-workflow__store {
+  border-radius: 16px;
+  background: #f6f9ff;
+  border: 1px solid var(--color-neutral-200);
+  padding: 1rem;
+  display: grid;
+  gap: 0.85rem;
+  min-height: 21rem;
+}
+
+.hero-workflow__brand-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hero-workflow__brand {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-neutral-900);
+}
+
+.hero-workflow__store-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  font-size: 0.62rem;
+  color: #475569;
+}
+
+.hero-workflow__cart-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.45rem;
+  height: 1.45rem;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid rgba(124, 140, 255, 0.28);
+  font-size: 0.78rem;
+}
+
+.hero-workflow__banner {
+  min-height: 4.7rem;
+  border-radius: 12px;
+  display: grid;
+  align-content: center;
+  gap: 0.24rem;
+  padding: 0.75rem;
+  border: 1px solid transparent;
+  position: relative;
+}
+
+.hero-workflow__banner-title {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.hero-workflow__banner-cta {
+  font-size: 0.72rem;
+  color: #4f46e5;
+}
+
+.hero-workflow__banner--before {
+  background: linear-gradient(135deg, #e7f0ff, #f5f7ff);
+  border-color: rgba(124, 140, 255, 0.35);
+  animation: hero-workflow-banner-before 6.6s infinite;
+}
+
+.hero-workflow__banner--after {
+  position: absolute;
+  left: 2rem;
+  right: 2rem;
+  top: 4.65rem;
+  background: #ffffff;
+  border: 1px solid rgba(124, 140, 255, 0.45);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  transform: translateY(8px);
+  animation: hero-workflow-banner-after 6.6s infinite;
+}
+
+.hero-workflow__banner-link {
+  font-size: 0.71rem;
+  color: #4f46e5;
+}
+
+.hero-workflow__check {
+  position: absolute;
+  right: 0.72rem;
+  top: 0.72rem;
+  font-size: 0.8rem;
+  color: #16a34a;
+}
+
+.hero-workflow__categories {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.hero-workflow__categories span {
+  font-size: 0.68rem;
+  background: #e7f0ff;
+  border: 1px solid rgba(124, 140, 255, 0.2);
+  border-radius: 10px;
+  padding: 0.35rem 0.45rem;
+  text-align: center;
+  color: #334155;
+}
+
+.hero-workflow__product {
+  border-radius: 12px;
+  border: 1px solid var(--color-neutral-200);
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 0.7rem;
+  display: grid;
+  gap: 0.22rem;
+  align-content: start;
+}
+
+.hero-workflow__badge {
+  justify-self: start;
+  background: #fff5f5;
+  color: #7f1d1d;
+  border-radius: 8px;
+  font-size: 0.7rem;
+  padding: 0.18rem 0.4rem;
+  border: 1px solid #fee2e2;
+}
+
+.hero-workflow__product-image {
+  width: 100%;
+  min-height: 4.2rem;
+  border-radius: 12px;
+  background: #f0f4ff;
+  border: 1px solid rgba(124, 140, 255, 0.2);
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.hero-workflow__bottle {
+  width: 1.35rem;
+  height: 2rem;
+  border-radius: 0.45rem;
+  background: linear-gradient(180deg, #ffffff, #e8efff);
+  border: 1px solid rgba(124, 140, 255, 0.35);
+}
+
+.hero-workflow__bottle-cap {
+  position: absolute;
+  top: 0.88rem;
+  width: 0.7rem;
+  height: 0.2rem;
+  border-radius: 999px;
+  background: #7c8cff;
+}
+
+.hero-workflow__product-title {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.hero-workflow__product-price {
+  margin: 0;
+  font-size: 0.77rem;
+  color: var(--color-muted);
+}
+
+.hero-workflow__product-rating {
+  margin: 0;
+  font-size: 0.72rem;
+  color: #f59e0b;
+}
+
+.hero-workflow__product-cta {
+  justify-self: start;
+  border: 1px solid rgba(124, 140, 255, 0.35);
+  background: #ffffff;
+  color: #374151;
+  border-radius: 8px;
+  padding: 0.32rem 0.58rem;
+  font-size: 0.72rem;
+}
+
+.hero-workflow__bubble,
+.hero-workflow__done {
+  position: absolute;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  font-size: 0.74rem;
+  line-height: 1.4;
+  opacity: 0;
+}
+
+.hero-workflow__bubble {
+  padding: 0.55rem 0.7rem;
+  transform: translateY(8px);
+}
+
+.hero-workflow__bubble--founder {
+  right: 1rem;
+  top: 0.95rem;
+  max-width: 12.5rem;
+  background: #ffffff;
+  border: 1px solid var(--color-neutral-200);
+  animation: hero-workflow-founder 6.6s infinite;
+}
+
+.hero-workflow__bubble--shotgun {
+  left: 1rem;
+  top: 9.2rem;
+  background: #eef0ff;
+  border: 1px solid rgba(124, 140, 255, 0.26);
+  animation: hero-workflow-shotgun 6.6s infinite;
+}
+
+.hero-workflow__done {
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  background: #ffffff;
+  border: 1px solid rgba(159, 227, 215, 0.6);
+  padding: 0.6rem 0.7rem;
+  display: grid;
+  gap: 0.25rem;
+  transform: translateY(6px);
+  animation: hero-workflow-complete 6.6s infinite;
+}
+
+.hero-workflow__done strong {
+  font-size: 0.76rem;
+  color: var(--color-neutral-900);
+}
+
+.hero-workflow__done span {
+  font-size: 0.72rem;
+  color: #334155;
+}
+
+.hero-workflow__static-image,
+.hero-workflow__static-card {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid var(--color-neutral-200);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.hero-workflow__static-card {
+  background: #f6f9ff;
+  padding: 1rem;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.hero-workflow__banner--after-static {
+  position: relative;
+  left: auto;
+  right: auto;
+  top: auto;
+  opacity: 1;
+  transform: none;
+  animation: none;
+}
+
+@keyframes hero-workflow-founder {
+  0%,
+  14% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  18%,
+  58% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+@keyframes hero-workflow-shotgun {
+  0%,
+  30% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  34%,
+  64% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+@keyframes hero-workflow-banner-before {
+  0%,
+  44% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(124, 140, 255, 0.24);
+  }
+  18%,
+  34% {
+    box-shadow: 0 0 0 8px rgba(124, 140, 255, 0);
+  }
+  52%,
+  100% {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes hero-workflow-banner-after {
+  0%,
+  50% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  56%,
+  96% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+@keyframes hero-workflow-complete {
+  0%,
+  66% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  72%,
+  96% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
+@media (max-width: 60rem) {
+  .hero-workflow__animated {
+    display: none;
+  }
+
+  .hero-workflow__static {
+    display: block;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-workflow__banner--before,
+  .hero-workflow__banner--after,
+  .hero-workflow__bubble,
+  .hero-workflow__done {
+    animation: none;
+  }
+
+  .hero-workflow__banner--before,
+  .hero-workflow__bubble,
+  .hero-workflow__done {
+    opacity: 0;
+  }
+
+  .hero-workflow__banner--after {
+    opacity: 1;
+    transform: none;
+  }
+}

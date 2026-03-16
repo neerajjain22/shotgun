@@ -1,0 +1,36 @@
+.header {
+  margin-bottom: var(--space-6);
+}
+
+.title {
+  margin: 0;
+}
+
+.list {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.item {
+  padding: var(--space-4) var(--space-5);
+}
+
+.details {
+  width: 100%;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  list-style: none;
+}
+
+.question::-webkit-details-marker {
+  display: none;
+}
+
+.answer {
+  margin-top: var(--space-3);
+  color: var(--color-muted);
+}

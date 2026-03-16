@@ -1,0 +1,42 @@
+.card {
+  padding: var(--space-6);
+  display: grid;
+  gap: var(--space-4);
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.icon {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.625rem;
+  background: rgba(159, 227, 215, 0.3);
+  color: var(--color-text-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.375rem;
+}
+
+.description {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.link {
+  font-size: var(--text-small);
+  font-weight: 600;
+  color: var(--color-accent-primary);
+}
+
+.link:hover {
+  text-decoration: underline;
+}

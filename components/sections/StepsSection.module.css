@@ -1,0 +1,54 @@
+.header {
+  margin-bottom: var(--space-6);
+}
+
+.title {
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  gap: var(--grid-gap);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.stepCard {
+  padding: 1.5rem;
+  display: grid;
+  gap: var(--space-3);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 6%);
+}
+
+.stepNumber {
+  margin: 0;
+  font-size: var(--text-small);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent-primary);
+}
+
+.stepIcon {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.stepTitle {
+  margin: 0;
+  font-size: var(--text-subheading);
+}
+
+.stepDescription {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+@media (max-width: 64rem) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
