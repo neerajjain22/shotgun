@@ -84,9 +84,9 @@ export const productPageContent: MarketingPageContent = {
   path: "/product",
   intro: {
     eyebrow: "Product",
-    title: "Decide if Shotgun is the right Shopify execution model for your team",
+    title: "Get Shopify development work done without managing developers",
     description:
-      "This page is for teams evaluating whether Shotgun should be their Shopify execution layer. If your team manages recurring storefront updates, campaign launches, product page changes, and bug fixes, this breakdown explains who Shotgun fits, who it does not fit, how engagement works, and what happens after your first request. Use this as a practical decision page before choosing your next execution workflow.",
+      "Shotgun helps Shopify teams execute recurring store changes such as homepage updates, product page edits, promotion rollouts, and bug fixes. You send requests through Slack, WhatsApp, or email. Shotgun scopes the task, implements the change, verifies quality, and delivers it ready to launch. Use this page to evaluate fit, understand how engagement works, and decide if this model matches how your team operates.",
     primaryCta: contactCtaPrimary,
     secondaryCta: standardSecondaryCtas.compareOptions,
     microcopy: standardCtaMicrocopy
@@ -117,22 +117,22 @@ export const productPageContent: MarketingPageContent = {
     ]
   },
   featureSection: {
-    sectionTitle: "Decision criteria teams evaluate before choosing Shotgun",
+    sectionTitle: "What to evaluate before choosing Shotgun",
     features: [
       {
-        title: "Recurring task volume",
+        title: "Ongoing Shopify execution needs",
         description:
-          "Shotgun is strongest when your team has ongoing Shopify tasks every week, not one isolated project."
+          "Shotgun is a strong fit when your backlog includes regular requests each week, not just one-off redesign work."
       },
       {
-        title: "Coordination overhead reduction",
+        title: "How much coordination your team can handle",
         description:
-          "Teams choose Shotgun to reduce briefing loops, status chasing, and quality-review burden on internal operators."
+          "If your team is spending too much time briefing freelancers and chasing status updates, this model removes a lot of that overhead."
       },
       {
-        title: "Implementation reliability",
+        title: "Launch confidence after delivery",
         description:
-          "Delivered changes are verified before handoff, which helps teams launch updates with higher confidence."
+          "Delivered changes are reviewed and tested before handoff so teams can publish faster with fewer last-minute surprises."
       }
     ]
   },
@@ -144,28 +144,28 @@ export const productPageContent: MarketingPageContent = {
         icon: "📝",
         title: "Submit your first request",
         description:
-          "Share one Shopify task with page URL, expected outcome, and any launch deadline."
+          "Share the exact Shopify change you need, including page URL, desired outcome, and any timing constraints."
       },
       {
         stepNumber: "STEP 2",
         icon: "🔍",
         title: "Scope and clarification",
         description:
-          "Shotgun validates requirements and asks focused questions only where details are missing."
+          "Shotgun reviews requirements, flags dependencies, and asks focused clarifying questions only when needed."
       },
       {
         stepNumber: "STEP 3",
         icon: "⚙️",
         title: "Implementation and verification",
         description:
-          "AI-assisted execution and developer review are combined to complete and quality-check the work."
+          "The task is implemented using AI-assisted workflows and experienced developer review for reliable output."
       },
       {
         stepNumber: "STEP 4",
         icon: "✅",
         title: "Delivery and next request",
         description:
-          "You receive completed implementation with clear notes, then continue the same workflow for new tasks."
+          "You receive completed implementation with clear notes, then continue the same request flow for the next task."
       }
     ]
   },
@@ -173,47 +173,36 @@ export const productPageContent: MarketingPageContent = {
     {
       sectionTitle: "Who Shotgun is built for",
       sectionDescription:
-        "Shotgun is designed for teams that run fast Shopify operations and need predictable execution support.",
+        "Teams that run stores actively and need steady implementation throughput usually get the most value.",
       bullets: [
-        "Shopify founders who need execution help without building a full in-house development function.",
-        "Ecommerce managers responsible for weekly updates across homepage, collections, product pages, and promotions.",
-        "Growth and marketing teams that need campaign launches to ship on schedule, including last-minute changes.",
-        "Product and operations teams that want reliable implementation quality with fewer follow-up loops."
-      ]
-    },
-    {
-      sectionTitle: "Who Shotgun is not for",
-      sectionDescription:
-        "Shotgun is not the best fit for every scenario, and these cases are better served by other models.",
-      bullets: [
-        "Teams looking for a one-time full replatforming or large custom app build with broad systems integration.",
-        "Organizations that already have dedicated in-house Shopify developers with available execution bandwidth.",
-        "Workflows where internal policy requires all implementation to stay inside enterprise engineering teams.",
-        "Projects that need long pre-production discovery phases before any implementation can begin."
+        "Shopify founders who want store updates shipped without hiring or managing multiple developers.",
+        "Ecommerce managers responsible for frequent merchandising, layout, and operational fixes.",
+        "Growth and marketing teams launching campaigns that depend on fast storefront implementation.",
+        "Product and operations teams that need predictable quality across recurring Shopify tasks."
       ]
     },
     {
       sectionTitle: "Why teams choose this model",
       sectionDescription:
-        "Shotgun combines execution speed with delivery confidence for recurring Shopify operations.",
+        "The model is built for repeatable delivery across everyday Shopify work.",
       bullets: [
-        "Requests are translated into clear implementation tasks before development begins.",
-        "AI systems accelerate scoping and planning for common Shopify change patterns.",
-        "Experienced developers handle edge cases and validate behavior before delivery.",
-        "The same request workflow can be repeated weekly without rebuilding process from scratch."
+        "You can submit requests in familiar channels instead of adopting another complex project tool.",
+        "Scope is clarified early, which reduces revision loops and misunderstandings later in execution.",
+        "AI systems speed up implementation planning while humans verify quality before handoff.",
+        "A repeatable workflow helps teams clear recurring task backlogs without constant process rebuilding."
       ]
     }
   ],
   checklistSection: {
     sectionTitle: "What happens after your first request",
     sectionDescription:
-      "After the first task is completed, this is how most teams transition into a repeatable execution rhythm.",
+      "After the first task is delivered, most teams follow this simple rhythm to keep shipping reliably.",
     items: [
-      "You submit one Shopify task with page URL, desired outcome, and any campaign deadline.",
-      "Shotgun clarifies any missing details and confirms implementation scope before starting.",
-      "The request is executed and verified against expected behavior on relevant templates.",
-      "You receive completion notes and can validate the outcome quickly with your team.",
-      "You queue the next highest-priority task using the same communication channel and workflow."
+      "Start with one high-priority task that is currently blocking a launch, campaign, or store update.",
+      "Review the delivered output and validate behavior against your expected result.",
+      "Use the same request format for the next task so execution speeds up over time.",
+      "Batch related small changes when useful, while keeping each request outcome-specific.",
+      "Run a weekly request rhythm so improvements ship consistently instead of piling up."
     ]
   },
   faqSection: {
@@ -222,33 +211,33 @@ export const productPageContent: MarketingPageContent = {
       {
         question: "Can we start with one request before committing to a broader workflow?",
         answer:
-          "Yes. Most teams start with one high-priority task to evaluate clarity, turnaround, and implementation quality."
+          "Yes. Most teams begin with one high-priority task to evaluate response quality, speed, and delivery reliability."
       },
       {
-        question: "What types of tasks are usually handled first?",
+        question: "Will this work if our requests are small but frequent?",
         answer:
-          "Teams commonly begin with homepage updates, product page changes, promotions, and urgent bug fixes."
+          "Yes. That is one of the most common use cases: recurring Shopify updates that are too small for agency projects but still require reliable execution."
       },
       {
-        question: "How quickly do we get a response after submitting a request?",
+        question: "How quickly can we expect progress after submitting a task?",
         answer:
-          "Response-time expectations are shared during intake, and initial clarification typically starts quickly after submission."
+          "Initial response and scoping begin quickly, and you receive clear communication on next steps and expected delivery flow."
       },
       {
-        question: "What if our request is unclear or has moving requirements?",
+        question: "What if our request is unclear or changes during execution?",
         answer:
-          "Shotgun asks focused clarifying questions so the final implementation scope is aligned before execution."
+          "Shotgun handles clarification early and updates scope as needed so implementation stays aligned with the business outcome."
       },
       {
-        question: "How do we know delivered work is reliable enough to launch?",
+        question: "How do we know delivered work is ready to launch?",
         answer:
-          "Work is verified before handoff and delivered with clear completion context so your team can review and publish confidently."
+          "Changes are verified before handoff and delivered with completion context so your team can review and publish with confidence."
       }
     ]
   },
   finalCta: withDefaultCta(
-    "Need Shopify development execution support?",
-    "Share your next task and Shotgun will handle implementation end-to-end."
+    "Ready to test Shotgun with a real Shopify task?",
+    "Share one request and evaluate the workflow on your own store."
   )
 };
 
@@ -2792,6 +2781,7 @@ export const staticSitePaths = [
   "/guides",
   "/compare",
   "/resources",
+  "/free-shopify-development-first-month-offer",
   "/about",
   "/contact",
   "/blog",
@@ -2822,6 +2812,7 @@ const topLevelRouteTitleByPath: Record<string, string> = {
   [guidesPageContent.path]: guidesPageContent.intro.eyebrow ?? guidesPageContent.metadataTitle,
   [comparePageContent.path]: comparePageContent.intro.eyebrow ?? comparePageContent.metadataTitle,
   [resourcesPageContent.path]: resourcesPageContent.intro.eyebrow ?? resourcesPageContent.metadataTitle,
+  "/free-shopify-development-first-month-offer": "Free Shopify Development First Month Offer",
   [aboutPageContent.path]: aboutPageContent.metadataTitle,
   [contactPageContent.path]: contactPageContent.metadataTitle,
   "/contact/success": "Request Received",

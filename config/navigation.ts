@@ -120,8 +120,8 @@ export const navigation = {
   } as FooterNavigation,
   ctas: {
     primary: {
-      label: "Start Request",
-      href: "/contact"
+      label: "1st month free",
+      href: "/free-shopify-development-first-month-offer"
     } as NavigationCTA,
     secondary: {
       label: "Book Demo",
