@@ -41,6 +41,13 @@
   margin-top: var(--space-2);
 }
 
+.ctaMicrocopy {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: var(--text-small);
+  line-height: 1.5;
+}
+
 .sectionHeader {
   display: grid;
   gap: var(--space-3);

@@ -3,12 +3,19 @@ export type PageAction = {
   href: string;
 };
 
+export type StandardSecondaryCtaLabel =
+  | "See Use Cases"
+  | "Compare Options"
+  | "Read Guides"
+  | "View Product";
+
 export type IntroContent = {
   eyebrow?: string;
   title: string;
   description: string;
   primaryCta?: PageAction;
   secondaryCta?: PageAction;
+  microcopy?: string;
 };
 
 export type FeatureItemContent = {
@@ -21,6 +28,18 @@ export type FeatureSectionContent = {
   sectionTitle: string;
   sectionDescription?: string;
   features: FeatureItemContent[];
+};
+
+export type InsightSectionContent = {
+  sectionTitle: string;
+  sectionDescription: string;
+  bullets: [string, string, string, ...string[]];
+};
+
+export type ChecklistSectionContent = {
+  sectionTitle: string;
+  sectionDescription?: string;
+  items: [string, string, string, string, string, ...string[]];
 };
 
 export type StepItemContent = {
@@ -91,6 +110,7 @@ export type FinalCtaContent = {
   description: string;
   primaryCTA: PageAction;
   secondaryCTA?: PageAction;
+  microcopy?: string;
 };
 
 export type MarketingPageContent = {
@@ -101,6 +121,8 @@ export type MarketingPageContent = {
   linkedCardsSection?: LinkedCardsSectionContent;
   featureSection?: FeatureSectionContent;
   stepsSection?: StepsSectionContent;
+  insightSections?: InsightSectionContent[];
+  checklistSection?: ChecklistSectionContent;
   tasksSection?: TasksSectionContent;
   faqSection?: FaqSectionContent;
   finalCta?: FinalCtaContent;

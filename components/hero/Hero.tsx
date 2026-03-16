@@ -24,10 +24,11 @@ type HeroProps = {
   subheadline: string;
   primaryCta: HeroAction;
   secondaryCta?: HeroAction;
+  ctaMicrocopy?: string;
   image?: HeroImage;
 };
 
-export function Hero({ headline, subheadline, primaryCta, secondaryCta, image }: HeroProps) {
+export function Hero({ headline, subheadline, primaryCta, secondaryCta, ctaMicrocopy, image }: HeroProps) {
   return (
     <Section>
       <div className={styles.grid}>
@@ -44,6 +45,7 @@ export function Hero({ headline, subheadline, primaryCta, secondaryCta, image }:
               </Button>
             ) : null}
           </div>
+          {ctaMicrocopy ? <p className={styles.microcopy}>{ctaMicrocopy}</p> : null}
         </div>
 
         <div className={styles.media}>

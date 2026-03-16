@@ -1,21 +1,18 @@
 import { Section } from "@/components/sections/Section";
 import { Button } from "@/components/ui/Button";
-
-type CTAAction = {
-  label: string;
-  href: string;
-};
+import type { PageAction } from "@/types/marketing-page";
 
 type CTASectionProps = {
   headline: string;
   description: string;
-  primaryCTA: CTAAction;
-  secondaryCTA?: CTAAction;
+  primaryCTA: PageAction;
+  secondaryCTA?: PageAction;
+  microcopy?: string;
 };
 
 import styles from "./CTASection.module.css";
 
-export function CTASection({ headline, description, primaryCTA, secondaryCTA }: CTASectionProps) {
+export function CTASection({ headline, description, primaryCTA, secondaryCTA, microcopy }: CTASectionProps) {
   return (
     <Section>
       <div className={styles.wrapper}>
@@ -31,6 +28,7 @@ export function CTASection({ headline, description, primaryCTA, secondaryCTA }: 
             </Button>
           ) : null}
         </div>
+        {microcopy ? <p className={styles.microcopy}>{microcopy}</p> : null}
       </div>
     </Section>
   );

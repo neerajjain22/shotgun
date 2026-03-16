@@ -28,6 +28,13 @@
   margin-top: var(--space-2);
 }
 
+.microcopy {
+  margin: 0;
+  font-size: var(--text-small);
+  line-height: 1.5;
+  color: var(--color-muted);
+}
+
 .media {
   display: flex;
   justify-content: center;

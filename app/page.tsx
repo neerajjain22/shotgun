@@ -47,21 +47,22 @@ export default function HomePage() {
       <Hero
         headline={
           <>
-            Shopify development
+            Shopify development tasks
             <br />
-            tasks done for you
+            done for your team
           </>
         }
         image={{
           src: heroImage,
           alt: "Placeholder showing Shopify development request workflow"
         }}
-        primaryCta={{ label: "Start a request", href: "/contact" }}
+        primaryCta={{ label: "Start Request", href: "/contact" }}
         secondaryCta={{
-          label: "Learn how Shotgun works",
-          href: "/product/how-shotgun-works"
+          label: "See Use Cases",
+          href: "/use-cases"
         }}
-        subheadline="Shopify stores require constant updates such as theme changes, product page edits, promotions, and bug fixes. Shotgun helps Shopify teams get these tasks completed quickly without hiring freelancers or agencies."
+        ctaMicrocopy="We reply within 1 business day."
+        subheadline="Send your Shopify changes through Slack, WhatsApp, or email. Shotgun executes theme updates, product page edits, promotions, and bug fixes without you managing developers."
       />
 
       <FeatureGrid

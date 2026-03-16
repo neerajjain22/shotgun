@@ -51,6 +51,36 @@ Props:
 - `sectionTitle: string`
 - `steps: Array<{ stepNumber: string; title: string; description: string }>`
 
+### InsightSection
+File:
+- `components/sections/InsightSection.tsx`
+
+Use when:
+- adding contextual depth after core section blocks
+- explaining risks, tradeoffs, or operator decisions
+
+Props:
+- `sectionTitle: string`
+- `sectionDescription: string`
+- `bullets: string[]`
+
+### ChecklistSection
+File:
+- `components/sections/ChecklistSection.tsx`
+
+Use when:
+- turning strategy into practical execution actions
+- providing implementation-ready handoff items
+
+Props:
+- `sectionTitle: string`
+- `sectionDescription?: string`
+- `items: string[]`
+
+Guide usage recommendation:
+- For guide subpages, checklist items should be direct actions teams can execute.
+- Target at least 8 items so the section is operationally useful, not conceptual.
+
 ### TwoColumnSection
 File:
 - `components/sections/TwoColumnSection.tsx`
@@ -135,6 +165,13 @@ Backwards compatibility:
 - Use concrete copy and examples.
 - Reuse section components before creating new custom blocks.
 - Add new generic sections to this library and document them here.
+
+Guide page composition guidance:
+- Guide subpages should combine:
+  - `StepsSection` for ordered workflow
+  - `ChecklistSection` for execution detail
+  - `FAQSection` for objections and edge cases
+  - final `CTASection` for next-step conversion
 
 ## Maintenance
 When section APIs or usage patterns change:
