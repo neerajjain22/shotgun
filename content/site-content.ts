@@ -84,11 +84,11 @@ export const productPageContent: MarketingPageContent = {
   path: "/product",
   intro: {
     eyebrow: "Product",
-    title: "Shopify development execution for daily store work",
+    title: "Decide if Shotgun is the right Shopify execution model for your team",
     description:
-      "Shotgun is built for Shopify founders, operators, and growth teams that need constant storefront updates without managing multiple freelancers or waiting on agency cycles. You can share requests through channels your team already uses, including Slack, WhatsApp, and email, and receive implementation that is reviewed, tested, and delivered with clear completion context.",
+      "This page is for teams evaluating whether Shotgun should be their Shopify execution layer. If your team manages recurring storefront updates, campaign launches, product page changes, and bug fixes, this breakdown explains who Shotgun fits, who it does not fit, how engagement works, and what happens after your first request. Use this as a practical decision page before choosing your next execution workflow.",
     primaryCta: contactCtaPrimary,
-    secondaryCta: standardSecondaryCtas.seeUseCases,
+    secondaryCta: standardSecondaryCtas.compareOptions,
     microcopy: standardCtaMicrocopy
   },
   linkedCardsSection: {
@@ -117,21 +117,55 @@ export const productPageContent: MarketingPageContent = {
     ]
   },
   featureSection: {
-    sectionTitle: "Why Shopify teams switch to Shotgun",
+    sectionTitle: "Decision criteria teams evaluate before choosing Shotgun",
     features: [
       {
-        title: "No developer coordination overhead",
-        description: "Avoid chasing freelancers across Slack threads, calls, and changing timelines."
+        title: "Recurring task volume",
+        description:
+          "Shotgun is strongest when your team has ongoing Shopify tasks every week, not one isolated project."
       },
       {
-        title: "AI + human execution model",
+        title: "Coordination overhead reduction",
         description:
-          "AI systems speed up implementation while experienced developers review and verify output."
+          "Teams choose Shotgun to reduce briefing loops, status chasing, and quality-review burden on internal operators."
       },
       {
-        title: "Built for operational teams",
+        title: "Implementation reliability",
         description:
-          "Marketing, ecommerce, and product teams can move quickly without waiting for engineering bandwidth."
+          "Delivered changes are verified before handoff, which helps teams launch updates with higher confidence."
+      }
+    ]
+  },
+  stepsSection: {
+    sectionTitle: "How engagement works",
+    steps: [
+      {
+        stepNumber: "STEP 1",
+        icon: "📝",
+        title: "Submit your first request",
+        description:
+          "Share one Shopify task with page URL, expected outcome, and any launch deadline."
+      },
+      {
+        stepNumber: "STEP 2",
+        icon: "🔍",
+        title: "Scope and clarification",
+        description:
+          "Shotgun validates requirements and asks focused questions only where details are missing."
+      },
+      {
+        stepNumber: "STEP 3",
+        icon: "⚙️",
+        title: "Implementation and verification",
+        description:
+          "AI-assisted execution and developer review are combined to complete and quality-check the work."
+      },
+      {
+        stepNumber: "STEP 4",
+        icon: "✅",
+        title: "Delivery and next request",
+        description:
+          "You receive completed implementation with clear notes, then continue the same workflow for new tasks."
       }
     ]
   },
@@ -148,51 +182,67 @@ export const productPageContent: MarketingPageContent = {
       ]
     },
     {
-      sectionTitle: "Why this execution model works",
+      sectionTitle: "Who Shotgun is not for",
       sectionDescription:
-        "Shotgun combines AI-assisted speed with developer quality checks so teams can move faster with confidence.",
+        "Shotgun is not the best fit for every scenario, and these cases are better served by other models.",
       bullets: [
-        "Requests are translated into clear implementation tasks before development work starts.",
-        "AI systems accelerate scoping and implementation planning for recurring Shopify patterns.",
-        "Experienced developers handle edge cases, verify behavior, and reduce avoidable regressions.",
-        "Delivery includes clear completion context so your team can launch changes without uncertainty."
+        "Teams looking for a one-time full replatforming or large custom app build with broad systems integration.",
+        "Organizations that already have dedicated in-house Shopify developers with available execution bandwidth.",
+        "Workflows where internal policy requires all implementation to stay inside enterprise engineering teams.",
+        "Projects that need long pre-production discovery phases before any implementation can begin."
+      ]
+    },
+    {
+      sectionTitle: "Why teams choose this model",
+      sectionDescription:
+        "Shotgun combines execution speed with delivery confidence for recurring Shopify operations.",
+      bullets: [
+        "Requests are translated into clear implementation tasks before development begins.",
+        "AI systems accelerate scoping and planning for common Shopify change patterns.",
+        "Experienced developers handle edge cases and validate behavior before delivery.",
+        "The same request workflow can be repeated weekly without rebuilding process from scratch."
       ]
     }
   ],
   checklistSection: {
-    sectionTitle: "What happens next",
+    sectionTitle: "What happens after your first request",
     sectionDescription:
-      "After you submit your first request, Shotgun follows a structured flow so your team knows exactly what to expect.",
+      "After the first task is completed, this is how most teams transition into a repeatable execution rhythm.",
     items: [
       "You submit one Shopify task with page URL, desired outcome, and any campaign deadline.",
-      "Shotgun reviews scope and asks focused clarification questions if anything is ambiguous.",
-      "Implementation starts with the most important blocker or launch-critical requirement first.",
-      "Completed work is reviewed and tested before it is delivered back to your team.",
-      "You receive the delivered change with clear notes on what was implemented and how to verify it."
+      "Shotgun clarifies any missing details and confirms implementation scope before starting.",
+      "The request is executed and verified against expected behavior on relevant templates.",
+      "You receive completion notes and can validate the outcome quickly with your team.",
+      "You queue the next highest-priority task using the same communication channel and workflow."
     ]
   },
   faqSection: {
-    sectionTitle: "Product overview FAQs",
+    sectionTitle: "Common buying questions",
     faqs: [
       {
-        question: "Who should use Shotgun instead of managing freelancers directly?",
+        question: "Can we start with one request before committing to a broader workflow?",
         answer:
-          "Teams that need recurring Shopify execution and want less coordination overhead typically benefit most from Shotgun."
+          "Yes. Most teams start with one high-priority task to evaluate clarity, turnaround, and implementation quality."
       },
       {
-        question: "What is included in day-to-day execution support?",
+        question: "What types of tasks are usually handled first?",
         answer:
-          "Support covers common Shopify implementation work such as theme updates, product page changes, campaign rollouts, and bug fixes."
+          "Teams commonly begin with homepage updates, product page changes, promotions, and urgent bug fixes."
       },
       {
-        question: "How does Shotgun keep delivery quality consistent?",
+        question: "How quickly do we get a response after submitting a request?",
         answer:
-          "Shotgun combines AI-assisted workflows with experienced developer review and verification before delivery."
+          "Response-time expectations are shared during intake, and initial clarification typically starts quickly after submission."
       },
       {
-        question: "Do we need to change our current communication workflow?",
+        question: "What if our request is unclear or has moving requirements?",
         answer:
-          "No. Most teams continue using Slack, WhatsApp, or email and submit requests through their existing operational flow."
+          "Shotgun asks focused clarifying questions so the final implementation scope is aligned before execution."
+      },
+      {
+        question: "How do we know delivered work is reliable enough to launch?",
+        answer:
+          "Work is verified before handoff and delivered with clear completion context so your team can review and publish confidently."
       }
     ]
   },

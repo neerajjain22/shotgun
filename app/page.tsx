@@ -7,7 +7,6 @@ import { ExecutionPipeline } from "@/components/sections/ExecutionPipeline";
 import { FeatureGrid } from "@/components/sections/FeatureGrid";
 import { LogoGrid } from "@/components/sections/LogoGrid";
 import { Section } from "@/components/sections/Section";
-import { StepsSection } from "@/components/sections/StepsSection";
 import { Card } from "@/components/ui/Card";
 import { siteConfig } from "@/config/site";
 
@@ -47,9 +46,9 @@ export default function HomePage() {
       <Hero
         headline={
           <>
-            Shopify development tasks
+            Shopify development execution
             <br />
-            done for your team
+            for growing stores
           </>
         }
         image={{
@@ -58,11 +57,11 @@ export default function HomePage() {
         }}
         primaryCta={{ label: "Start Request", href: "/contact" }}
         secondaryCta={{
-          label: "See Use Cases",
-          href: "/use-cases"
+          label: "View Product",
+          href: "/product"
         }}
-        ctaMicrocopy="We reply within 1 business day."
-        subheadline="Send your Shopify changes through Slack, WhatsApp, or email. Shotgun executes theme updates, product page edits, promotions, and bug fixes without you managing developers."
+        ctaMicrocopy="Start with one task. We reply within 1 business day."
+        subheadline="Shotgun helps Shopify teams get store updates completed without managing freelancers or agency workflows. Visit Product for detailed fit, workflow, and buying guidance."
       />
 
       <FeatureGrid
@@ -86,31 +85,6 @@ export default function HomePage() {
       />
 
       <ExecutionPipeline />
-
-      <StepsSection
-        sectionTitle="How Shopify teams work with Shotgun team"
-        steps={[
-          {
-            stepNumber: "STEP 1",
-            icon: "💬",
-            title: "Submit a Shopify task",
-            description: "Use Slack, WhatsApp, Email to describe the change required in your Shopify store."
-          },
-          {
-            stepNumber: "STEP 2",
-            icon: "⚙️",
-            title: "Shotgun executes the task",
-            description:
-              "AI systems evaluate the request and generate the solution. Experienced developers implement the change and verify it."
-          },
-          {
-            stepNumber: "STEP 3",
-            icon: "🛍",
-            title: "Your Shopify store is updated",
-            description: "The changes are quality tested and your store is updated."
-          }
-        ]}
-      />
 
       <ExampleTasksSection
         sectionTitle="Common Shopify development tasks"
@@ -221,8 +195,9 @@ export default function HomePage() {
       <CTASection
         description="Submit a request and Shotgun will complete the implementation."
         headline="Need help with a Shopify development task?"
-        primaryCTA={{ label: "Start a request", href: "/contact" }}
-        secondaryCTA={{ label: "Book a demo", href: "/contact" }}
+        primaryCTA={{ label: "Start Request", href: "/contact" }}
+        secondaryCTA={{ label: "View Product", href: "/product" }}
+        microcopy="Share one Shopify task. We reply within 1 business day."
       />
     </main>
   );
