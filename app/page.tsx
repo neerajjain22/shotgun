@@ -55,7 +55,7 @@ export default function HomePage() {
           src: heroImage,
           alt: "Placeholder showing Shopify development request workflow"
         }}
-        primaryCta={{ label: "Start Request", href: "/contact" }}
+        primaryCta={{ label: "1st month free", href: "/contact" }}
         secondaryCta={{
           label: "View Product",
           href: "/product"
@@ -195,7 +195,7 @@ export default function HomePage() {
       <CTASection
         description="Submit a request and Shotgun will complete the implementation."
         headline="Need help with a Shopify development task?"
-        primaryCTA={{ label: "Start Request", href: "/contact" }}
+        primaryCTA={{ label: "1st month free", href: "/contact" }}
         secondaryCTA={{ label: "View Product", href: "/product" }}
         microcopy="Share one Shopify task. We reply within 1 business day."
       />

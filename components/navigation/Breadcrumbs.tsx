@@ -47,6 +47,11 @@ function buildBreadcrumbs(pathname: string): BreadcrumbItem[] {
 
 export function Breadcrumbs() {
   const pathname = usePathname();
+
+  if (pathname === "/") {
+    return null;
+  }
+
   const breadcrumbs = buildBreadcrumbs(pathname);
 
   return (

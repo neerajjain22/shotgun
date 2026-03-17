@@ -9,7 +9,7 @@ type SecondaryCtaAction = PageAction & {
 };
 
 export const standardPrimaryCta: PageAction = {
-  label: "Start Request",
+  label: "1st month free",
   href: "/contact"
 };
 
