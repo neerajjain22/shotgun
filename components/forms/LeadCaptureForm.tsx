@@ -13,8 +13,6 @@ type LeadFormValues = {
   workEmail: string;
   storeUrl: string;
   taskDescription: string;
-  deadline: string;
-  preferredChannel: string;
 };
 
 type LeadFormField = keyof LeadFormValues;
@@ -24,13 +22,10 @@ const initialFormValues: LeadFormValues = {
   name: "",
   workEmail: "",
   storeUrl: "",
-  taskDescription: "",
-  deadline: "",
-  preferredChannel: ""
+  taskDescription: ""
 };
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const preferredChannels = new Set(["Slack", "WhatsApp", "Email"]);
 
 function normalizeStoreUrl(value: string): string {
   const trimmed = value.trim();
@@ -81,10 +76,6 @@ function validateForm(values: LeadFormValues): LeadFormErrors {
     errors.taskDescription = "Add a bit more detail so we can scope this correctly.";
   }
 
-  if (values.preferredChannel && !preferredChannels.has(values.preferredChannel)) {
-    errors.preferredChannel = "Choose a valid communication channel.";
-  }
-
   return errors;
 }
 
@@ -106,7 +97,7 @@ export function LeadCaptureForm() {
   const [submitError, setSubmitError] = useState<string>("");
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
-  function handleChange(event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) {
+  function handleChange(event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
     const { name, value } = event.target;
     const field = name as LeadFormField;
 
@@ -142,8 +133,8 @@ export function LeadCaptureForm() {
       workEmail: values.workEmail.trim(),
       storeUrl: normalizeStoreUrl(values.storeUrl),
       taskDescription: values.taskDescription.trim(),
-      deadline: values.deadline || null,
-      preferredChannel: values.preferredChannel || null
+      deadline: null,
+      preferredChannel: null
     };
 
     try {
@@ -259,41 +250,6 @@ export function LeadCaptureForm() {
             {errors.taskDescription}
           </p>
         ) : null}
-      </div>
-
-      <div className={styles.twoColumnFields}>
-        <div className={styles.field}>
-          <label htmlFor="lead-deadline">Deadline (optional)</label>
-          <input
-            id="lead-deadline"
-            name="deadline"
-            type="date"
-            value={values.deadline}
-            onChange={handleChange}
-          />
-        </div>
-
-        <div className={styles.field}>
-          <label htmlFor="lead-channel">Preferred channel (optional)</label>
-          <select
-            id="lead-channel"
-            name="preferredChannel"
-            value={values.preferredChannel}
-            onChange={handleChange}
-            aria-invalid={Boolean(errors.preferredChannel)}
-            aria-describedby={errors.preferredChannel ? "lead-channel-error" : undefined}
-          >
-            <option value="">No preference</option>
-            <option value="Slack">Slack</option>
-            <option value="WhatsApp">WhatsApp</option>
-            <option value="Email">Email</option>
-          </select>
-          {errors.preferredChannel ? (
-            <p className={styles.errorText} id="lead-channel-error" role="alert">
-              {errors.preferredChannel}
-            </p>
-          ) : null}
-        </div>
       </div>
 
       {submitError ? (
