@@ -740,56 +740,57 @@ export const aboutPageContent: MarketingPageContent = {
   path: "/about",
   intro: {
     eyebrow: "About",
-    title: "Krish. helps Shopify teams execute faster",
+    title: "Built for Shopify founders who need execution, not more coordination",
     description:
-      "Krish. was built for founders, ecommerce operators, and marketing teams that need reliable Shopify implementation without managing fragmented developer workflows.",
+      "Krish helps founders and lean ecommerce teams ship Shopify changes quickly without managing freelancers, chasing agencies, or running long ticket threads. Send a task, get implementation done, and keep moving.",
     primaryCta: contactCtaPrimary,
     secondaryCta: { label: "How it works", href: "/product/how-krish-works" }
   },
   featureSection: {
-    sectionTitle: "How Krish. is designed",
+    sectionTitle: "Why founders choose Krish",
     features: [
       {
-        title: "Clarity first",
-        description: "Requests are translated into clear implementation scopes before work begins."
+        title: "Less management overhead",
+        description: "No back-and-forth across multiple vendors. One place to send tasks and get updates."
       },
       {
-        title: "Execution ownership",
-        description: "Krish. owns delivery quality so teams are not left managing fragmented contributors."
-      },
-      {
-        title: "AI speed + human judgment",
+        title: "Faster launch execution",
         description:
-          "Automation accelerates tasks while experienced developers handle edge cases and quality control."
+          "Homepage edits, promo updates, and bug fixes get prioritized so campaigns do not slip."
+      },
+      {
+        title: "Reliable delivery quality",
+        description:
+          "Tasks are completed with human verification before handoff, so your team can ship confidently."
       }
     ]
   },
   stepsSection: {
-    sectionTitle: "How we typically partner with teams",
+    sectionTitle: "How founders typically work with Krish",
     steps: [
       {
         stepNumber: "STEP 1",
-        icon: "🧾",
-        title: "Collect your recurring task patterns",
-        description: "We map common requests like banners, PDP updates, promo launches, and bug fixes."
+        icon: "💬",
+        title: "Send your Shopify task",
+        description: "Share the page URL, what needs to change, and the expected outcome."
       },
       {
         stepNumber: "STEP 2",
-        icon: "🔁",
-        title: "Set up a repeatable request workflow",
-        description: "Teams submit tasks from Slack, WhatsApp, or email using a consistent request format."
+        icon: "⚙️",
+        title: "We scope and execute",
+        description: "Krish clarifies requirements, implements the task, and keeps you updated on progress."
       },
       {
         stepNumber: "STEP 3",
         icon: "✅",
-        title: "Deliver with ongoing quality checks",
-        description: "Changes are implemented, tested, and delivered with clear completion context."
+        title: "Review and ship",
+        description: "You receive a completed, tested update and can immediately submit the next task."
       }
     ]
   },
   finalCta: withDefaultCta(
-    "Want to see if Krish. fits your team?",
-    "Book a short workflow walkthrough and share your current Shopify execution process."
+    "Need a Shopify execution partner your team can rely on?",
+    "Start with one real task and evaluate speed, quality, and communication."
   )
 };
 
