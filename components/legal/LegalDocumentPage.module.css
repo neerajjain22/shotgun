@@ -1,0 +1,113 @@
+.wrapper {
+  padding-block: clamp(2.5rem, 6vw, 5rem);
+}
+
+.document {
+  max-width: 56rem;
+  margin: 0 auto;
+  display: grid;
+  gap: clamp(1.5rem, 2.5vw, 2.25rem);
+}
+
+.header {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(2rem, 4.8vw, 3.5rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  color: var(--color-neutral-900);
+}
+
+.effectiveDate {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.intro,
+.section,
+.subsection,
+.contactBlock,
+.closingNote {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.section {
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--color-neutral-100);
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: clamp(1.35rem, 2.2vw, 1.7rem);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.subsectionTitle {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.paragraph {
+  margin: 0;
+  color: var(--color-text-primary);
+  font-size: 1.05rem;
+  line-height: 1.72;
+  max-width: 80ch;
+}
+
+.bullets {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.bullets li {
+  color: var(--color-text-primary);
+  font-size: 1.03rem;
+  line-height: 1.68;
+}
+
+.subsectionGrid {
+  display: grid;
+  gap: 1rem;
+}
+
+.contactLine {
+  margin: 0;
+  color: var(--color-text-primary);
+  font-size: 1.05rem;
+  line-height: 1.68;
+}
+
+.emailLink {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 48rem) {
+  .wrapper {
+    padding-block: clamp(2rem, 8vw, 3rem);
+  }
+
+  .document {
+    gap: 1.4rem;
+  }
+
+  .paragraph,
+  .bullets li,
+  .contactLine {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+}

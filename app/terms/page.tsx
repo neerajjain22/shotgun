@@ -1,13 +1,13 @@
-import { MarketingPageTemplate } from "@/components/layout/MarketingPageTemplate";
-import { termsPageContent } from "@/content/site-content";
+import { LegalDocumentPage } from "@/components/legal/LegalDocumentPage";
+import { termsDocument } from "@/content/legal-documents";
 import { createPageMetadata } from "@/seo/metadata";
 
 export const metadata = createPageMetadata({
-  title: termsPageContent.metadataTitle,
-  description: termsPageContent.metadataDescription,
-  path: termsPageContent.path
+  title: termsDocument.metadataTitle,
+  description: termsDocument.metadataDescription,
+  path: termsDocument.path
 });
 
 export default function TermsPage() {
-  return <MarketingPageTemplate content={termsPageContent} />;
+  return <LegalDocumentPage document={termsDocument} />;
 }

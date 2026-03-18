@@ -1,13 +1,13 @@
-import { MarketingPageTemplate } from "@/components/layout/MarketingPageTemplate";
-import { privacyPageContent } from "@/content/site-content";
+import { LegalDocumentPage } from "@/components/legal/LegalDocumentPage";
+import { privacyDocument } from "@/content/legal-documents";
 import { createPageMetadata } from "@/seo/metadata";
 
 export const metadata = createPageMetadata({
-  title: privacyPageContent.metadataTitle,
-  description: privacyPageContent.metadataDescription,
-  path: privacyPageContent.path
+  title: privacyDocument.metadataTitle,
+  description: privacyDocument.metadataDescription,
+  path: privacyDocument.path
 });
 
 export default function PrivacyPage() {
-  return <MarketingPageTemplate content={privacyPageContent} />;
+  return <LegalDocumentPage document={privacyDocument} />;
 }

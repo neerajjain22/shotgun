@@ -77,6 +77,15 @@ Section library (`components/sections`) is the standard page-composition layer:
   - keep user on form with a visible error on failure
 - Keep future conversion forms aligned with this behavior so paid-traffic paths stay consistent.
 
+## Legal Document Pattern
+- `/terms` and `/privacy` use `components/legal/LegalDocumentPage.tsx` instead of `MarketingPageTemplate`.
+- Legal copy is maintained in `content/legal-documents.ts` as structured content blocks.
+- Use semantic hierarchy for legal pages:
+  - H1: document title
+  - H2: primary legal sections
+  - H3: nested clauses/subsections
+- Keep legal page styling in `components/legal/LegalDocumentPage.module.css` so legal formatting stays isolated from marketing section styles.
+
 ## Simplified Steps Workflow Pattern
 - `components/sections/StepsSection.tsx` supports a concise process section for marketing pages.
 - Preferred default is a 3-step flow for clarity:
