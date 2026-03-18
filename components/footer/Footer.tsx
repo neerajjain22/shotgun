@@ -21,7 +21,7 @@ export function Footer() {
         <div className={styles.topGrid}>
           <section className={styles.brandBlock}>
             <Link aria-label="Go to homepage" className={styles.logo} href="/">
-              {siteConfig.name}.
+              {siteConfig.name}
             </Link>
             <p className={styles.brandDescription}>
               The on-demand Shopify execution team for operators who want to ship improvements, not manage
@@ -47,7 +47,7 @@ export function Footer() {
 
         <div className={styles.bottom}>
           <small>
-            {year} {siteConfig.copyrightLabel}. All rights reserved.
+            {year} {siteConfig.copyrightLabel} All rights reserved.
           </small>
         </div>
       </PageContainer>
