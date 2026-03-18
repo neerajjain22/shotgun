@@ -124,8 +124,8 @@ export default function HomePage() {
               <p className={styles.metricDescription}>usually waiting in the average Shopify backlog.</p>
             </article>
             <article className={styles.metricBlockMuted}>
-              <p className={styles.metricValue}>30 mins to 24 hours</p>
-              <p className={styles.metricDescription}>target completion time for most Krish. tasks.</p>
+              <p className={styles.metricValue}>100+ hrs/month</p>
+              <p className={styles.metricDescription}>lost in back-and-forth with your agency</p>
             </article>
           </div>
         </div>
