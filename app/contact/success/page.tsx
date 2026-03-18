@@ -10,7 +10,7 @@ import styles from "./SuccessPage.module.css";
 export const metadata: Metadata = createPageMetadata({
   title: "Request Received",
   description:
-    "Your Shopify task request was submitted successfully. Shotgun will review your request and follow up with next steps.",
+    "Your Shopify task request was submitted successfully. Krish. will review your request and follow up with next steps.",
   path: "/contact/success",
   noIndex: true
 });

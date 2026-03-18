@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Plus_Jakarta_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 import type { ReactNode } from "react";
 
 import { Footer } from "@/components/footer/Footer";
@@ -15,12 +15,6 @@ const inter = Inter({
   display: "swap"
 });
 
-const plusJakartaSans = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  variable: "--font-plus-jakarta-sans",
-  display: "swap"
-});
-
 export const metadata: Metadata = defaultMetadata;
 
 type RootLayoutProps = {
@@ -30,7 +24,7 @@ type RootLayoutProps = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${inter.variable} ${plusJakartaSans.variable}`}>
+      <body className={`${inter.className} ${inter.variable}`}>
         <div className="site-frame">
           <Navbar />
           <Breadcrumbs />

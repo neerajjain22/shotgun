@@ -13,6 +13,8 @@ type CTASectionProps = {
 import styles from "./CTASection.module.css";
 
 export function CTASection({ headline, description, primaryCTA, secondaryCTA, microcopy }: CTASectionProps) {
+  void microcopy;
+
   return (
     <Section>
       <div className={styles.wrapper}>
@@ -28,7 +30,6 @@ export function CTASection({ headline, description, primaryCTA, secondaryCTA, mi
             </Button>
           ) : null}
         </div>
-        {microcopy ? <p className={styles.microcopy}>{microcopy}</p> : null}
       </div>
     </Section>
   );

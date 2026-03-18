@@ -40,29 +40,35 @@ function createInputId(title: string): string {
 
 export function ExampleTasksSection({ sectionTitle, tasks, taskPrompt }: ExampleTasksSectionProps) {
   const inputId = taskPrompt ? createInputId(taskPrompt.title) : "task-request-input";
+  const hasTasks = tasks.length > 0;
+  const sectionClassName = hasTasks ? undefined : styles.promptOnly;
 
   return (
-    <Section>
-      <div className={styles.header}>
-        <h2 className={styles.title}>{sectionTitle}</h2>
-      </div>
+    <Section className={sectionClassName}>
+      {hasTasks ? (
+        <>
+          <div className={styles.header}>
+            <h2 className={styles.title}>{sectionTitle}</h2>
+          </div>
 
-      <div className={styles.grid}>
-        {tasks.map((task, index) => (
-          <Card
-            as="article"
-            className={`${styles.taskCard} ${taskThemeClassMap[task.theme]} ${
-              index < 3 ? styles.recognitionHigh : ""
-            }`}
-            hover
-            key={task.title}
-          >
-            <h3 className={styles.taskTitle}>{task.title}</h3>
-            <p className={styles.problemDescription}>{task.problemDescription}</p>
-            <p className={styles.difficultyLabel}>{task.difficultyLabel}</p>
-          </Card>
-        ))}
-      </div>
+          <div className={styles.grid}>
+            {tasks.map((task, index) => (
+              <Card
+                as="article"
+                className={`${styles.taskCard} ${taskThemeClassMap[task.theme]} ${
+                  index < 3 ? styles.recognitionHigh : ""
+                }`}
+                hover
+                key={task.title}
+              >
+                <h3 className={styles.taskTitle}>{task.title}</h3>
+                <p className={styles.problemDescription}>{task.problemDescription}</p>
+                <p className={styles.difficultyLabel}>{task.difficultyLabel}</p>
+              </Card>
+            ))}
+          </div>
+        </>
+      ) : null}
 
       {taskPrompt ? (
         <div className={styles.promptCard}>

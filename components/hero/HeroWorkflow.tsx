@@ -13,7 +13,7 @@ type HeroWorkflowProps = {
 
 export function HeroWorkflow({ fallbackImage }: HeroWorkflowProps) {
   return (
-    <div aria-label="Shotgun workflow animation" className="hero-workflow" role="img">
+    <div aria-label="Krish. workflow animation" className="hero-workflow" role="img">
       <div className="hero-workflow__animated">
         <div className="hero-workflow__frame">
           <div className="hero-workflow__store">

@@ -10,7 +10,7 @@ import styles from "./ContactPage.module.css";
 export const metadata: Metadata = createPageMetadata({
   title: "Start Request",
   description:
-    "Submit your Shopify development request to Shotgun. Share your store URL and task details to get implementation support quickly.",
+    "Submit your Shopify development request to Krish. Share your store URL and task details to get implementation support quickly.",
   path: "/contact"
 });
 

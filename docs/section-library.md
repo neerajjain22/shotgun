@@ -1,7 +1,7 @@
 # section-library.md
 
 ## Purpose
-Defines the reusable section blocks used to assemble Shotgun pages consistently across homepage, use-case pages, comparison pages, and SEO guides.
+Defines the reusable section blocks used to assemble Krish. pages consistently across homepage, use-case pages, comparison pages, and SEO guides.
 
 ## Composition Principle
 Pages should be built by composing section library components instead of creating one-off layouts.
@@ -30,7 +30,7 @@ Props:
 Example:
 ```tsx
 <FeatureGrid
-  sectionTitle="What Shotgun helps you ship"
+  sectionTitle="What Krish. helps you ship"
   sectionDescription="Common Shopify development requests we execute every week."
   features={[
     { title: "Theme updates", description: "Ship layout and section changes fast." },
@@ -45,7 +45,7 @@ File:
 
 Use when:
 - explaining workflows
-- showing how Shotgun works
+- showing how Krish. works
 
 Props:
 - `sectionTitle: string`
@@ -124,7 +124,7 @@ File:
 - `components/sections/ExampleTasksSection.tsx`
 
 Use when:
-- showing concrete examples of tasks Shotgun can execute
+- showing concrete examples of tasks Krish. can execute
 - surfacing recognizable merchant problems with implementation context
 
 Props:

@@ -1,6 +1,6 @@
-# Shotgun Site
+# Krish. Site
 
-Production-ready Next.js App Router skeleton for the Shotgun marketing website.
+Production-ready Next.js App Router skeleton for the Krish. marketing website.
 
 ## Architecture Overview
 

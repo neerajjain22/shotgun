@@ -1,7 +1,7 @@
 # SEO_RULES.md
 
 ## Purpose
-Defines non-negotiable SEO standards for all Shotgun website pages and content additions.
+Defines non-negotiable SEO standards for all Krish. website pages and content additions.
 
 ## Copywriting Source Of Truth
 For writing style, ICP alignment, and page messaging standards, follow:
@@ -15,7 +15,7 @@ For writing style, ICP alignment, and page messaging standards, follow:
 - Open Graph and Twitter metadata should be present via shared defaults/helpers.
 
 ## Title Rules
-- Format: `<Page-Specific Title> | Shotgun`.
+- Format: `<Page-Specific Title> | Krish.`.
 - Keep titles concise and intent-focused.
 - Avoid duplicate titles across routes.
 

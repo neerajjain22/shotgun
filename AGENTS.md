@@ -1,10 +1,10 @@
 # AGENTS.md
 
 ## Purpose
-This file is the entry point for AI coding agents working in the Shotgun website repository. It provides a quick project summary and points to deeper documentation.
+This file is the entry point for AI coding agents working in the Krish. website repository. It provides a quick project summary and points to deeper documentation.
 
 ## Project Overview
-Shotgun is a Shopify-focused execution platform. This website communicates product value, use cases, and SEO content for founders, operators, and ecommerce teams.
+Krish. is a Shopify-focused execution platform. This website communicates product value, use cases, and SEO content for founders, operators, and ecommerce teams.
 
 ## Tech Stack
 - Next.js (App Router, server-rendered React)

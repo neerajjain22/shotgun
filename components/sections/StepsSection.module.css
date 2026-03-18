@@ -29,14 +29,6 @@
   color: var(--color-accent-primary);
 }
 
-.stepIcon {
-  display: inline-flex;
-  align-items: center;
-  width: fit-content;
-  font-size: 1.5rem;
-  line-height: 1;
-}
-
 .stepTitle {
   margin: 0;
   font-size: var(--text-subheading);

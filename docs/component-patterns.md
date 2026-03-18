@@ -146,7 +146,7 @@ Section library (`components/sections`) is the standard page-composition layer:
 - Sequence communicates:
   - store before state
   - founder request bubble
-  - Shotgun working response
+  - Krish. working response
   - store after state
   - completion confirmation
 - On small screens, hide animated state and show static fallback visual for readability and performance.

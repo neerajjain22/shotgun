@@ -28,11 +28,6 @@ export function StepsSection({ sectionTitle, steps }: StepsSectionProps) {
         {steps.map((step) => (
           <Card className={styles.stepCard} hover key={`${step.stepNumber}-${step.title}`}>
             <p className={styles.stepNumber}>{step.stepNumber}</p>
-            {step.icon ? (
-              <span aria-hidden="true" className={styles.stepIcon}>
-                {step.icon}
-              </span>
-            ) : null}
             <h3 className={styles.stepTitle}>{step.title}</h3>
             <p className={styles.stepDescription}>{step.description}</p>
           </Card>

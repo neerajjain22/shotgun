@@ -4,7 +4,7 @@
 Provides deeper product and website context so contributors can align implementation decisions with business goals.
 
 ## Product Context
-Shotgun helps Shopify founders and teams execute development tasks quickly and reliably.
+Krish. helps Shopify founders and teams execute development tasks quickly and reliably.
 
 ## Website Goals
 - Explain product value clearly
@@ -20,7 +20,7 @@ Shotgun helps Shopify founders and teams execute development tasks quickly and r
 
 ## Messaging Direction (Template)
 - Problem: Shopify teams face execution bottlenecks
-- Solution: Shotgun provides fast, reliable dev execution
+- Solution: Krish. provides fast, reliable dev execution
 - Outcome: Better speed, quality, and operational confidence
 
 ## Content Expansion Model

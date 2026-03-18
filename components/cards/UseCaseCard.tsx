@@ -13,10 +13,11 @@ type UseCaseCardProps = {
 };
 
 export function UseCaseCard({ title, description, href, icon }: UseCaseCardProps) {
+  void icon;
+
   return (
     <Card className={styles.card} hover>
       <div className={styles.head}>
-        {icon ? <span className={styles.icon}>{icon}</span> : null}
         <h3 className={styles.title}>{title}</h3>
       </div>
       <p className={styles.description}>{description}</p>

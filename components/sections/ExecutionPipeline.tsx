@@ -5,9 +5,9 @@ export function ExecutionPipeline() {
     <Section>
       <div className="execution-pipeline">
         <header className="execution-pipeline__header">
-          <h2 className="execution-pipeline__title">How Shotgun completes your Shopify tasks</h2>
+          <h2 className="execution-pipeline__title">How Krish. completes your Shopify tasks</h2>
           <p className="execution-pipeline__subtitle">
-            Shotgun combines AI systems with experienced developers to complete Shopify development work
+            Krish. combines AI systems with experienced developers to complete Shopify development work
             quickly and reliably.
           </p>
         </header>

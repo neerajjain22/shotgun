@@ -1,7 +1,7 @@
 # seo-architecture.md
 
 ## Purpose
-Explains how SEO is implemented technically across the Shotgun website and how pages should consume shared SEO utilities.
+Explains how SEO is implemented technically across the Krish. website and how pages should consume shared SEO utilities.
 
 ## SEO Layers
 1. Global defaults (`config/metadata.ts`)
@@ -28,8 +28,8 @@ Built outputs:
 - Optional noindex robots directives
 
 ### Title Format Rules
-- Homepage title: `Shotgun — Shopify development execution`
-- Other pages: `Page Title | Shotgun`
+- Homepage title: `Krish. — Shopify development execution`
+- Other pages: `Page Title | Krish.`
 
 Implementation notes:
 - Homepage title is enforced by route path (`/`).

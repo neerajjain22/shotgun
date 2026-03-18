@@ -17,6 +17,8 @@ type MarketingPageTemplateProps = {
 };
 
 export function MarketingPageTemplate({ content }: MarketingPageTemplateProps) {
+  void content.intro.microcopy;
+
   return (
     <main>
       <Section>
@@ -39,7 +41,6 @@ export function MarketingPageTemplate({ content }: MarketingPageTemplateProps) {
               ) : null}
             </div>
           ) : null}
-          {content.intro.microcopy ? <p className={styles.ctaMicrocopy}>{content.intro.microcopy}</p> : null}
         </div>
       </Section>
 

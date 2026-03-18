@@ -1,7 +1,7 @@
 # seo-copywriting-guidelines.md
 
 ## Purpose
-Defines how Shotgun website copy should be written for SEO performance and clear communication.
+Defines how Krish. website copy should be written for SEO performance and clear communication.
 
 Primary rule: **Clarity > Cleverness**.
 
@@ -55,7 +55,7 @@ Metadata baseline:
 URL baseline:
 - Descriptive, keyword-based, lowercase kebab-case paths
 
-## Keyword Strategy (Shotgun Focus)
+## Keyword Strategy (Krish. Focus)
 Prioritize query families around:
 - Shopify development
 - Shopify theme changes
@@ -83,11 +83,11 @@ When relevant, include practical examples such as:
 - Launch a weekend sale with discount codes
 - Fix mobile layout issues
 
-Examples should help visitors immediately understand what Shotgun can execute.
+Examples should help visitors immediately understand what Krish. can execute.
 
 ## Mandatory Page Questions
 Every page should answer quickly:
-1. What does Shotgun do?
+1. What does Krish. do?
 2. Who is it for?
 3. What problem does it solve?
 4. What outcome does the user get?

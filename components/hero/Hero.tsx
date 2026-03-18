@@ -30,6 +30,8 @@ type HeroProps = {
 };
 
 export function Hero({ headline, subheadline, primaryCta, secondaryCta, ctaMicrocopy, image, mediaSlot }: HeroProps) {
+  void ctaMicrocopy;
+
   return (
     <Section>
       <div className={styles.grid}>
@@ -46,7 +48,6 @@ export function Hero({ headline, subheadline, primaryCta, secondaryCta, ctaMicro
               </Button>
             ) : null}
           </div>
-          {ctaMicrocopy ? <p className={styles.microcopy}>{ctaMicrocopy}</p> : null}
         </div>
 
         <div className={styles.media}>

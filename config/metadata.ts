@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 
 export const metadataConfig = {
-  homeTitle: "Shotgun — Shopify development execution",
-  titleTemplate: "%s | Shotgun",
+  homeTitle: "Krish. — Shopify development execution",
+  titleTemplate: "%s | Krish.",
   defaultDescription:
     "Reliable Shopify development execution for founders, operators, and ecommerce teams.",
   twitterHandle: "@shotgun"

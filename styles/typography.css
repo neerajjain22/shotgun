@@ -13,56 +13,40 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: var(--font-primary);
   color: var(--color-neutral-900);
-  font-weight: 600;
-  letter-spacing: -0.015em;
+  font-family: var(--font-primary);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1;
 }
 
 h1 {
-  font-size: 3.5rem; /* 56px */
-  line-height: 1.1;
+  font-size: var(--text-hero);
 }
 
 h2 {
-  font-size: 2.25rem; /* 36px */
-  line-height: 1.2;
+  font-size: var(--text-section-title);
 }
 
 h3 {
-  font-size: 1.5rem; /* 24px */
-  line-height: var(--line-height-tight);
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  line-height: 1.1;
 }
 
 p,
 li {
-  font-size: 1.125rem; /* 18px */
-  line-height: 1.6;
-  color: var(--color-text-primary);
   margin: 0;
+  font-size: var(--text-body);
+  line-height: var(--line-height-body);
+  color: var(--color-text-primary);
 }
 
 p {
-  max-width: 40rem; /* 640px */
+  max-width: 40rem;
 }
 
 small {
   font-size: var(--text-small);
-  line-height: 1.4;
+  line-height: 1.45;
   color: var(--color-muted);
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (max-width: 48rem) {
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
 }

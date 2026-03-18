@@ -1,7 +1,7 @@
 # site-architecture.md
 
 ## Purpose
-Defines the information architecture for the Shotgun website so navigation, SEO, and content expansion stay consistent as the site grows.
+Defines the information architecture for the Krish. website so navigation, SEO, and content expansion stay consistent as the site grows.
 
 ## Audience Alignment
 Architecture is designed for:
@@ -10,7 +10,7 @@ Architecture is designed for:
 - Growth and marketing teams
 - Product managers managing Shopify stores
 
-These users need quick paths to understand what Shotgun does, how it works, and which Shopify tasks can be handled.
+These users need quick paths to understand what Krish. does, how it works, and which Shopify tasks can be handled.
 
 ## Architecture Principles
 - Keep navigation shallow and predictable.
@@ -39,8 +39,8 @@ Additional top-level informational routes:
 Hub: `/product`
 
 Primary subpages:
-- `/product/how-shotgun-works`
-- `/product/what-shotgun-can-do`
+- `/product/how-krish-works`
+- `/product/what-krish-can-do`
 - `/product/pricing`
 
 Purpose:
@@ -65,11 +65,11 @@ Purpose:
 Hub: `/compare`
 
 Primary subpages:
-- `/compare/freelancers-vs-shotgun`
-- `/compare/shopify-agencies-vs-shotgun`
-- `/compare/task-services-vs-shotgun`
-- `/compare/storetasker-vs-shotgun`
-- `/compare/taskhusky-vs-shotgun`
+- `/compare/freelancers-vs-krish`
+- `/compare/shopify-agencies-vs-krish`
+- `/compare/task-services-vs-krish`
+- `/compare/storetasker-vs-krish`
+- `/compare/taskhusky-vs-krish`
 
 Purpose:
 - Help operators evaluate alternatives with clear tradeoffs and execution fit.
@@ -92,7 +92,7 @@ Hub: `/resources`
 
 Primary subpages:
 - `/resources/blog`
-- `/resources/case-studies`
+- `/use-cases`
 - `/resources/docs`
 
 Purpose:

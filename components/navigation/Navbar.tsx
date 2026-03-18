@@ -50,7 +50,10 @@ export function Navbar() {
           </nav>
 
           <div className={styles.desktopCtas}>
-            <Button href={navigationConfig.ctas.primary.href} size="sm" variant="primary">
+            <Link className={styles.loginLink} href={navigationConfig.ctas.secondary.href}>
+              {navigationConfig.ctas.secondary.label}
+            </Link>
+            <Button className={styles.trialCta} href={navigationConfig.ctas.primary.href} size="md" variant="primary">
               {navigationConfig.ctas.primary.label}
             </Button>
           </div>
@@ -86,6 +89,9 @@ export function Navbar() {
           </nav>
 
           <div className={styles.mobileCtas}>
+            <Link className={styles.mobileLoginLink} href={navigationConfig.ctas.secondary.href}>
+              {navigationConfig.ctas.secondary.label}
+            </Link>
             <Button className={styles.mobileCta} href={navigationConfig.ctas.primary.href} variant="primary">
               {navigationConfig.ctas.primary.label}
             </Button>

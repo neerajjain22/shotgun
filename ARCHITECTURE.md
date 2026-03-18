@@ -4,7 +4,7 @@
 Defines the high-level website architecture so future contributors and AI agents can make consistent changes without re-discovering design intent.
 
 ## System Overview
-Shotgun website is a server-rendered Next.js App Router application optimized for SEO growth and maintainability.
+Krish. website is a server-rendered Next.js App Router application optimized for SEO growth and maintainability.
 
 Core principles:
 - Route-driven content architecture

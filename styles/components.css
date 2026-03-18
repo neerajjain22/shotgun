@@ -6,23 +6,23 @@
   gap: var(--space-2);
   border: 1px solid transparent;
   border-radius: var(--radius-button);
-  padding: 0.75rem 1.375rem; /* 12px 22px */
+  padding: 0.8rem 1.35rem;
   font-family: var(--font-primary);
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 0.95rem;
+  font-weight: 700;
   line-height: 1;
   cursor: pointer;
   transition:
-    transform 200ms ease,
-    box-shadow 200ms ease,
-    background-color 200ms ease,
-    border-color 200ms ease,
-    color 200ms ease;
+    transform var(--motion-duration) var(--motion-ease),
+    box-shadow var(--motion-duration) var(--motion-ease),
+    background-color var(--motion-duration) var(--motion-ease),
+    border-color var(--motion-duration) var(--motion-ease),
+    color var(--motion-duration) var(--motion-ease);
 }
 
 .btn-primary,
 .ui-button-primary {
-  background: var(--color-accent-primary);
+  background: var(--color-neutral-900);
   color: var(--color-white);
   box-shadow: var(--shadow-button);
 }
@@ -30,7 +30,6 @@
 .btn-primary:hover,
 .ui-button-primary:hover {
   transform: translateY(-1px);
-  filter: brightness(1.02);
 }
 
 .btn-secondary,
@@ -38,13 +37,11 @@
   background: var(--color-white);
   color: var(--color-text-primary);
   border: var(--border-subtle);
-  padding: 0.75rem 1.25rem; /* 12px 20px */
 }
 
 .btn-secondary:hover,
 .ui-button-secondary:hover {
   transform: translateY(-1px);
-  border-color: var(--color-accent-primary);
 }
 
 .card,
@@ -81,43 +78,44 @@
   animation: fadeInUp var(--motion-duration) var(--motion-ease) both;
 }
 
-/* Overrides for CSS-module based Button component */
 a[class*="button"],
 button[class*="button"] {
   border-radius: var(--radius-button);
-  font-weight: 600;
+  font-weight: 700;
   transition:
-    transform 200ms ease,
-    box-shadow 200ms ease,
-    background-color 200ms ease,
-    border-color 200ms ease,
-    color 200ms ease;
+    transform var(--motion-duration) var(--motion-ease),
+    box-shadow var(--motion-duration) var(--motion-ease),
+    background-color var(--motion-duration) var(--motion-ease),
+    border-color var(--motion-duration) var(--motion-ease),
+    color var(--motion-duration) var(--motion-ease);
 }
 
-a[class*="button"][class*="medium"],
-button[class*="button"][class*="medium"] {
-  padding: 0.75rem 1.375rem; /* 12px 22px */
+a[class*="button"][class*="primary"],
+button[class*="button"][class*="primary"] {
+  background: var(--color-neutral-900);
+  color: var(--color-white);
 }
 
 a[class*="button"][class*="secondary"],
 button[class*="button"][class*="secondary"] {
-  padding: 0.75rem 1.25rem; /* 12px 20px */
+  border-color: var(--color-neutral-200);
 }
 
 a[class*="button"][class*="primary"]:hover,
-button[class*="button"][class*="primary"]:hover {
+button[class*="button"][class*="primary"]:hover,
+a[class*="button"][class*="secondary"]:hover,
+button[class*="button"][class*="secondary"]:hover {
   transform: translateY(-1px);
 }
 
-/* Navbar readability helpers */
 header .nav-readable-list {
-  gap: 1.75rem; /* 28px */
+  gap: 2rem;
 }
 
 header .nav-readable-link {
-  font-size: 1rem; /* 16px */
-  font-weight: 500;
-  color: var(--color-text-primary);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-muted);
 }
 
 header .nav-readable-link:hover {
@@ -129,6 +127,7 @@ header .nav-readable-link:hover {
     opacity: 0;
     transform: translateY(8px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);

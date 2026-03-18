@@ -1,7 +1,7 @@
 # deployment.md
 
 ## Purpose
-Documents deployment workflow for the Shotgun website on Vercel.
+Documents deployment workflow for the Krish. website on Vercel.
 
 ## Platform
 - Hosting: Vercel

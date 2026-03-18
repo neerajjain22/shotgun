@@ -1,3 +1,7 @@
+.promptOnly.promptOnly {
+  padding-top: var(--space-3);
+}
+
 .header {
   margin-bottom: var(--space-6);
 }

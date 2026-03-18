@@ -68,9 +68,9 @@ const freeMonthSteps = [
 ] as const;
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Free Shopify Development – First Month Free | Shotgun",
+  title: "Free Shopify Development – First Month Free | Krish.",
   description:
-    "Try Shotgun with a free first month. Submit Shopify development tasks and get them completed quickly without hiring freelancers.",
+    "Try Krish. with a free first month. Submit Shopify development tasks and get them completed quickly without hiring freelancers.",
   path: pagePath
 });
 
@@ -79,7 +79,7 @@ export default function FreeShopifyDevelopmentFirstMonthOfferPage() {
     <main>
       <Hero
         headline="Get your Shopify development tasks done — first month free"
-        subheadline="Try Shotgun with zero risk. Submit Shopify tasks and our developers complete them for you. No contracts. No hiring freelancers. Just finished work."
+        subheadline="Try Krish. with zero risk. Submit Shopify tasks and our developers complete them for you. No contracts. No hiring freelancers. Just finished work."
         primaryCta={{ label: "Start Free Month", href: "/contact" }}
         secondaryCta={{ label: "View Example Tasks", href: `${pagePath}#example-tasks` }}
         ctaMicrocopy="No credit card required. Cancel anytime."
@@ -119,7 +119,7 @@ export default function FreeShopifyDevelopmentFirstMonthOfferPage() {
         <p className={styles.sectionNote}>
           Most Shopify stores accumulate dozens of small fixes.
           <br />
-          Shotgun helps you clear them quickly.
+          Krish. helps you clear them quickly.
         </p>
         <p className={styles.inlineLinkNote}>
           Need more examples? Explore <Link href="/use-cases">Shopify use cases</Link>.
@@ -150,7 +150,7 @@ export default function FreeShopifyDevelopmentFirstMonthOfferPage() {
             <li>Freelancers disappear mid-project</li>
             <li>Agencies are expensive for simple tasks</li>
           </ul>
-          <p className={styles.bodyText}>Shotgun exists to remove this friction.</p>
+          <p className={styles.bodyText}>Krish. exists to remove this friction.</p>
           <p className={styles.bodyText}>
             The best way to understand the value is to experience it directly, which is why we offer the first month
             free for Shopify teams.
@@ -198,7 +198,7 @@ export default function FreeShopifyDevelopmentFirstMonthOfferPage() {
           },
           {
             question: "What happens after the free month?",
-            answer: "You can choose to continue with a paid Shotgun plan."
+            answer: "You can choose to continue with a paid Krish. plan."
           },
           {
             question: "How fast are tasks completed?",

@@ -1,43 +1,37 @@
 :root {
-  /* Pastel palette */
-  --color-bg-primary: #f7f8fc;
-  --color-accent-primary: #7c8cff;
-  --color-accent-secondary: #9fe3d7;
-  --color-accent-highlight: #f8d7da;
-  --color-text-primary: #1f2937;
+  --color-bg-primary: #fcfcfc;
+  --color-surface: #ffffff;
+  --color-neutral-100: #f4f4f5;
+  --color-neutral-200: #e4e4e7;
+  --color-neutral-400: #a1a1aa;
+  --color-neutral-500: #888888;
+  --color-neutral-900: #050505;
 
-  /* Neutral scale */
+  --color-text-primary: #050505;
+  --color-muted: #888888;
+  --color-accent-primary: #050505;
+  --color-accent-secondary: #10b981;
+  --color-execution: #10b981;
+  --color-destructive: #ff3b30;
   --color-white: #ffffff;
-  --color-neutral-100: #f3f4f6;
-  --color-neutral-200: #e5e7eb;
-  --color-neutral-500: #6b7280;
-  --color-neutral-900: #111827;
 
-  /* Subtle gradients */
-  --gradient-soft-bg: linear-gradient(
-    180deg,
-    rgba(124, 140, 255, 0.08) 0%,
-    rgba(159, 227, 215, 0.06) 55%,
-    rgba(248, 215, 218, 0.05) 100%
-  );
+  --gradient-soft-bg: none;
 
-  /* Typography */
   --font-primary: var(--font-inter, "Inter"), "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  --font-secondary: var(--font-plus-jakarta-sans, "Plus Jakarta Sans"), "Inter", "Segoe UI", sans-serif;
+  --font-secondary: var(--font-inter, "Inter"), "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 
-  --text-hero: 4rem; /* 64px */
-  --text-section-title: 2.5rem; /* 40px */
-  --text-subheading: 1.5rem; /* 24px */
-  --text-body: 1.125rem; /* 18px */
-  --text-small: 0.875rem; /* 14px */
+  --text-hero: clamp(2.75rem, 9vw, 5.6rem);
+  --text-section-title: clamp(2rem, 5vw, 3.5rem);
+  --text-subheading: 1.75rem;
+  --text-body: 1.125rem;
+  --text-small: 0.875rem;
 
-  --line-height-tight: 1.2;
+  --line-height-tight: 1.1;
   --line-height-body: 1.6;
 
-  /* Spacing and layout */
-  --container-max: 75rem; /* 1200px */
-  --section-space-y: clamp(5rem, 8vw, 7.5rem); /* up to 120px */
-  --grid-gap: 1.5rem; /* 24px */
+  --container-max: 78rem;
+  --section-space-y: clamp(4.5rem, 8vw, 7rem);
+  --grid-gap: 1.5rem;
 
   --space-1: 0.25rem;
   --space-2: 0.5rem;
@@ -49,32 +43,26 @@
   --space-10: 2.5rem;
   --space-12: 3rem;
 
-  /* Radius */
   --radius-button: 999px;
-  --radius-card: 1.125rem; /* 18px */
-  --radius-sm: 0.5rem;
-  --radius-md: 0.875rem;
-  --radius-lg: 1.125rem;
+  --radius-card: 2rem;
+  --radius-sm: 0.75rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
 
-  /* Border and shadow */
   --border-subtle: 1px solid var(--color-neutral-200);
-  --shadow-card: 0 10px 30px rgba(31, 41, 55, 0.06);
-  --shadow-card-hover: 0 16px 38px rgba(31, 41, 55, 0.1);
-  --shadow-button: 0 8px 20px rgba(124, 140, 255, 0.22);
+  --shadow-card: 0 10px 40px -10px rgba(0, 0, 0, 0.06);
+  --shadow-card-hover: 0 20px 60px -15px rgba(0, 0, 0, 0.12);
+  --shadow-button: 0 8px 20px rgba(5, 5, 5, 0.2);
 
-  /* Motion */
   --motion-duration: 200ms;
-  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --motion-ease: cubic-bezier(0.16, 1, 0.3, 1);
 
-  /* Icon style */
   --icon-stroke-width: 1.6;
   --icon-stroke-linecap: round;
   --icon-stroke-linejoin: round;
 
-  /* Compatibility aliases */
   --color-bg: var(--color-bg-primary);
   --color-text: var(--color-text-primary);
-  --color-muted: var(--color-neutral-500);
   --color-border: var(--color-neutral-200);
   --font-sans: var(--font-primary);
 }
