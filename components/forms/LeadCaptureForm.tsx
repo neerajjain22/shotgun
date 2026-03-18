@@ -304,7 +304,7 @@ export function LeadCaptureForm() {
 
       <div className={styles.actions}>
         <Button type="submit" variant="primary" fullWidth disabled={isSubmitting}>
-          {isSubmitting ? "Submitting request..." : "1st month free"}
+          {isSubmitting ? "Submitting request..." : "Start for free"}
         </Button>
       </div>
     </form>

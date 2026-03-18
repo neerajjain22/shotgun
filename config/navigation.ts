@@ -23,11 +23,10 @@ export type NavigationCTA = {
 
 export const navigation = {
   main: [
-    { label: "Product", href: "/product" },
+    { label: "How it Works", href: "/product/how-krish-works" },
+    { label: "Pricing", href: "/product/pricing" },
     { label: "Use Cases", href: "/use-cases" },
-    { label: "Guides", href: "/guides" },
-    { label: "Compare", href: "/compare" },
-    { label: "Resources", href: "/resources" }
+    { label: "FAQ", href: "/faqs" }
   ] as NavigationItem[],
   sections: [
     {
@@ -35,8 +34,8 @@ export const navigation = {
       href: "/product",
       pages: [
         { label: "Overview", href: "/product" },
-        { label: "How Shotgun Works", href: "/product/how-shotgun-works" },
-        { label: "What Shotgun Can Do", href: "/product/what-shotgun-can-do" },
+        { label: "How Krish. Works", href: "/product/how-krish-works" },
+        { label: "What Krish. Can Do", href: "/product/what-krish-can-do" },
         { label: "Pricing", href: "/product/pricing" }
       ]
     },
@@ -74,11 +73,11 @@ export const navigation = {
       label: "Compare",
       href: "/compare",
       pages: [
-        { label: "Freelancers vs Shotgun", href: "/compare/freelancers-vs-shotgun" },
-        { label: "Shopify Agencies vs Shotgun", href: "/compare/shopify-agencies-vs-shotgun" },
-        { label: "Task Services vs Shotgun", href: "/compare/task-services-vs-shotgun" },
-        { label: "Storetasker vs Shotgun", href: "/compare/storetasker-vs-shotgun" },
-        { label: "TaskHusky vs Shotgun", href: "/compare/taskhusky-vs-shotgun" }
+        { label: "Freelancers vs Krish.", href: "/compare/freelancers-vs-krish" },
+        { label: "Shopify Agencies vs Krish.", href: "/compare/shopify-agencies-vs-krish" },
+        { label: "Task Services vs Krish.", href: "/compare/task-services-vs-krish" },
+        { label: "Storetasker vs Krish.", href: "/compare/storetasker-vs-krish" },
+        { label: "TaskHusky vs Krish.", href: "/compare/taskhusky-vs-krish" }
       ]
     },
     {
@@ -86,15 +85,15 @@ export const navigation = {
       href: "/resources",
       pages: [
         { label: "Blog", href: "/resources/blog" },
-        { label: "Case Studies", href: "/resources/case-studies" },
+        { label: "Use Cases", href: "/use-cases" },
         { label: "Documentation", href: "/resources/docs" }
       ]
     }
   ] as NavigationSection[],
   footer: {
     product: [
-      { label: "How Shotgun Works", href: "/product/how-shotgun-works" },
-      { label: "What Shotgun Can Do", href: "/product/what-shotgun-can-do" },
+      { label: "How Krish. Works", href: "/product/how-krish-works" },
+      { label: "What Krish. Can Do", href: "/product/what-krish-can-do" },
       { label: "Pricing", href: "/product/pricing" }
     ],
     useCases: [
@@ -109,7 +108,7 @@ export const navigation = {
     resources: [
       { label: "Guides", href: "/guides" },
       { label: "Blog", href: "/resources/blog" },
-      { label: "Case Studies", href: "/resources/case-studies" }
+      { label: "Use Cases", href: "/use-cases" }
     ],
     company: [
       { label: "About", href: "/about" },
@@ -120,18 +119,18 @@ export const navigation = {
   } as FooterNavigation,
   ctas: {
     primary: {
-      label: "1st month free",
+      label: "Start Free Trial",
       href: "/free-shopify-development-first-month-offer"
     } as NavigationCTA,
     secondary: {
-      label: "Book Demo",
+      label: "Log In",
       href: "/contact"
     } as NavigationCTA
   }
 } as const;
 
 export const navigationConfig = {
-  logoLabel: "Shotgun",
+  logoLabel: "Krish.",
   items: navigation.main,
   sections: navigation.sections,
   footer: navigation.footer,

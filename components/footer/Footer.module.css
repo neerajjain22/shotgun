@@ -1,40 +1,46 @@
 .footer {
   margin-top: var(--section-space-y);
-  border-top: var(--border-subtle);
-  padding-block: var(--space-12) var(--space-8);
-  background: rgba(255, 255, 255, 0.72);
+  background: #fff;
+  border-top: 1px solid var(--color-neutral-200);
+  padding-block: clamp(3rem, 7vw, 5rem);
 }
 
-.brandRow {
-  margin-bottom: var(--space-6);
+.topGrid {
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 2.75rem);
+  grid-template-columns: 1.2fr repeat(3, minmax(0, 1fr));
+}
+
+.brandBlock {
+  display: grid;
+  gap: 1rem;
 }
 
 .logo {
-  font-family: var(--font-secondary);
-  font-size: 1.125rem;
-  font-weight: 700;
+  font-size: 1.45rem;
+  font-weight: 900;
+  letter-spacing: -0.04em;
   color: var(--color-neutral-900);
 }
 
-.grid {
-  display: grid;
-  gap: var(--grid-gap);
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+.brandDescription {
+  margin: 0;
+  max-width: 16rem;
+  color: var(--color-muted);
+  font-size: 0.9rem;
 }
 
 .group {
   display: grid;
-  gap: var(--space-3);
+  gap: 0.8rem;
 }
 
 .title {
   margin: 0;
-  font-size: var(--text-small);
-  font-family: var(--font-primary);
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--color-muted);
+  color: var(--color-neutral-900);
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
 }
 
 .list {
@@ -42,32 +48,46 @@
   margin: 0;
   padding: 0;
   display: grid;
-  gap: var(--space-2);
+  gap: 0.6rem;
 }
 
 .link {
-  color: var(--color-text-primary);
-  font-size: 1rem;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .link:hover {
-  color: var(--color-accent-primary);
+  color: var(--color-neutral-900);
 }
 
 .bottom {
-  border-top: var(--border-subtle);
-  margin-top: var(--space-8);
-  padding-top: var(--space-4);
+  margin-top: clamp(2rem, 4vw, 3rem);
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-neutral-100);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
 }
 
-@media (max-width: 64rem) {
-  .grid {
+@media (max-width: 72rem) {
+  .topGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .brandBlock {
+    grid-column: 1 / -1;
   }
 }
 
 @media (max-width: 42rem) {
-  .grid {
+  .topGrid {
     grid-template-columns: 1fr;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

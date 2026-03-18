@@ -20,10 +20,6 @@ export const footerLinkGroups: FooterLinkGroup[] = [
     links: [...navigation.footer.useCases]
   },
   {
-    title: "Resources",
-    links: [...navigation.footer.resources]
-  },
-  {
     title: "Company",
     links: [...navigation.footer.company]
   }

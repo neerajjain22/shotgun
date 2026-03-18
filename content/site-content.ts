@@ -80,13 +80,13 @@ const commonTasksSection: TasksSectionContent = {
 export const productPageContent: MarketingPageContent = {
   metadataTitle: "Product",
   metadataDescription:
-    "See how Shotgun helps Shopify teams execute development tasks quickly and reliably without managing freelancers.",
+    "See how Krish. helps Shopify teams execute development tasks quickly and reliably without managing freelancers.",
   path: "/product",
   intro: {
     eyebrow: "Product",
     title: "Get Shopify development work done without managing developers",
     description:
-      "Shotgun helps Shopify teams execute recurring store changes such as homepage updates, product page edits, promotion rollouts, and bug fixes. You send requests through Slack, WhatsApp, or email. Shotgun scopes the task, implements the change, verifies quality, and delivers it ready to launch. Use this page to evaluate fit, understand how engagement works, and decide if this model matches how your team operates.",
+      "Krish. helps Shopify teams execute recurring store changes such as homepage updates, product page edits, promotion rollouts, and bug fixes. You send requests through Slack, WhatsApp, or email. Krish. scopes the task, implements the change, verifies quality, and delivers it ready to launch. Use this page to evaluate fit, understand how engagement works, and decide if this model matches how your team operates.",
     primaryCta: contactCtaPrimary,
     secondaryCta: standardSecondaryCtas.compareOptions,
     microcopy: standardCtaMicrocopy
@@ -94,18 +94,18 @@ export const productPageContent: MarketingPageContent = {
   linkedCardsSection: {
     sectionTitle: "Explore the product",
     sectionDescription:
-      "Start with how Shotgun works, what types of tasks are supported, and which operating model fits your team.",
+      "Start with how Krish. works, what types of tasks are supported, and which operating model fits your team.",
     cards: [
       {
-        title: "How Shotgun Works",
+        title: "How Krish. Works",
         description: "Understand the request-to-delivery workflow and quality checks.",
-        href: "/product/how-shotgun-works",
+        href: "/product/how-krish-works",
         icon: "⚙️"
       },
       {
-        title: "What Shotgun Can Do",
-        description: "See practical examples of Shopify tasks Shotgun executes daily.",
-        href: "/product/what-shotgun-can-do",
+        title: "What Krish. Can Do",
+        description: "See practical examples of Shopify tasks Krish. executes daily.",
+        href: "/product/what-krish-can-do",
         icon: "🧩"
       },
       {
@@ -117,12 +117,12 @@ export const productPageContent: MarketingPageContent = {
     ]
   },
   featureSection: {
-    sectionTitle: "What to evaluate before choosing Shotgun",
+    sectionTitle: "What to evaluate before choosing Krish.",
     features: [
       {
         title: "Ongoing Shopify execution needs",
         description:
-          "Shotgun is a strong fit when your backlog includes regular requests each week, not just one-off redesign work."
+          "Krish. is a strong fit when your backlog includes regular requests each week, not just one-off redesign work."
       },
       {
         title: "How much coordination your team can handle",
@@ -151,7 +151,7 @@ export const productPageContent: MarketingPageContent = {
         icon: "🔍",
         title: "Scope and clarification",
         description:
-          "Shotgun reviews requirements, flags dependencies, and asks focused clarifying questions only when needed."
+          "Krish. reviews requirements, flags dependencies, and asks focused clarifying questions only when needed."
       },
       {
         stepNumber: "STEP 3",
@@ -171,7 +171,7 @@ export const productPageContent: MarketingPageContent = {
   },
   insightSections: [
     {
-      sectionTitle: "Who Shotgun is built for",
+      sectionTitle: "Who Krish. is built for",
       sectionDescription:
         "Teams that run stores actively and need steady implementation throughput usually get the most value.",
       bullets: [
@@ -226,7 +226,7 @@ export const productPageContent: MarketingPageContent = {
       {
         question: "What if our request is unclear or changes during execution?",
         answer:
-          "Shotgun handles clarification early and updates scope as needed so implementation stays aligned with the business outcome."
+          "Krish. handles clarification early and updates scope as needed so implementation stays aligned with the business outcome."
       },
       {
         question: "How do we know delivered work is ready to launch?",
@@ -236,7 +236,7 @@ export const productPageContent: MarketingPageContent = {
     ]
   },
   finalCta: withDefaultCta(
-    "Ready to test Shotgun with a real Shopify task?",
+    "Ready to test Krish. with a real Shopify task?",
     "Share one request and evaluate the workflow on your own store."
   )
 };
@@ -244,19 +244,19 @@ export const productPageContent: MarketingPageContent = {
 export const useCasesPageContent: MarketingPageContent = {
   metadataTitle: "Use Cases",
   metadataDescription:
-    "Browse high-intent Shopify use cases Shotgun can execute, including theme changes, bug fixes, promotions, mobile fixes, and performance work.",
+    "Browse high-intent Shopify use cases Krish. can execute, including theme changes, bug fixes, promotions, mobile fixes, and performance work.",
   path: "/use-cases",
   intro: {
     eyebrow: "Use Cases",
-    title: "Shopify tasks teams request every week",
+    title: "Common Shopify tasks teams need done every week",
     description:
-      "Most Shopify teams run into the same execution bottlenecks repeatedly: campaign updates that need code, product page changes that break layout logic, mobile issues that hurt conversion, and urgent fixes before launch windows. This use-case library shows practical request categories, what typically causes delay, and how Shotgun helps teams move from request to reliable implementation without fragmented freelancer coordination.",
+      "Most Shopify teams run into the same execution bottlenecks repeatedly: campaign updates that need code, product page changes that break layout logic, mobile issues that hurt conversion, and urgent fixes before launch windows. This use-case library shows practical request categories, what typically causes delay, and how Krish. helps teams move from request to reliable implementation without fragmented freelancer coordination.",
     primaryCta: contactCtaPrimary,
     secondaryCta: standardSecondaryCtas.readGuides,
     microcopy: standardCtaMicrocopy
   },
   linkedCardsSection: {
-    sectionTitle: "Use case pages",
+    sectionTitle: "Common Shopify development tasks",
     cards: [
       {
         title: "Shopify Theme Changes",
@@ -302,76 +302,107 @@ export const useCasesPageContent: MarketingPageContent = {
       }
     ]
   },
-  insightSections: [
-    {
-      sectionTitle: "Why these use cases matter",
-      sectionDescription:
-        "These pages are based on recurring Shopify operator problems, not abstract service descriptions.",
-      bullets: [
-        "Most requests are small in scope but high in urgency because they block campaign launches and merchandising updates.",
-        "Merchants often attempt changes in the theme editor first, then hit implementation limits that require Liquid, CSS, or JS edits.",
-        "Execution delays usually come from unclear scoping, fragmented communication, and inconsistent follow-through.",
-        "The fastest path to improvement is repeatable request handling for these recurring operational task categories."
-      ]
-    },
-    {
-      sectionTitle: "How to use this section effectively",
-      sectionDescription:
-        "Treat each use-case page as an execution reference to decide how to brief and prioritize your next request.",
-      bullets: [
-        "Start with the page closest to your current blocker and compare the listed task patterns with your backlog.",
-        "Use the examples to write clearer request descriptions with page URL, expected behavior, and priority level.",
-        "Review related pages to identify adjacent issues you can batch into one implementation cycle.",
-        "Use the CTA to submit the exact task once scope is clear so execution can begin without extra prep work."
-      ]
-    }
-  ],
   faqSection: {
-    sectionTitle: "Use-case library FAQs",
+    sectionTitle: "FAQs",
     faqs: [
       {
-        question: "How do we choose the right use-case page for our request?",
+        question: "How quickly can Krish. start and complete typical Shopify tasks?",
         answer:
-          "Pick the page that best matches your immediate store bottleneck, such as theme changes, mobile fixes, promotions, or bug resolution."
+          "Most requests are acknowledged quickly and common tasks are typically completed within 30 minutes to 24 hours, depending on complexity and active queue priority."
       },
       {
-        question: "Can one request include tasks from multiple use cases?",
+        question: "Can we submit multiple Shopify tasks in one request?",
         answer:
-          "Yes. Many teams submit mixed request lists, and Shotgun helps prioritize by launch impact and dependencies."
+          "Yes. Founders often send a list. Krish. helps prioritize by business impact, urgency, and dependencies so critical updates ship first."
       },
       {
-        question: "Are these use cases only for large Shopify teams?",
+        question: "What if a task is urgent because of an upcoming campaign?",
         answer:
-          "No. Founders, ecommerce managers, and growth teams can all use these patterns to speed up recurring implementation work."
+          "Share your deadline in the request. Urgent launch-critical tasks can be prioritized to reduce campaign risk."
       },
       {
-        question: "Do these pages cover urgent launch-day issues too?",
+        question: "How do we know if a task is included in the monthly plan?",
         answer:
-          "Yes. Several use cases include time-sensitive tasks such as promotion changes, homepage updates, and critical bug fixes."
+          "Most recurring Shopify implementation tasks are included. If a task needs special scoping, Krish. flags it early and confirms custom pricing before work starts."
       },
       {
-        question: "What happens after we find a matching use case?",
+        question: "What quality checks happen before delivery?",
         answer:
-          "Submit the task details with store context and expected outcome, and Shotgun will begin execution with quick clarification if needed."
+          "Krish. combines AI-assisted execution with human verification, then delivers with clear completion context so you can publish confidently."
       }
     ]
   },
-  checklistSection: {
-    sectionTitle: "What happens next after selecting a use case",
-    sectionDescription:
-      "Once you identify the closest use-case category, use this flow to move quickly into implementation.",
-    items: [
-      "Choose the use-case page that best matches the specific Shopify change you need now.",
-      "Prepare a clear request with URL, expected outcome, and any campaign or launch deadline.",
-      "Submit the request through your preferred channel so implementation can be scoped immediately.",
-      "Shotgun executes, verifies, and delivers the update with clear completion context.",
-      "Repeat the same workflow for the next task to keep store operations moving consistently."
-    ]
+  tasksSection: {
+    ...commonTasksSection,
+    tasks: []
   },
-  tasksSection: commonTasksSection,
   finalCta: withDefaultCta(
     "Have a Shopify task similar to these use cases?",
-    "Send the request and Shotgun will complete it with AI-assisted, human-verified execution."
+    "Send the request and Krish. will complete it with AI-assisted, human-verified execution."
+  )
+};
+
+export const faqsPageContent: MarketingPageContent = {
+  metadataTitle: "FAQs",
+  metadataDescription:
+    "Answers to the most common questions Shopify founders ask when evaluating Krish. for ongoing development execution.",
+  path: "/faqs",
+  intro: {
+    eyebrow: "FAQ",
+    title: "FAQs for Shopify teams evaluating Krish.",
+    description:
+      "Get answers to the practical questions Shopify teams ask before they start: what is included, how fast requests are completed, what access is required, and how pricing works for recurring and special-scope Shopify tasks. If your team wants reliable execution, this FAQs help you make decisions quickly.",
+    primaryCta: contactCtaPrimary,
+    secondaryCta: standardSecondaryCtas.seeUseCases
+  },
+  faqSection: {
+    sectionTitle: "Frequently asked questions",
+    faqs: [
+      {
+        question: "How quickly can Krish. complete Shopify tasks?",
+        answer:
+          "Most standard tasks are completed within 30 minutes to 24 hours once scope is clear. You also receive quick acknowledgment so your team knows work has started."
+      },
+      {
+        question: "What types of tasks are included?",
+        answer:
+          "Recurring Shopify implementation tasks are included, such as theme updates, homepage changes, product page edits, promotion setup support, bug fixes, and mobile/layout fixes."
+      },
+      {
+        question: "Can we submit multiple tasks at once?",
+        answer:
+          "Yes. You can submit a list of tasks and Krish. will prioritize by urgency, launch impact, and dependencies."
+      },
+      {
+        question: "Do we need to use a new project management tool?",
+        answer:
+          "No. You can submit and manage requests through channels your team already uses, including Slack, WhatsApp, or email."
+      },
+      {
+        question: "How is quality handled before delivery?",
+        answer:
+          "Krish. combines AI-assisted execution with human verification before handoff, then shares completion context so your team can review and publish confidently."
+      },
+      {
+        question: "Are all tasks covered under monthly pricing?",
+        answer:
+          "Most recurring tasks are covered. Special-scope tasks are also supported and priced separately on a per-task basis after scope review and approval."
+      },
+      {
+        question: "What access do you need to our Shopify store?",
+        answer:
+          "Only the minimum collaborator access required for the requested work. You keep full ownership and can adjust permissions any time."
+      },
+      {
+        question: "How do we start?",
+        answer:
+          "Send one high-priority Shopify task with page URL, expected outcome, and timeline. Krish. will confirm scope and begin execution."
+      }
+    ]
+  },
+  finalCta: withDefaultCta(
+    "Still deciding if Krish. is the right fit?",
+    "Start with one real Shopify task and evaluate speed, quality, and communication."
   )
 };
 
@@ -499,7 +530,7 @@ export const guidesPageContent: MarketingPageContent = {
       {
         question: "What if we need help executing the checklist?",
         answer:
-          "You can submit the checklist as a request and Shotgun can complete implementation with AI-assisted, human-verified execution."
+          "You can submit the checklist as a request and Krish. can complete implementation with AI-assisted, human-verified execution."
       },
       {
         question: "Should we start with guides or use-case pages first?",
@@ -515,14 +546,14 @@ export const guidesPageContent: MarketingPageContent = {
   },
   finalCta: withDefaultCta(
     "Need help implementing what you read?",
-    "Shotgun can execute the exact changes from your guide checklist."
+    "Krish. can execute the exact changes from your guide checklist."
   )
 };
 
 export const comparePageContent: MarketingPageContent = {
   metadataTitle: "Compare",
   metadataDescription:
-    "Compare Shotgun with freelancers, agencies, and Shopify task services to choose the right execution model for your team.",
+    "Compare Krish. with freelancers, agencies, and Shopify task services to choose the right execution model for your team.",
   path: "/compare",
   intro: {
     eyebrow: "Compare",
@@ -537,33 +568,33 @@ export const comparePageContent: MarketingPageContent = {
     sectionTitle: "Comparison pages",
     cards: [
       {
-        title: "Freelancers vs Shotgun",
+        title: "Freelancers vs Krish.",
         description: "Compare flexibility, reliability, communication overhead, and turnaround consistency.",
-        href: "/compare/freelancers-vs-shotgun",
+        href: "/compare/freelancers-vs-krish",
         icon: "🧑‍💻"
       },
       {
-        title: "Shopify Agencies vs Shotgun",
+        title: "Shopify Agencies vs Krish.",
         description: "Evaluate agency retainers vs on-demand task execution for ongoing store changes.",
-        href: "/compare/shopify-agencies-vs-shotgun",
+        href: "/compare/shopify-agencies-vs-krish",
         icon: "🏢"
       },
       {
-        title: "Task Services vs Shotgun",
+        title: "Task Services vs Krish.",
         description: "Understand differences between queue-based task services and integrated execution.",
-        href: "/compare/task-services-vs-shotgun",
+        href: "/compare/task-services-vs-krish",
         icon: "📋"
       },
       {
-        title: "Storetasker vs Shotgun",
+        title: "Storetasker vs Krish.",
         description: "Compare expert-matching workflows with continuous execution support models.",
-        href: "/compare/storetasker-vs-shotgun",
+        href: "/compare/storetasker-vs-krish",
         icon: "🆚"
       },
       {
-        title: "TaskHusky vs Shotgun",
+        title: "TaskHusky vs Krish.",
         description: "Compare speed, communication flow, and Shopify-specific implementation outcomes.",
-        href: "/compare/taskhusky-vs-shotgun",
+        href: "/compare/taskhusky-vs-krish",
         icon: "⚖️"
       }
     ]
@@ -655,7 +686,7 @@ export const comparePageContent: MarketingPageContent = {
     ]
   },
   finalCta: withDefaultCta(
-    "Want to evaluate Shotgun on your own task backlog?",
+    "Want to evaluate Krish. on your own task backlog?",
     "Start with one request and measure delivery speed and quality for your team."
   )
 };
@@ -663,7 +694,7 @@ export const comparePageContent: MarketingPageContent = {
 export const resourcesPageContent: MarketingPageContent = {
   metadataTitle: "Resources",
   metadataDescription:
-    "Explore Shopify resources from Shotgun, including blog content, case studies, and implementation documentation.",
+    "Explore Shopify resources from Krish., including blog content, use cases, and implementation documentation.",
   path: "/resources",
   intro: {
     eyebrow: "Resources",
@@ -683,9 +714,9 @@ export const resourcesPageContent: MarketingPageContent = {
         icon: "✍️"
       },
       {
-        title: "Case Studies",
-        description: "Examples of Shopify task execution outcomes and workflow improvements.",
-        href: "/resources/case-studies",
+        title: "Use Cases",
+        description: "Browse practical Shopify execution scenarios and recurring request patterns.",
+        href: "/use-cases",
         icon: "📚"
       },
       {
@@ -698,25 +729,25 @@ export const resourcesPageContent: MarketingPageContent = {
   },
   finalCta: withDefaultCta(
     "Need execution help beyond documentation?",
-    "Send your Shopify request and Shotgun can implement the change directly."
+    "Send your Shopify request and Krish. can implement the change directly."
   )
 };
 
 export const aboutPageContent: MarketingPageContent = {
   metadataTitle: "About",
   metadataDescription:
-    "Learn about Shotgun's mission to help Shopify teams execute development tasks quickly and reliably using an AI + human workflow.",
+    "Learn about Krish's mission to help Shopify teams execute development tasks quickly and reliably using an AI + human workflow.",
   path: "/about",
   intro: {
     eyebrow: "About",
-    title: "Shotgun helps Shopify teams execute faster",
+    title: "Krish. helps Shopify teams execute faster",
     description:
-      "Shotgun was built for founders, ecommerce operators, and marketing teams that need reliable Shopify implementation without managing fragmented developer workflows.",
+      "Krish. was built for founders, ecommerce operators, and marketing teams that need reliable Shopify implementation without managing fragmented developer workflows.",
     primaryCta: contactCtaPrimary,
-    secondaryCta: { label: "How it works", href: "/product/how-shotgun-works" }
+    secondaryCta: { label: "How it works", href: "/product/how-krish-works" }
   },
   featureSection: {
-    sectionTitle: "How Shotgun is designed",
+    sectionTitle: "How Krish. is designed",
     features: [
       {
         title: "Clarity first",
@@ -724,7 +755,7 @@ export const aboutPageContent: MarketingPageContent = {
       },
       {
         title: "Execution ownership",
-        description: "Shotgun owns delivery quality so teams are not left managing fragmented contributors."
+        description: "Krish. owns delivery quality so teams are not left managing fragmented contributors."
       },
       {
         title: "AI speed + human judgment",
@@ -757,7 +788,7 @@ export const aboutPageContent: MarketingPageContent = {
     ]
   },
   finalCta: withDefaultCta(
-    "Want to see if Shotgun fits your team?",
+    "Want to see if Krish. fits your team?",
     "Book a short workflow walkthrough and share your current Shopify execution process."
   )
 };
@@ -765,7 +796,7 @@ export const aboutPageContent: MarketingPageContent = {
 export const contactPageContent: MarketingPageContent = {
   metadataTitle: "Contact",
   metadataDescription:
-    "Contact Shotgun to submit Shopify development requests via Slack, WhatsApp, or email and get fast execution support.",
+    "Contact Krish. to submit Shopify development requests via Slack, WhatsApp, or email and get fast execution support.",
   path: "/contact",
   intro: {
     eyebrow: "Contact",
@@ -804,7 +835,7 @@ export const contactPageContent: MarketingPageContent = {
       {
         question: "Can we submit multiple Shopify tasks at once?",
         answer:
-          "Yes. You can send a prioritized list of tasks, and Shotgun will help sequence implementation based on urgency."
+          "Yes. You can send a prioritized list of tasks, and Krish. will help sequence implementation based on urgency."
       },
       {
         question: "Do you handle urgent launch-day fixes?",
@@ -822,13 +853,13 @@ export const contactPageContent: MarketingPageContent = {
 export const blogPageContent: MarketingPageContent = {
   metadataTitle: "Blog",
   metadataDescription:
-    "Read Shotgun blog content on Shopify development operations, task execution workflows, and practical store optimization insights.",
+    "Read Krish. blog content on Shopify development operations, task execution workflows, and practical store optimization insights.",
   path: "/blog",
   intro: {
     eyebrow: "Blog",
     title: "Shopify execution insights for operators",
     description:
-      "The Shotgun blog focuses on practical Shopify task execution: what teams request most, where implementation bottlenecks happen, and how to ship updates faster.",
+      "The Krish. blog focuses on practical Shopify task execution: what teams request most, where implementation bottlenecks happen, and how to ship updates faster.",
     primaryCta: { label: "Browse guides", href: "/guides" },
     secondaryCta: { label: "View resources", href: "/resources" }
   },
@@ -857,27 +888,27 @@ export const blogPageContent: MarketingPageContent = {
   },
   finalCta: withDefaultCta(
     "Want help implementing blog recommendations?",
-    "Shotgun can execute the exact Shopify changes from your optimization checklist."
+    "Krish. can execute the exact Shopify changes from your optimization checklist."
   )
 };
 
 export const privacyPageContent: MarketingPageContent = {
   metadataTitle: "Privacy Policy",
   metadataDescription:
-    "Read Shotgun's privacy policy and data handling principles for website visitors and request submissions.",
+    "Read Krish's privacy policy and data handling principles for website visitors and request submissions.",
   path: "/privacy",
   intro: {
     eyebrow: "Legal",
     title: "Privacy Policy",
     description:
-      "Shotgun respects your privacy. We only use submitted information to evaluate and execute Shopify requests, improve service quality, and provide support communication."
+      "Krish. respects your privacy. We only use submitted information to evaluate and execute Shopify requests, improve service quality, and provide support communication."
   },
   featureSection: {
     sectionTitle: "Privacy principles",
     features: [
       {
         title: "Purpose-limited use",
-        description: "Information shared with Shotgun is used to deliver requested services and support."
+        description: "Information shared with Krish. is used to deliver requested services and support."
       },
       {
         title: "Minimum required access",
@@ -899,13 +930,13 @@ export const privacyPageContent: MarketingPageContent = {
 export const termsPageContent: MarketingPageContent = {
   metadataTitle: "Terms",
   metadataDescription:
-    "Review Shotgun service terms, responsibilities, and execution expectations for Shopify development requests.",
+    "Review Krish. service terms, responsibilities, and execution expectations for Shopify development requests.",
   path: "/terms",
   intro: {
     eyebrow: "Legal",
     title: "Terms of Service",
     description:
-      "Shotgun provides Shopify development execution support based on request scope, platform constraints, and implementation feasibility."
+      "Krish. provides Shopify development execution support based on request scope, platform constraints, and implementation feasibility."
   },
   featureSection: {
     sectionTitle: "Service terms summary",
@@ -931,16 +962,16 @@ export const termsPageContent: MarketingPageContent = {
 };
 
 export const productSubpageContent: Record<string, MarketingPageContent> = {
-  "how-shotgun-works": {
-    metadataTitle: "How Shotgun Works",
+  "how-krish-works": {
+    metadataTitle: "How Krish. Works",
     metadataDescription:
-      "Understand how Shotgun processes Shopify requests, executes implementation with AI + human workflows, and delivers tested outcomes.",
-    path: "/product/how-shotgun-works",
+      "Understand how Krish. processes Shopify requests, executes implementation with AI + human workflows, and delivers tested outcomes.",
+    path: "/product/how-krish-works",
     intro: {
       eyebrow: "Product Workflow",
-      title: "How Shotgun completes Shopify requests",
+      title: "How Krish. completes Shopify requests",
       description:
-        "From your team’s perspective, Shotgun works like an execution partner focused on speed and reliability. You send one clear Shopify task, Shotgun validates the requirement, executes the implementation using AI-assisted workflows and experienced developers, and returns a tested result that is ready to use. This structure removes ambiguity and reduces back-and-forth during launch-critical changes.",
+        "From your team’s perspective, Krish. works like an execution partner focused on speed and reliability. You send your Shopify task(s), Krish. validates the requirement, executes the implementation using AI-assisted workflows and experienced developers, and returns a human-tested result that is ready to use.",
       primaryCta: contactCtaPrimary,
       secondaryCta: standardSecondaryCtas.seeUseCases,
       microcopy: standardCtaMicrocopy
@@ -958,7 +989,7 @@ export const productSubpageContent: Record<string, MarketingPageContent> = {
           stepNumber: "STEP 2",
           icon: "🧠",
           title: "Task interpretation",
-          description: "Shotgun analyzes scope and asks clarifying questions when requirements are ambiguous."
+          description: "Krish. analyzes scope and asks clarifying questions when requirements are ambiguous."
         },
         {
           stepNumber: "STEP 3",
@@ -983,17 +1014,6 @@ export const productSubpageContent: Record<string, MarketingPageContent> = {
     },
     insightSections: [
       {
-        sectionTitle: "Execution flow in practice",
-        sectionDescription:
-          "The request-to-delivery process is built to reduce misalignment and keep implementation momentum high.",
-        bullets: [
-          "Intake captures store context, page URL, expected behavior, and urgency so work starts from clear requirements.",
-          "Clarification is handled early through short focused questions rather than long back-and-forth threads.",
-          "Implementation is prioritized around launch impact, so blockers and revenue-critical tasks are handled first.",
-          "Verification confirms that delivered behavior matches requested outcomes across relevant device contexts."
-        ]
-      },
-      {
         sectionTitle: "What teams receive at delivery",
         sectionDescription:
           "Delivery is structured so operators and marketers can ship quickly without decoding technical details.",
@@ -1012,7 +1032,7 @@ export const productSubpageContent: Record<string, MarketingPageContent> = {
       items: [
         "Send the requested Shopify change with URL, desired behavior, and deadline if applicable.",
         "Receive an acknowledgment and clarification questions if any requirement needs detail.",
-        "Shotgun executes implementation with AI-assisted planning and developer execution.",
+        "Krish. executes implementation with AI-assisted planning and developer execution.",
         "Quality checks are completed before the final handoff to your team.",
         "You receive the completed update and can immediately submit the next task in the same workflow."
       ]
@@ -1021,24 +1041,29 @@ export const productSubpageContent: Record<string, MarketingPageContent> = {
       sectionTitle: "How it works FAQs",
       faqs: [
         {
-          question: "Do we need to learn a new project management tool?",
+          question: "How fast are Shopify tasks completed?",
           answer:
-            "No. Shotgun is designed to work with the channels your team already uses for operational requests."
+            "Most small and medium Shopify tasks are completed within 1-2 business days after scope is clear. You also get a fast acknowledgement so you know work has started."
         },
         {
-          question: "What happens if requirements are incomplete?",
+          question: "Who is actually doing the work: AI or developers?",
           answer:
-            "Shotgun asks focused clarification questions so implementation can proceed without assumptions."
+            "Krish. uses AI to speed up task interpretation and implementation planning, then experienced developers execute and verify the final output before delivery."
         },
         {
-          question: "Do we see internal AI and developer workflows?",
+          question: "What store access do you need?",
           answer:
-            "You receive the final implemented outcome and completion context, not internal execution complexity."
+            "You can grant collaborator access with only the permissions needed for your request. You keep full store ownership and can adjust or remove access at any time."
         },
         {
-          question: "How quickly do we hear back after submitting a request?",
+          question: "What if the delivered change is not exactly what we asked for?",
           answer:
-            "Shotgun responds quickly with acknowledgement and requirement alignment so implementation can start without delay."
+            "If something needs adjustment, you send feedback in the same thread and Krish. iterates until the requested outcome is met."
+        },
+        {
+          question: "Can Krish. handle urgent launch-day fixes?",
+          answer:
+            "Yes. Urgent requests can be prioritized when launch timing is shared clearly, especially for homepage, promotion, checkout, or mobile-impacting issues."
         }
       ]
     },
@@ -1047,16 +1072,16 @@ export const productSubpageContent: Record<string, MarketingPageContent> = {
       "Share one Shopify request and evaluate the end-to-end execution experience."
     )
   },
-  "what-shotgun-can-do": {
-    metadataTitle: "What Shotgun Can Do",
+  "what-krish-can-do": {
+    metadataTitle: "What Krish. Can Do",
     metadataDescription:
-      "See what Shopify development tasks Shotgun can execute, including theme updates, PDP customization, discounts, bug fixes, and performance improvements.",
-    path: "/product/what-shotgun-can-do",
+      "See what Shopify development tasks Krish. can execute, including theme updates, PDP customization, discounts, bug fixes, and performance improvements.",
+    path: "/product/what-krish-can-do",
     intro: {
       eyebrow: "Task Coverage",
-      title: "Shopify tasks Shotgun can execute for your team",
+      title: "Shopify tasks Krish. can execute for your team",
       description:
-        "Shotgun handles recurring Shopify implementation work that usually slows operators down: theme changes, campaign updates, product page customization, bug fixes, and performance-focused improvements. The goal is to give your team one execution path for practical store changes that require reliable completion, clear handoff, and less coordination overhead during active growth periods.",
+        "Krish. handles recurring Shopify implementation work that usually slows operators down: theme changes, campaign updates, product page customization, bug fixes, and performance-focused improvements. The goal is to give your team one execution path for practical store changes that require reliable completion, clear handoff, and less coordination overhead during active growth periods.",
       primaryCta: contactCtaPrimary,
       secondaryCta: standardSecondaryCtas.compareOptions,
       microcopy: standardCtaMicrocopy
@@ -1094,7 +1119,7 @@ export const productSubpageContent: Record<string, MarketingPageContent> = {
       {
         sectionTitle: "What is not a fit for this model",
         sectionDescription:
-          "Shotgun is designed for Shopify execution workflows, not every possible digital project type.",
+          "Krish. is designed for Shopify execution workflows, not every possible digital project type.",
         bullets: [
           "Full custom app platform builds that require long discovery and multi-quarter product roadmaps.",
           "Non-Shopify engineering projects such as backend systems unrelated to store implementation.",
@@ -1106,10 +1131,10 @@ export const productSubpageContent: Record<string, MarketingPageContent> = {
     checklistSection: {
       sectionTitle: "What happens next after coverage confirmation",
       sectionDescription:
-        "Once your task is confirmed as a fit, Shotgun moves quickly into implementation.",
+        "Once your task is confirmed as a fit, Krish. moves quickly into implementation.",
       items: [
         "You share the request with context, expected outcome, and any campaign timing constraints.",
-        "Shotgun confirms scope and flags dependencies or assumptions before work begins.",
+        "Krish. confirms scope and flags dependencies or assumptions before work begins.",
         "Implementation is completed with attention to behavior, layout, and store consistency.",
         "Delivery includes completion notes so your team can verify and publish confidently.",
         "You can continue with the next request using the same intake workflow."
@@ -1119,9 +1144,9 @@ export const productSubpageContent: Record<string, MarketingPageContent> = {
       sectionTitle: "Task coverage FAQs",
       faqs: [
         {
-          question: "Can Shotgun handle both simple and code-dependent Shopify changes?",
+          question: "Can Krish. handle both simple and code-dependent Shopify changes?",
           answer:
-            "Yes. Shotgun supports routine updates and more technical implementation tasks that go beyond the theme editor."
+            "Yes. Krish. supports routine updates and more technical implementation tasks that go beyond the theme editor."
         },
         {
           question: "Do you support campaign-related requests with tight deadlines?",
@@ -1131,113 +1156,117 @@ export const productSubpageContent: Record<string, MarketingPageContent> = {
         {
           question: "What if our request spans multiple related updates?",
           answer:
-            "You can share a prioritized list and Shotgun will sequence implementation based on urgency and dependencies."
+            "You can share a prioritized list and Krish. will sequence implementation based on urgency and dependencies."
         },
         {
           question: "How do we know if a task is out of scope?",
           answer:
-            "Shotgun reviews requests quickly and communicates fit, constraints, and recommended next steps before execution."
+            "Krish. reviews requests quickly and communicates fit, constraints, and recommended next steps before execution."
         }
       ]
     },
     finalCta: withDefaultCta(
       "Not sure if your task is covered?",
-      "Send the requirement and Shotgun will confirm scope quickly."
+      "Send the requirement and Krish. will confirm scope quickly."
     )
   },
   pricing: {
     metadataTitle: "Pricing",
     metadataDescription:
-      "Explore Shotgun pricing models for Shopify development execution, from ad-hoc tasks to continuous workflow support.",
+      "Simple Krish. pricing: first 7 days free, then $1,000/month for unlimited Shopify tasks.",
     path: "/product/pricing",
     intro: {
       eyebrow: "Pricing",
-      title: "Pricing options based on your Shopify execution volume",
+      title: "Simple pricing for Shopify execution",
       description:
-        "Pricing should match how often your team needs Shopify implementation, how quickly changes must ship, and how much coordination overhead you want to remove. Most teams start by validating quality on active requests, then choose an operating model aligned to recurring workload, campaign intensity, and expected response speed without committing to unnecessary complexity.",
+        "Start with a free 7-day trial to validate speed and quality on real tasks. If it fits, continue on one simple plan: $1,000/month for unlimited Shopify tasks.",
       primaryCta: contactCtaPrimary,
-      secondaryCta: standardSecondaryCtas.compareOptions,
+      secondaryCta: standardSecondaryCtas.seeUseCases,
       microcopy: standardCtaMicrocopy
     },
     featureSection: {
-      sectionTitle: "Typical pricing models",
+      sectionTitle: "Pricing",
       features: [
         {
-          title: "Per-task execution",
-          description: "Best for low-volume teams that need reliable delivery on specific Shopify changes."
+          title: "First 7 days free",
+          description:
+            "Submit Shopify tasks during the first week at no cost. Use this period to evaluate turnaround, communication, and execution quality."
         },
         {
-          title: "Monthly execution support",
-          description: "Best for teams with recurring weekly requests across marketing and ecommerce operations."
-        },
-        {
-          title: "Priority workflow plans",
-          description: "Best for teams with campaign-heavy calendars and stricter response timelines."
+          title: "$1,000/month — unlimited tasks",
+          description:
+            "After trial, continue on a flat monthly plan. You can assign unlimited Shopify tasks based on active execution capacity and priority."
         }
       ]
     },
     insightSections: [
       {
-        sectionTitle: "How to choose plan fit",
+        sectionTitle: "What counts as a task",
         sectionDescription:
-          "The best plan depends on request volume, urgency, and how integrated execution needs to be with your operating cadence.",
+          "A task is one clear Shopify change request with a defined outcome.",
         bullets: [
-          "Low request volume teams usually fit ad-hoc execution for specific launches and fixes.",
-          "Teams with weekly implementation needs often prefer ongoing execution support for continuity.",
-          "Campaign-heavy calendars benefit from faster response expectations and clearer prioritization flow.",
-          "Decision quality improves when you map monthly task frequency before selecting a support model."
+          "Make homepage banner clickable.",
+          "Fix mobile spacing or layout issue on a specific template.",
+          "Update product page section order or content behavior.",
+          "Configure a promotion update, discount display, or navigation change."
         ]
       },
       {
-        sectionTitle: "Buying decision guidance without guesswork",
+        sectionTitle: "Special-scope tasks*",
         sectionDescription:
-          "You do not need price tables first; you need confidence that the model fits how your team actually works.",
+          "These tasks are supported, but priced separately on a per-task basis after scope review.",
         bullets: [
-          "Start by reviewing your past 30 to 60 days of Shopify requests and recurring bottlenecks.",
-          "Estimate coordination overhead currently spent on briefing, follow-up, and QA across contributors.",
-          "Prioritize plans that reduce launch risk and shorten time from request to published change.",
-          "Validate fit with real tasks so performance, quality, and workflow alignment are measured directly."
+          "Full store redesigns and complete replatforming projects.",
+          "Large custom app builds or deep backend system integrations.",
+          "Complex enterprise workflows requiring multi-month discovery and architecture.",
+          "Non-Shopify engineering projects unrelated to your store implementation."
         ]
       }
     ],
     checklistSection: {
-      sectionTitle: "What happens next after pricing inquiry",
+      sectionTitle: "How unlimited works in practice",
       sectionDescription:
-        "After you share your workflow context, Shotgun helps match a support model to your current execution needs.",
+        "Unlimited means you can keep sending tasks. Work is prioritized and delivered in a continuous queue.",
       items: [
-        "You share typical monthly request volume and the kinds of Shopify tasks your team runs most.",
-        "Shotgun reviews urgency, campaign cadence, and expected turnaround requirements.",
-        "A recommended support model is shared based on operational fit rather than arbitrary package selection.",
-        "You can begin with active requests to validate quality and workflow fit in real conditions.",
-        "As demand changes, support structure can evolve to match your execution rhythm."
+        "Submit as many tasks as needed through Slack, WhatsApp, or email.",
+        "We prioritize based on urgency, launch dates, and business impact.",
+        "Tasks are completed and delivered continuously, not batched at month-end.",
+        "If a request falls under special-scope tasks*, we confirm custom per-task pricing before execution.",
+        "*Special-scope tasks are supported and priced separately based on request complexity."
       ]
     },
     faqSection: {
       sectionTitle: "Pricing FAQs",
       faqs: [
         {
-          question: "Can we start with one request before committing?",
-          answer: "Yes. Many teams begin with a single task to validate quality and turnaround."
+          question: "Is the first 7-day trial really free?",
+          answer: "Yes. You can submit tasks for 7 days at no cost and no long-term commitment."
         },
         {
-          question: "Do pricing options include quality testing?",
+          question: "What happens after the trial?",
           answer:
-            "Execution includes implementation checks to confirm requested behavior before final handoff."
+            "You can continue on the $1,000/month plan for unlimited Shopify task execution."
         },
         {
-          question: "Can we upgrade as our task volume increases?",
-          answer: "Yes. Pricing can be aligned with evolving request volume and workflow complexity."
-        },
-        {
-          question: "How should we choose between ad-hoc and ongoing support?",
+          question: "What does unlimited tasks mean?",
           answer:
-            "Choose based on recurring request frequency and how much execution continuity your team needs each month."
+            "You can submit unlimited requests. Tasks are prioritized and completed in an active execution queue."
+        },
+        {
+          question: "Are all Shopify requests included?",
+          answer:
+            "Most recurring Shopify implementation tasks are included in the monthly plan. Special-scope tasks* are also supported and priced separately per task after review."
+        },
+        {
+          question: "How quickly are tasks completed?",
+          answer:
+            "Most standard tasks are completed within 30 minutes to 24 hours depending on scope and current queue."
         }
       ]
     },
     finalCta: withDefaultCta(
-      "Need a pricing recommendation for your team?",
-      "Share your monthly request volume and we can suggest the right model."
+      "Start with the free 7-day trial",
+      "Send one Shopify task and evaluate speed, quality, and communication."
     )
   }
 };
@@ -1252,7 +1281,7 @@ export const useCaseSubpageContent: Record<string, MarketingPageContent> = {
       eyebrow: "Use Case",
       title: "Shopify theme changes without the code bottleneck",
       description:
-        "Theme editors are useful for simple swaps, but most meaningful storefront updates eventually hit a code wall that slows non-technical teams down. Merchants often need layout behavior that themes do not support out of the box, and even small styling changes can affect multiple templates. Shotgun helps teams execute these updates safely, with faster turnaround and clearer implementation ownership.",
+        "Theme editors are useful for simple swaps, but most meaningful storefront updates eventually hit a code wall that slows non-technical teams down. Merchants often need layout behavior that themes do not support out of the box, and even small styling changes can affect multiple templates. Krish. helps teams execute these updates safely, with faster turnaround and clearer implementation ownership.",
       primaryCta: contactCtaPrimary,
       secondaryCta: standardSecondaryCtas.readGuides,
       microcopy: standardCtaMicrocopy
@@ -1287,7 +1316,7 @@ export const useCaseSubpageContent: Record<string, MarketingPageContent> = {
         ]
       },
       {
-        sectionTitle: "How Shotgun reduces theme-change risk",
+        sectionTitle: "How Krish. reduces theme-change risk",
         sectionDescription:
           "Execution is structured to preserve speed while controlling regressions.",
         bullets: [
@@ -1302,13 +1331,13 @@ export const useCaseSubpageContent: Record<string, MarketingPageContent> = {
       sectionTitle: "Theme change FAQs",
       faqs: [
         {
-          question: "Can Shotgun handle custom Liquid edits?",
+          question: "Can Krish. handle custom Liquid edits?",
           answer: "Yes. Theme file edits are supported when required by the request."
         },
         {
           question: "What if our theme has existing custom code?",
           answer:
-            "Shotgun reviews current implementation context before shipping changes to reduce regression risk."
+            "Krish. reviews current implementation context before shipping changes to reduce regression risk."
         },
         {
           question: "Will we still be able to maintain our theme after these changes?",
@@ -1319,7 +1348,7 @@ export const useCaseSubpageContent: Record<string, MarketingPageContent> = {
     },
     finalCta: withDefaultCta(
       "Need a Shopify theme change this week?",
-      "Share the exact section or template update and Shotgun will implement it."
+      "Share the exact section or template update and Krish. will implement it."
     )
   },
   "shopify-homepage-updates": {
@@ -1331,7 +1360,7 @@ export const useCaseSubpageContent: Record<string, MarketingPageContent> = {
       eyebrow: "Use Case",
       title: "Homepage updates for launches and campaigns",
       description:
-        "Homepage updates are often the highest-pressure Shopify tasks because they sit directly on campaign and revenue paths. Teams need to swap banners, adjust section order, update messaging, and launch seasonal blocks quickly, but execution can stall when requests depend on developer availability or unclear implementation scope. Shotgun helps teams ship homepage changes predictably, even under launch deadlines.",
+        "Homepage updates are often the highest-pressure Shopify tasks because they sit directly on campaign and revenue paths. Teams need to swap banners, adjust section order, update messaging, and launch seasonal blocks quickly, but execution can stall when requests depend on developer availability or unclear implementation scope. Krish. helps teams ship homepage changes predictably, even under launch deadlines.",
       primaryCta: contactCtaPrimary,
       secondaryCta: standardSecondaryCtas.readGuides,
       microcopy: standardCtaMicrocopy
@@ -1381,9 +1410,9 @@ export const useCaseSubpageContent: Record<string, MarketingPageContent> = {
       sectionTitle: "Homepage update FAQs",
       faqs: [
         {
-          question: "Can Shotgun handle urgent homepage changes before a campaign launch?",
+          question: "Can Krish. handle urgent homepage changes before a campaign launch?",
           answer:
-            "Yes. Teams regularly submit time-sensitive homepage requests and Shotgun prioritizes by launch impact."
+            "Yes. Teams regularly submit time-sensitive homepage requests and Krish. prioritizes by launch impact."
         },
         {
           question: "Do you support both visual updates and behavior changes?",
@@ -1399,7 +1428,7 @@ export const useCaseSubpageContent: Record<string, MarketingPageContent> = {
     },
     finalCta: withDefaultCta(
       "Need a homepage update for an upcoming campaign?",
-      "Send the creative and expected behavior, and Shotgun will implement it."
+      "Send the creative and expected behavior, and Krish. will implement it."
     )
   },
   "shopify-product-page-customization": {
@@ -1411,7 +1440,7 @@ export const useCaseSubpageContent: Record<string, MarketingPageContent> = {
       eyebrow: "Use Case",
       title: "Product page customization that improves conversion",
       description:
-        "Product pages carry most conversion pressure, so even minor implementation issues can reduce revenue quickly. Teams often need custom layout adjustments, personalization logic, variant behavior improvements, and trust-content placement that standard theme controls cannot handle cleanly. Shotgun helps operators execute these product page customizations with consistent implementation quality and clearer handoff expectations.",
+        "Product pages carry most conversion pressure, so even minor implementation issues can reduce revenue quickly. Teams often need custom layout adjustments, personalization logic, variant behavior improvements, and trust-content placement that standard theme controls cannot handle cleanly. Krish. helps operators execute these product page customizations with consistent implementation quality and clearer handoff expectations.",
       primaryCta: contactCtaPrimary,
       secondaryCta: standardSecondaryCtas.readGuides,
       microcopy: standardCtaMicrocopy
@@ -1461,14 +1490,14 @@ export const useCaseSubpageContent: Record<string, MarketingPageContent> = {
       sectionTitle: "Product page customization FAQs",
       faqs: [
         {
-          question: "Can Shotgun add personalization fields and custom product inputs?",
+          question: "Can Krish. add personalization fields and custom product inputs?",
           answer:
             "Yes. Personalization and custom input requirements are common PDP implementation requests."
         },
         {
           question: "Do you support layout restructuring on product pages?",
           answer:
-            "Yes. Shotgun can reorder modules and adjust content hierarchy based on your conversion goals."
+            "Yes. Krish. can reorder modules and adjust content hierarchy based on your conversion goals."
         },
         {
           question: "How do we avoid breaking variant and add-to-cart behavior?",
@@ -1479,7 +1508,7 @@ export const useCaseSubpageContent: Record<string, MarketingPageContent> = {
     },
     finalCta: withDefaultCta(
       "Need a custom product page behavior?",
-      "Share your current PDP URL and expected experience, and Shotgun can implement it."
+      "Share your current PDP URL and expected experience, and Krish. can implement it."
     )
   },
   "shopify-promotions-and-discounts": {
@@ -1491,7 +1520,7 @@ export const useCaseSubpageContent: Record<string, MarketingPageContent> = {
       eyebrow: "Use Case",
       title: "Promotion and discount launches without last-minute chaos",
       description:
-        "Promotion launches require multiple coordinated updates in a short window: discount logic, homepage messaging, collection visibility, and supporting campaign components. Merchants frequently lose time switching between tools and resolving implementation mismatches just before launch. Shotgun helps teams execute promotion work as one operational flow so campaign updates go live accurately and on schedule.",
+        "Promotion launches require multiple coordinated updates in a short window: discount logic, homepage messaging, collection visibility, and supporting campaign components. Merchants frequently lose time switching between tools and resolving implementation mismatches just before launch. Krish. helps teams execute promotion work as one operational flow so campaign updates go live accurately and on schedule.",
       primaryCta: contactCtaPrimary,
       secondaryCta: standardSecondaryCtas.readGuides,
       microcopy: standardCtaMicrocopy
@@ -1541,7 +1570,7 @@ export const useCaseSubpageContent: Record<string, MarketingPageContent> = {
       sectionTitle: "Promotion execution FAQs",
       faqs: [
         {
-          question: "Can Shotgun support complex promotion launches with multiple moving parts?",
+          question: "Can Krish. support complex promotion launches with multiple moving parts?",
           answer:
             "Yes. Promotion work often combines discount setup, storefront updates, and launch-day validation."
         },
@@ -1559,7 +1588,7 @@ export const useCaseSubpageContent: Record<string, MarketingPageContent> = {
     },
     finalCta: withDefaultCta(
       "Planning a sale or promotion launch?",
-      "Send your promotion checklist and Shotgun will coordinate implementation."
+      "Send your promotion checklist and Krish. will coordinate implementation."
     )
   },
   "shopify-bug-fixes": {
@@ -1571,7 +1600,7 @@ export const useCaseSubpageContent: Record<string, MarketingPageContent> = {
       eyebrow: "Use Case",
       title: "Shopify bug fixes with reliable resolution",
       description:
-        "Shopify bugs usually arrive at the worst possible time: right before campaign traffic, during merchandising pushes, or after theme and app updates. Teams often spend more time reproducing and explaining issues than actually fixing them, especially when behavior differs across pages and devices. Shotgun helps teams move from bug report to verified fix with less diagnostic overhead and clearer implementation ownership.",
+        "Shopify bugs usually arrive at the worst possible time: right before campaign traffic, during merchandising pushes, or after theme and app updates. Teams often spend more time reproducing and explaining issues than actually fixing them, especially when behavior differs across pages and devices. Krish. helps teams move from bug report to verified fix with less diagnostic overhead and clearer implementation ownership.",
       primaryCta: contactCtaPrimary,
       secondaryCta: standardSecondaryCtas.compareOptions,
       microcopy: standardCtaMicrocopy
@@ -1621,7 +1650,7 @@ export const useCaseSubpageContent: Record<string, MarketingPageContent> = {
       sectionTitle: "Bug-fix FAQs",
       faqs: [
         {
-          question: "Can Shotgun handle bugs that only happen on certain devices?",
+          question: "Can Krish. handle bugs that only happen on certain devices?",
           answer:
             "Yes. Device-specific issues are common, and requests can include screenshots and reproduction context."
         },
@@ -1639,7 +1668,7 @@ export const useCaseSubpageContent: Record<string, MarketingPageContent> = {
     },
     finalCta: withDefaultCta(
       "Need a Shopify bug fixed quickly?",
-      "Share the page URL and issue details, and Shotgun will work on a fix."
+      "Share the page URL and issue details, and Krish. will work on a fix."
     )
   },
   "shopify-mobile-fixes": {
@@ -1651,7 +1680,7 @@ export const useCaseSubpageContent: Record<string, MarketingPageContent> = {
       eyebrow: "Use Case",
       title: "Mobile fixes for real storefront traffic",
       description:
-        "Most Shopify traffic is mobile, but many stores still break under real device conditions: overlapping sections, misaligned controls, cropped media, and difficult touch interactions. These issues create friction across key conversion paths and often go unnoticed until campaign traffic rises. Shotgun helps teams resolve mobile-specific problems with implementation that prioritizes usability, readability, and conversion stability.",
+        "Most Shopify traffic is mobile, but many stores still break under real device conditions: overlapping sections, misaligned controls, cropped media, and difficult touch interactions. These issues create friction across key conversion paths and often go unnoticed until campaign traffic rises. Krish. helps teams resolve mobile-specific problems with implementation that prioritizes usability, readability, and conversion stability.",
       primaryCta: contactCtaPrimary,
       secondaryCta: standardSecondaryCtas.readGuides,
       microcopy: standardCtaMicrocopy
@@ -1701,7 +1730,7 @@ export const useCaseSubpageContent: Record<string, MarketingPageContent> = {
       sectionTitle: "Mobile-fix FAQs",
       faqs: [
         {
-          question: "Can Shotgun fix mobile-only layout issues without redesigning the full page?",
+          question: "Can Krish. fix mobile-only layout issues without redesigning the full page?",
           answer:
             "Yes. Mobile-specific fixes can be implemented while preserving the broader design system and page structure."
         },
@@ -1719,7 +1748,7 @@ export const useCaseSubpageContent: Record<string, MarketingPageContent> = {
     },
     finalCta: withDefaultCta(
       "Seeing mobile-specific issues on your store?",
-      "Share screenshots and URLs, and Shotgun will implement responsive fixes."
+      "Share screenshots and URLs, and Krish. will implement responsive fixes."
     )
   },
   "shopify-speed-optimization": {
@@ -1731,7 +1760,7 @@ export const useCaseSubpageContent: Record<string, MarketingPageContent> = {
       eyebrow: "Use Case",
       title: "Shopify speed optimization for conversion-sensitive stores",
       description:
-        "As Shopify stores scale, speed problems accumulate from heavy assets, script overlap, and theme-level inefficiencies that are difficult to unwind quickly. Slow pages reduce conversion and increase campaign waste, especially on mobile traffic. Shotgun helps teams identify practical performance opportunities, prioritize the highest-impact pages, and implement improvements in a structured sequence that supports ongoing store operations.",
+        "As Shopify stores scale, speed problems accumulate from heavy assets, script overlap, and theme-level inefficiencies that are difficult to unwind quickly. Slow pages reduce conversion and increase campaign waste, especially on mobile traffic. Krish. helps teams identify practical performance opportunities, prioritize the highest-impact pages, and implement improvements in a structured sequence that supports ongoing store operations.",
       primaryCta: contactCtaPrimary,
       secondaryCta: standardSecondaryCtas.readGuides,
       microcopy: standardCtaMicrocopy
@@ -1781,7 +1810,7 @@ export const useCaseSubpageContent: Record<string, MarketingPageContent> = {
       sectionTitle: "Speed optimization FAQs",
       faqs: [
         {
-          question: "Can Shotgun help prioritize which pages to optimize first?",
+          question: "Can Krish. help prioritize which pages to optimize first?",
           answer:
             "Yes. Speed work is typically prioritized by traffic, conversion impact, and campaign importance."
         },
@@ -1799,7 +1828,7 @@ export const useCaseSubpageContent: Record<string, MarketingPageContent> = {
     },
     finalCta: withDefaultCta(
       "Want to improve speed before your next campaign?",
-      "Share your key landing pages and Shotgun can prioritize high-impact fixes."
+      "Share your key landing pages and Krish. can prioritize high-impact fixes."
     )
   }
 };
@@ -1881,15 +1910,15 @@ export const guideSubpageContent: Record<string, MarketingPageContent> = {
             "Use a staged workflow: duplicate theme, implement in small batches, and validate across devices before publish."
         },
         {
-          question: "Can Shotgun execute theme customization requests directly from this checklist?",
+          question: "Can Krish. execute theme customization requests directly from this checklist?",
           answer:
-            "Yes. Share the checklist scope, page URLs, and expected outcome, and Shotgun can implement and verify the update."
+            "Yes. Share the checklist scope, page URLs, and expected outcome, and Krish. can implement and verify the update."
         }
       ]
     },
     finalCta: withDefaultCta(
       "Need help executing this guide?",
-      "Shotgun can implement your theme change checklist directly."
+      "Krish. can implement your theme change checklist directly."
     )
   },
   "shopify-homepage-optimization": {
@@ -1968,15 +1997,15 @@ export const guideSubpageContent: Record<string, MarketingPageContent> = {
             "Most teams try to communicate too many messages at once, which weakens CTA clarity above the fold."
         },
         {
-          question: "Can Shotgun implement homepage changes from this checklist quickly?",
+          question: "Can Krish. implement homepage changes from this checklist quickly?",
           answer:
-            "Yes. You can submit a focused homepage request and Shotgun can execute the required updates end-to-end."
+            "Yes. You can submit a focused homepage request and Krish. can execute the required updates end-to-end."
         }
       ]
     },
     finalCta: withDefaultCta(
       "Need homepage improvements implemented quickly?",
-      "Share your homepage goals and Shotgun will execute the required changes."
+      "Share your homepage goals and Krish. will execute the required changes."
     )
   },
   "shopify-product-page-optimization": {
@@ -2055,15 +2084,15 @@ export const guideSubpageContent: Record<string, MarketingPageContent> = {
             "Unclear variant and add-to-cart flows are one of the most frequent friction points on mobile and desktop."
         },
         {
-          question: "Can Shotgun implement product page changes from this checklist?",
+          question: "Can Krish. implement product page changes from this checklist?",
           answer:
-            "Yes. Share the affected products and required outcomes, and Shotgun can execute and validate the implementation."
+            "Yes. Share the affected products and required outcomes, and Krish. can execute and validate the implementation."
         }
       ]
     },
     finalCta: withDefaultCta(
       "Want these PDP updates shipped?",
-      "Shotgun can execute your product page checklist end-to-end."
+      "Krish. can execute your product page checklist end-to-end."
     )
   },
   "shopify-store-speed-optimization": {
@@ -2142,15 +2171,15 @@ export const guideSubpageContent: Record<string, MarketingPageContent> = {
             "Start with pages tied to revenue and high traffic, then expand optimization work by impact."
         },
         {
-          question: "Can Shotgun execute speed fixes without a full redesign?",
+          question: "Can Krish. execute speed fixes without a full redesign?",
           answer:
-            "Yes. Shotgun can implement practical speed improvements within your current theme and stack."
+            "Yes. Krish. can implement practical speed improvements within your current theme and stack."
         }
       ]
     },
     finalCta: withDefaultCta(
       "Need help executing speed fixes?",
-      "Share priority pages and Shotgun can implement performance improvements."
+      "Share priority pages and Krish. can implement performance improvements."
     )
   },
   "shopify-conversion-optimization": {
@@ -2229,28 +2258,28 @@ export const guideSubpageContent: Record<string, MarketingPageContent> = {
             "Start where your biggest traffic and drop-off overlap, then sequence follow-up improvements by impact."
         },
         {
-          question: "Can Shotgun execute conversion-focused changes continuously?",
+          question: "Can Krish. execute conversion-focused changes continuously?",
           answer:
-            "Yes. Shotgun can handle recurring optimization tasks so your team can keep improving conversion over time."
+            "Yes. Krish. can handle recurring optimization tasks so your team can keep improving conversion over time."
         }
       ]
     },
     finalCta: withDefaultCta(
       "Ready to implement a conversion checklist?",
-      "Shotgun can execute conversion-oriented store updates in your existing workflow."
+      "Krish. can execute conversion-oriented store updates in your existing workflow."
     )
   }
 };
 
 export const compareSubpageContent: Record<string, MarketingPageContent> = {
-  "freelancers-vs-shotgun": {
-    metadataTitle: "Freelancers vs Shotgun",
+  "freelancers-vs-krish": {
+    metadataTitle: "Freelancers vs Krish.",
     metadataDescription:
-      "Compare freelancers vs Shotgun for Shopify development execution speed, reliability, communication overhead, and quality consistency.",
-    path: "/compare/freelancers-vs-shotgun",
+      "Compare freelancers vs Krish. for Shopify development execution speed, reliability, communication overhead, and quality consistency.",
+    path: "/compare/freelancers-vs-krish",
     intro: {
       eyebrow: "Comparison",
-      title: "Freelancers vs Shotgun for Shopify execution",
+      title: "Freelancers vs Krish. for Shopify execution",
       description:
         "Freelancers can be a strong option for specific projects, but recurring Shopify operations often require more predictable execution than individual schedules can provide. Teams evaluating this model usually care about deadline reliability, communication effort, and whether delivered changes are launch-ready without extra QA cycles. This page compares those practical factors so you can choose with clearer operational expectations.",
       primaryCta: contactCtaPrimary,
@@ -2263,17 +2292,17 @@ export const compareSubpageContent: Record<string, MarketingPageContent> = {
         {
           title: "Turnaround consistency",
           description:
-            "Freelancer timelines can shift with parallel client work, while Shotgun is designed for more predictable request flow and response rhythm."
+            "Freelancer timelines can shift with parallel client work, while Krish. is designed for more predictable request flow and response rhythm."
         },
         {
           title: "Coordination overhead",
           description:
-            "Freelancer workflows often require more direct scoping and follow-up from your team; Shotgun reduces back-and-forth with structured intake."
+            "Freelancer workflows often require more direct scoping and follow-up from your team; Krish. reduces back-and-forth with structured intake."
         },
         {
           title: "Implementation reliability",
           description:
-            "Freelancer quality can vary by individual and context, while Shotgun combines AI-assisted execution with human verification before delivery."
+            "Freelancer quality can vary by individual and context, while Krish. combines AI-assisted execution with human verification before delivery."
         }
       ]
     },
@@ -2290,7 +2319,7 @@ export const compareSubpageContent: Record<string, MarketingPageContent> = {
         ]
       },
       {
-        sectionTitle: "When teams choose Shotgun instead",
+        sectionTitle: "When teams choose Krish. instead",
         sectionDescription:
           "Operational teams often prefer repeatable execution and lower coordination effort.",
         bullets: [
@@ -2302,7 +2331,7 @@ export const compareSubpageContent: Record<string, MarketingPageContent> = {
       }
     ],
     faqSection: {
-      sectionTitle: "Freelancers vs Shotgun FAQs",
+      sectionTitle: "Freelancers vs Krish. FAQs",
       faqs: [
         {
           question: "Is this comparison saying freelancers are always a bad option?",
@@ -2326,14 +2355,14 @@ export const compareSubpageContent: Record<string, MarketingPageContent> = {
       "Submit one request and evaluate execution quality and speed directly."
     )
   },
-  "shopify-agencies-vs-shotgun": {
-    metadataTitle: "Shopify Agencies vs Shotgun",
+  "shopify-agencies-vs-krish": {
+    metadataTitle: "Shopify Agencies vs Krish.",
     metadataDescription:
-      "Compare Shopify agencies vs Shotgun for ongoing implementation support, turnaround speed, and operational fit.",
-    path: "/compare/shopify-agencies-vs-shotgun",
+      "Compare Shopify agencies vs Krish. for ongoing implementation support, turnaround speed, and operational fit.",
+    path: "/compare/shopify-agencies-vs-krish",
     intro: {
       eyebrow: "Comparison",
-      title: "Shopify agencies vs Shotgun",
+      title: "Shopify agencies vs Krish.",
       description:
         "Agencies are often strong partners for larger strategic projects, redesigns, and multi-stream programs. However, daily Shopify execution work usually requires shorter cycles, tighter request handling, and lower operational drag. This comparison focuses on practical execution differences so teams can decide whether agency structure or a recurring task execution model better matches day-to-day store operations.",
       primaryCta: contactCtaPrimary,
@@ -2346,12 +2375,12 @@ export const compareSubpageContent: Record<string, MarketingPageContent> = {
         {
           title: "Turnaround consistency",
           description:
-            "Agency workflows can involve planning layers and broader prioritization queues, while Shotgun emphasizes faster recurring request cycles."
+            "Agency workflows can involve planning layers and broader prioritization queues, while Krish. emphasizes faster recurring request cycles."
         },
         {
           title: "Coordination overhead",
           description:
-            "Agency delivery often includes additional process overhead, whereas Shotgun is structured for lightweight operational coordination."
+            "Agency delivery often includes additional process overhead, whereas Krish. is structured for lightweight operational coordination."
         },
         {
           title: "Implementation reliability",
@@ -2373,9 +2402,9 @@ export const compareSubpageContent: Record<string, MarketingPageContent> = {
         ]
       },
       {
-        sectionTitle: "When Shotgun is the better fit",
+        sectionTitle: "When Krish. is the better fit",
         sectionDescription:
-          "Shotgun is designed for recurring implementation throughput in operational contexts.",
+          "Krish. is designed for recurring implementation throughput in operational contexts.",
         bullets: [
           "You need weekly storefront updates with consistent execution turnaround.",
           "Your team wants fewer status meetings and less project-management overhead.",
@@ -2385,17 +2414,17 @@ export const compareSubpageContent: Record<string, MarketingPageContent> = {
       }
     ],
     faqSection: {
-      sectionTitle: "Agencies vs Shotgun FAQs",
+      sectionTitle: "Agencies vs Krish. FAQs",
       faqs: [
         {
-          question: "Should we replace our agency entirely with Shotgun?",
+          question: "Should we replace our agency entirely with Krish.?",
           answer:
-            "Not necessarily. Many teams use agencies for strategic work and Shotgun for recurring operational execution."
+            "Not necessarily. Many teams use agencies for strategic work and Krish. for recurring operational execution."
         },
         {
-          question: "Can Shotgun support agency-led roadmaps with tactical execution?",
+          question: "Can Krish. support agency-led roadmaps with tactical execution?",
           answer:
-            "Yes. Shotgun can implement ongoing Shopify tasks that support broader roadmap initiatives."
+            "Yes. Krish. can implement ongoing Shopify tasks that support broader roadmap initiatives."
         },
         {
           question: "What is the main tradeoff to evaluate?",
@@ -2406,17 +2435,17 @@ export const compareSubpageContent: Record<string, MarketingPageContent> = {
     },
     finalCta: withDefaultCta(
       "Need agency-level reliability for recurring tasks?",
-      "Shotgun can support ongoing Shopify execution without heavyweight process."
+      "Krish. can support ongoing Shopify execution without heavyweight process."
     )
   },
-  "task-services-vs-shotgun": {
-    metadataTitle: "Task Services vs Shotgun",
+  "task-services-vs-krish": {
+    metadataTitle: "Task Services vs Krish.",
     metadataDescription:
-      "Compare Shopify task services vs Shotgun for request quality, implementation context, and integrated execution workflow.",
-    path: "/compare/task-services-vs-shotgun",
+      "Compare Shopify task services vs Krish. for request quality, implementation context, and integrated execution workflow.",
+    path: "/compare/task-services-vs-krish",
     intro: {
       eyebrow: "Comparison",
-      title: "Task services vs Shotgun",
+      title: "Task services vs Krish.",
       description:
         "Task services can be a useful starting point for simple standardized requests, especially when teams need low-friction ticket handling. As request complexity grows, teams often evaluate whether the model can still deliver reliable outcomes without repeated clarification loops. This page compares practical delivery behavior so you can assess fit for both straightforward and code-dependent Shopify execution work.",
       primaryCta: contactCtaPrimary,
@@ -2434,7 +2463,7 @@ export const compareSubpageContent: Record<string, MarketingPageContent> = {
         {
           title: "Coordination overhead",
           description:
-            "Some task models require repeated reformats or scope restatement; Shotgun aims to reduce this with clearer request interpretation."
+            "Some task models require repeated reformats or scope restatement; Krish. aims to reduce this with clearer request interpretation."
         },
         {
           title: "Implementation reliability",
@@ -2468,12 +2497,12 @@ export const compareSubpageContent: Record<string, MarketingPageContent> = {
       }
     ],
     faqSection: {
-      sectionTitle: "Task services vs Shotgun FAQs",
+      sectionTitle: "Task services vs Krish. FAQs",
       faqs: [
         {
-          question: "Is Shotgun only for complex tasks?",
+          question: "Is Krish. only for complex tasks?",
           answer:
-            "No. Shotgun supports simple recurring tasks and more complex implementation requests in one workflow."
+            "No. Krish. supports simple recurring tasks and more complex implementation requests in one workflow."
         },
         {
           question: "What should we test during a comparison?",
@@ -2489,19 +2518,19 @@ export const compareSubpageContent: Record<string, MarketingPageContent> = {
     },
     finalCta: withDefaultCta(
       "Need a more integrated execution workflow?",
-      "Try Shotgun on a mixed task list and compare operational overhead."
+      "Try Krish. on a mixed task list and compare operational overhead."
     )
   },
-  "storetasker-vs-shotgun": {
-    metadataTitle: "Storetasker vs Shotgun",
+  "storetasker-vs-krish": {
+    metadataTitle: "Storetasker vs Krish.",
     metadataDescription:
-      "Compare Storetasker vs Shotgun for Shopify task execution, turnaround reliability, and ongoing support workflow.",
-    path: "/compare/storetasker-vs-shotgun",
+      "Compare Storetasker vs Krish. for Shopify task execution, turnaround reliability, and ongoing support workflow.",
+    path: "/compare/storetasker-vs-krish",
     intro: {
       eyebrow: "Comparison",
-      title: "Storetasker vs Shotgun",
+      title: "Storetasker vs Krish.",
       description:
-        "Both Storetasker and Shotgun support Shopify execution, but teams usually compare how each model performs under recurring operational load. Buyers often want to understand whether turnaround stays predictable, how much internal management effort is required, and whether delivered work is consistently launch-ready. This page focuses on those concrete comparison points for practical decision-making.",
+        "Both Storetasker and Krish. support Shopify execution, but teams usually compare how each model performs under recurring operational load. Buyers often want to understand whether turnaround stays predictable, how much internal management effort is required, and whether delivered work is consistently launch-ready. This page focuses on those concrete comparison points for practical decision-making.",
       primaryCta: contactCtaPrimary,
       secondaryCta: standardSecondaryCtas.viewProduct,
       microcopy: standardCtaMicrocopy
@@ -2551,7 +2580,7 @@ export const compareSubpageContent: Record<string, MarketingPageContent> = {
       }
     ],
     faqSection: {
-      sectionTitle: "Storetasker vs Shotgun FAQs",
+      sectionTitle: "Storetasker vs Krish. FAQs",
       faqs: [
         {
           question: "Can we run a side-by-side test before choosing?",
@@ -2575,16 +2604,16 @@ export const compareSubpageContent: Record<string, MarketingPageContent> = {
       "Send a few real Shopify tasks and compare execution experience."
     )
   },
-  "taskhusky-vs-shotgun": {
-    metadataTitle: "TaskHusky vs Shotgun",
+  "taskhusky-vs-krish": {
+    metadataTitle: "TaskHusky vs Krish.",
     metadataDescription:
-      "Compare TaskHusky vs Shotgun for Shopify task delivery speed, implementation reliability, and communication workflow fit.",
-    path: "/compare/taskhusky-vs-shotgun",
+      "Compare TaskHusky vs Krish. for Shopify task delivery speed, implementation reliability, and communication workflow fit.",
+    path: "/compare/taskhusky-vs-krish",
     intro: {
       eyebrow: "Comparison",
-      title: "TaskHusky vs Shotgun",
+      title: "TaskHusky vs Krish.",
       description:
-        "When teams compare TaskHusky and Shotgun, the main question is not whether tasks can be completed, but how reliably recurring requests move through the workflow under real operating pressure. This includes consistency of turnaround, the coordination effort required from internal teams, and the quality of delivered implementation for both routine and edge-case Shopify updates.",
+        "When teams compare TaskHusky and Krish., the main question is not whether tasks can be completed, but how reliably recurring requests move through the workflow under real operating pressure. This includes consistency of turnaround, the coordination effort required from internal teams, and the quality of delivered implementation for both routine and edge-case Shopify updates.",
       primaryCta: contactCtaPrimary,
       secondaryCta: standardSecondaryCtas.viewProduct,
       microcopy: standardCtaMicrocopy
@@ -2634,7 +2663,7 @@ export const compareSubpageContent: Record<string, MarketingPageContent> = {
       }
     ],
     faqSection: {
-      sectionTitle: "TaskHusky vs Shotgun FAQs",
+      sectionTitle: "TaskHusky vs Krish. FAQs",
       faqs: [
         {
           question: "How many tasks should we compare before deciding?",
@@ -2664,7 +2693,7 @@ export const resourceSubpageContent: Record<string, MarketingPageContent> = {
   blog: {
     metadataTitle: "Resources Blog",
     metadataDescription:
-      "Explore Shotgun resource blog content focused on Shopify execution workflows and practical implementation guidance.",
+      "Explore Krish. resource blog content focused on Shopify execution workflows and practical implementation guidance.",
     path: "/resources/blog",
     intro: {
       eyebrow: "Resource",
@@ -2693,48 +2722,13 @@ export const resourceSubpageContent: Record<string, MarketingPageContent> = {
     },
     finalCta: withDefaultCta(
       "Need help implementing insights from these resources?",
-      "Shotgun can execute the related Shopify tasks for your store."
-    )
-  },
-  "case-studies": {
-    metadataTitle: "Case Studies",
-    metadataDescription:
-      "Review case-study style examples of Shopify teams improving execution speed and reliability with structured task workflows.",
-    path: "/resources/case-studies",
-    intro: {
-      eyebrow: "Resource",
-      title: "Case studies from recurring Shopify workflows",
-      description:
-        "Case studies in this section focus on practical outcomes: faster launches, reduced execution delays, and fewer unresolved storefront issues.",
-      primaryCta: contactCtaPrimary,
-      secondaryCta: { label: "Contact Shotgun", href: "/contact" }
-    },
-    featureSection: {
-      sectionTitle: "Case-study outcome themes",
-      features: [
-        {
-          title: "Faster campaign rollout",
-          description: "Teams reduce delay between planning and launch implementation."
-        },
-        {
-          title: "Lower coordination load",
-          description: "Operators spend less time chasing updates and managing fragmented contributors."
-        },
-        {
-          title: "Improved change reliability",
-          description: "Store updates are delivered with clearer quality validation."
-        }
-      ]
-    },
-    finalCta: withDefaultCta(
-      "Want similar outcomes for your store operations?",
-      "Start with one request and evaluate execution impact."
+      "Krish. can execute the related Shopify tasks for your store."
     )
   },
   docs: {
     metadataTitle: "Documentation",
     metadataDescription:
-      "Read Shotgun documentation on architecture, coding standards, SEO rules, and workflow expectations.",
+      "Read Krish. documentation on architecture, coding standards, SEO rules, and workflow expectations.",
     path: "/resources/docs",
     intro: {
       eyebrow: "Resource",
@@ -2769,7 +2763,7 @@ export const resourceSubpageContent: Record<string, MarketingPageContent> = {
     },
     finalCta: withDefaultCta(
       "Need execution support with documented standards?",
-      "Shotgun can execute Shopify tasks while aligning with your process and quality expectations."
+      "Krish. can execute Shopify tasks while aligning with your process and quality expectations."
     )
   }
 };
@@ -2777,6 +2771,7 @@ export const resourceSubpageContent: Record<string, MarketingPageContent> = {
 export const staticSitePaths = [
   "/",
   "/product",
+  "/faqs",
   "/use-cases",
   "/guides",
   "/compare",
@@ -2808,6 +2803,7 @@ export const contentDrivenPaths = [
 const topLevelRouteTitleByPath: Record<string, string> = {
   "/": "Home",
   [productPageContent.path]: productPageContent.intro.eyebrow ?? productPageContent.metadataTitle,
+  [faqsPageContent.path]: faqsPageContent.metadataTitle,
   [useCasesPageContent.path]: useCasesPageContent.intro.eyebrow ?? useCasesPageContent.metadataTitle,
   [guidesPageContent.path]: guidesPageContent.intro.eyebrow ?? guidesPageContent.metadataTitle,
   [comparePageContent.path]: comparePageContent.intro.eyebrow ?? comparePageContent.metadataTitle,

@@ -9,7 +9,7 @@ type SecondaryCtaAction = PageAction & {
 };
 
 export const standardPrimaryCta: PageAction = {
-  label: "1st month free",
+  label: "Start for free",
   href: "/contact"
 };
 
@@ -30,8 +30,8 @@ export const standardSecondaryCtas: Record<
     href: "/guides"
   },
   viewProduct: {
-    label: "View Product",
-    href: "/product"
+    label: "See Use cases",
+    href: "/use-cases"
   }
 };
 

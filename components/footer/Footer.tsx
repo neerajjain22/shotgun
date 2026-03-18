@@ -9,7 +9,6 @@ import styles from "./Footer.module.css";
 const footerGroupMap = [
   { key: "product", title: "Product" },
   { key: "useCases", title: "Use Cases" },
-  { key: "resources", title: "Resources" },
   { key: "company", title: "Company" }
 ] as const;
 
@@ -19,13 +18,17 @@ export function Footer() {
   return (
     <footer className={styles.footer}>
       <PageContainer>
-        <div className={styles.brandRow}>
-          <Link aria-label="Go to homepage" className={styles.logo} href="/">
-            {siteConfig.name}
-          </Link>
-        </div>
+        <div className={styles.topGrid}>
+          <section className={styles.brandBlock}>
+            <Link aria-label="Go to homepage" className={styles.logo} href="/">
+              {siteConfig.name}.
+            </Link>
+            <p className={styles.brandDescription}>
+              The on-demand Shopify execution team for operators who want to ship improvements, not manage
+              developers.
+            </p>
+          </section>
 
-        <div className={styles.grid}>
           {footerGroupMap.map((group) => (
             <nav aria-label={group.title} className={styles.group} key={group.key}>
               <h2 className={styles.title}>{group.title}</h2>

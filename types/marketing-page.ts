@@ -7,7 +7,7 @@ export type StandardSecondaryCtaLabel =
   | "See Use Cases"
   | "Compare Options"
   | "Read Guides"
-  | "View Product";
+  | "See Use cases";
 
 export type IntroContent = {
   eyebrow?: string;
