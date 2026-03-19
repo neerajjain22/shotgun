@@ -69,13 +69,21 @@ Section library (`components/sections`) is the standard page-composition layer:
 - The `/contact` route is a dedicated conversion page, not a generic marketing template.
 - Form UI is implemented in `components/forms/LeadCaptureForm.tsx` with:
   - required fields: `name`, `workEmail`, `storeUrl`, `taskDescription`
-  - optional fields: `deadline`, `preferredChannel`
   - client-side validation, inline errors, and submit loading state
 - Submit flow:
   - POST to `/api/leads`
   - redirect to `/contact/success` on success
   - keep user on form with a visible error on failure
 - Keep future conversion forms aligned with this behavior so paid-traffic paths stay consistent.
+
+## Paid Landing Page Shell Pattern
+- `components/layout/SiteShell.tsx` controls global chrome visibility by route.
+- For `/lp/*` paths, hide:
+  - `Navbar`
+  - `Breadcrumbs`
+  - `Footer`
+- This keeps paid landing pages focused and reusable as the `/lp` cluster grows.
+- Standard site routes keep the default global chrome behavior.
 
 ## Legal Document Pattern
 - `/terms` and `/privacy` use `components/legal/LegalDocumentPage.tsx` instead of `MarketingPageTemplate`.

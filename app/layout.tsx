@@ -3,9 +3,7 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 import type { ReactNode } from "react";
 
-import { Footer } from "@/components/footer/Footer";
-import { Breadcrumbs } from "@/components/navigation/Breadcrumbs";
-import { Navbar } from "@/components/navigation/Navbar";
+import { SiteShell } from "@/components/layout/SiteShell";
 import { defaultMetadata } from "@/config/metadata";
 
 import "@/styles/globals.css";
@@ -43,12 +41,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-        <div className="site-frame">
-          <Navbar />
-          <Breadcrumbs />
-          <main className="site-main">{children}</main>
-          <Footer />
-        </div>
+        <SiteShell>{children}</SiteShell>
       </body>
     </html>
   );

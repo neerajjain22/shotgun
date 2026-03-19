@@ -34,6 +34,9 @@ Additional top-level informational routes:
 - Privacy (`/privacy`)
 - Terms (`/terms`)
 
+Dedicated landing pages:
+- `/lp/*` (for paid-traffic landing experiences)
+
 ## Section Structure
 ### Product
 Hub: `/product`
@@ -134,6 +137,12 @@ Footer complements top navigation by surfacing high-value destination pages and 
 - Descriptive URLs: lowercase, kebab-case, keyword-based slugs.
 - Internal linking: each page should link to its hub and adjacent related pages.
 - Cluster strategy: use-case pages link to guides/compare pages and vice versa.
+
+## Paid Landing Pages
+- All ad landing pages live under `/lp` (for example, `/lp/shopify-dev-team`).
+- `/lp/*` routes intentionally hide global navigation chrome (header, breadcrumbs, and footer) to reduce exit paths and keep conversion flow focused.
+- Keep CTA path and messaging explicit, with repeated trust cues and minimal page depth.
+- These routes should use focused copy blocks rather than the full `MarketingPageTemplate` structure.
 
 ## Expansion Rules
 When adding new pages:
