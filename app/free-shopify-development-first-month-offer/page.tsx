@@ -80,7 +80,7 @@ export default function FreeShopifyDevelopmentFirstMonthOfferPage() {
       <Hero
         headline="Get your Shopify development tasks done — first month free"
         subheadline="Try Shotgun with zero risk. Submit Shopify tasks and our developers complete them for you. No contracts. No hiring freelancers. Just finished work."
-        primaryCta={{ label: "Start Free Month", href: "/contact" }}
+        primaryCta={{ label: "Start Free Month", href: "https://app.heykrish.ai/" }}
         secondaryCta={{ label: "View Example Tasks", href: `${pagePath}#example-tasks` }}
         ctaMicrocopy="No credit card required. Cancel anytime."
         image={{
@@ -210,7 +210,7 @@ export default function FreeShopifyDevelopmentFirstMonthOfferPage() {
       <CTASection
         headline="Start your free month of Shopify development"
         description="Submit your first task in minutes."
-        primaryCTA={{ label: "Start Free Month", href: "/contact" }}
+        primaryCTA={{ label: "Start Free Month", href: "https://app.heykrish.ai/" }}
         secondaryCTA={{ label: "Book Demo", href: "/contact" }}
         microcopy="First month free for early users."
       />

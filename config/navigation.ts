@@ -120,11 +120,11 @@ export const navigation = {
   ctas: {
     primary: {
       label: "Start Free Trial",
-      href: "/free-shopify-development-first-month-offer"
+      href: "https://app.heykrish.ai/"
     } as NavigationCTA,
     secondary: {
       label: "Log In",
-      href: "/contact"
+      href: "https://app.heykrish.ai/"
     } as NavigationCTA
   }
 } as const;

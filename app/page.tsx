@@ -98,7 +98,7 @@ export default function HomePage() {
           </div>
 
           <div className={styles.heroActions}>
-            <Link className={styles.primaryCta} href="/free-shopify-development-first-month-offer">
+            <Link className={styles.primaryCta} href="https://app.heykrish.ai/">
               Start for free
             </Link>
             <Link className={styles.secondaryCta} href="/use-cases">
@@ -221,7 +221,7 @@ export default function HomePage() {
 
       <section className={styles.finalCtaSection}>
         <h2>Never write another developer hiring brief.</h2>
-        <Link className={styles.finalCtaButton} href="/free-shopify-development-first-month-offer">
+        <Link className={styles.finalCtaButton} href="https://app.heykrish.ai/">
           Start your free month
         </Link>
       </section>

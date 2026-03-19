@@ -10,7 +10,7 @@ type SecondaryCtaAction = PageAction & {
 
 export const standardPrimaryCta: PageAction = {
   label: "Start for free",
-  href: "/contact"
+  href: "https://app.heykrish.ai/"
 };
 
 export const standardSecondaryCtas: Record<
