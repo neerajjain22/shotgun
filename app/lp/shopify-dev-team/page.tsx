@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
+import { TrackedCtaLink } from "@/components/lp/TrackedCtaLink";
 import { createPageMetadata } from "@/seo/metadata";
 
-import { CtaTrackedLink } from "./CtaTrackedLink";
 import styles from "./LandingPage.module.css";
 
 export const metadata: Metadata = createPageMetadata({
@@ -24,9 +24,9 @@ export default function ShopifyDevTeamLandingPage() {
       <section className={styles.hero}>
         <h1 className={styles.heroTitle}>Your Shopify tasks, done in hours.</h1>
         <p className={styles.heroSubtitle}>AI + expert developers. No agency. No freelancers.</p>
-        <CtaTrackedLink className={styles.primaryCta} href="/contact">
+        <TrackedCtaLink className={styles.primaryCta} eventPage="lp-shopify-dev-team" href="https://app.heykrish.ai">
           Start Free — First 7 Days on Us
-        </CtaTrackedLink>
+        </TrackedCtaLink>
         <p className={styles.trustText}>No contract. No credit card.</p>
       </section>
 
@@ -52,9 +52,9 @@ export default function ShopifyDevTeamLandingPage() {
         <h2 className={styles.sectionTitle}>Pricing</h2>
         <p className={styles.priceLine}>$1,000/month — unlimited tasks</p>
         <p className={styles.pricingSubtext}>First 7 days free.</p>
-        <CtaTrackedLink className={styles.primaryCta} href="/contact">
+        <TrackedCtaLink className={styles.primaryCta} eventPage="lp-shopify-dev-team" href="https://app.heykrish.ai">
           Start Free — First 7 Days on Us
-        </CtaTrackedLink>
+        </TrackedCtaLink>
         <p className={styles.trustText}>No contract. No credit card.</p>
       </section>
     </div>
