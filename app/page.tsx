@@ -98,7 +98,10 @@ export default function HomePage() {
           </div>
 
           <div className={styles.heroActions}>
-            <Link className={styles.primaryCta} href="/free-shopify-development-first-month-offer">
+            <Link
+              className={styles.primaryCta}
+              href="https://app.heykrish.ai/?utm_source=start_free_trial&utm_medium=website"
+            >
               Start for free
             </Link>
             <Link className={styles.secondaryCta} href="/use-cases">
