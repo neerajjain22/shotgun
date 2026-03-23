@@ -71,7 +71,7 @@ export function HeroWorkflow({ fallbackImage }: HeroWorkflowProps) {
             Make the homepage banner clickable
           </div>
 
-          <div className="hero-workflow__bubble hero-workflow__bubble--shotgun">Working on it</div>
+          <div className="hero-workflow__bubble hero-workflow__bubble--HeyKrish">Working on it</div>
 
           <div className="hero-workflow__done">
             <strong>Task completed</strong>

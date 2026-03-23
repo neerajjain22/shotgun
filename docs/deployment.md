@@ -16,7 +16,7 @@ Documents deployment workflow for the Krish. website on Vercel.
 
 ## Vercel Setup (Template)
 1. Connect repository to Vercel.
-2. Select project root (`shotgun-site` if monorepo parent exists).
+2. Select project root (`HeyKrish-site` if monorepo parent exists).
 3. Confirm Next.js framework detection.
 4. Configure environment variables.
 5. Enable preview deployments for branches/PRs.

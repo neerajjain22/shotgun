@@ -6,37 +6,37 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/product/how-shotgun-works",
+        source: "/product/how-HeyKrish-works",
         destination: "/product/how-krish-works",
         permanent: true
       },
       {
-        source: "/product/what-shotgun-can-do",
+        source: "/product/what-HeyKrish-can-do",
         destination: "/product/what-krish-can-do",
         permanent: true
       },
       {
-        source: "/compare/freelancers-vs-shotgun",
+        source: "/compare/freelancers-vs-HeyKrish",
         destination: "/compare/freelancers-vs-krish",
         permanent: true
       },
       {
-        source: "/compare/shopify-agencies-vs-shotgun",
+        source: "/compare/shopify-agencies-vs-HeyKrish",
         destination: "/compare/shopify-agencies-vs-krish",
         permanent: true
       },
       {
-        source: "/compare/task-services-vs-shotgun",
+        source: "/compare/task-services-vs-HeyKrish",
         destination: "/compare/task-services-vs-krish",
         permanent: true
       },
       {
-        source: "/compare/storetasker-vs-shotgun",
+        source: "/compare/storetasker-vs-HeyKrish",
         destination: "/compare/storetasker-vs-krish",
         permanent: true
       },
       {
-        source: "/compare/taskhusky-vs-shotgun",
+        source: "/compare/taskhusky-vs-HeyKrish",
         destination: "/compare/taskhusky-vs-krish",
         permanent: true
       },

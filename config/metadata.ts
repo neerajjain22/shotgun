@@ -7,7 +7,7 @@ export const metadataConfig = {
   titleTemplate: "%s | Krish.",
   defaultDescription:
     "Reliable Shopify development execution for founders, operators, and ecommerce teams.",
-  twitterHandle: "@shotgun"
+  twitterHandle: "@HeyKrish"
 } as const;
 
 export const defaultMetadata: Metadata = {
