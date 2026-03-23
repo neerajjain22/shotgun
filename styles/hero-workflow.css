@@ -237,12 +237,12 @@
   animation: hero-workflow-founder 6.6s infinite;
 }
 
-.hero-workflow__bubble--shotgun {
+.hero-workflow__bubble--HeyKrish {
   left: 1rem;
   top: 9.2rem;
   background: #eef0ff;
   border: 1px solid rgba(124, 140, 255, 0.26);
-  animation: hero-workflow-shotgun 6.6s infinite;
+  animation: hero-workflow-HeyKrish 6.6s infinite;
 }
 
 .hero-workflow__done {
@@ -310,7 +310,7 @@
   }
 }
 
-@keyframes hero-workflow-shotgun {
+@keyframes hero-workflow-HeyKrish {
   0%,
   30% {
     opacity: 0;

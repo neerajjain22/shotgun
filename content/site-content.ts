@@ -803,7 +803,7 @@ export const contactPageContent: MarketingPageContent = {
     title: "Share your Shopify task and we'll handle execution",
     description:
       "You can send requests through Slack, WhatsApp, or email. Include your store URL, the change needed, and any launch timeline.",
-    primaryCta: { label: "Email us", href: "mailto:hello@shotgun.so" },
+    primaryCta: { label: "Email us", href: "mailto:hello@heykrish.ai" },
     secondaryCta: { label: "View use cases", href: "/use-cases" }
   },
   featureSection: {

@@ -1,9 +1,9 @@
 export const siteConfig = {
-  name: "Shotgun",
+  name: "Krish.",
   description:
-    "Shotgun helps Shopify founders and teams execute development tasks quickly and reliably.",
-  url: "https://shotgun.so",
+    "Krish. helps Shopify founders and teams execute development tasks quickly and reliably.",
+  url: "https://heykrish.ai",
   locale: "en_US",
-  legalName: "Shotgun",
-  copyrightLabel: "Shotgun"
+  legalName: "Krish.",
+  copyrightLabel: "Krish."
 } as const;
