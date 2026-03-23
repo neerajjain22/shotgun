@@ -48,6 +48,7 @@ See: `docs/seo-copywriting-guidelines.md`
 Use small focused changes, avoid unrelated edits, and validate with lint/type checks.
 Before any file edits, provide analysis + proposed file changes and wait for explicit confirmation.
 After significant changes, review and update relevant documentation in the same task.
+Use `shotgun-xyz` as the default remote for `git push` operations unless explicitly instructed otherwise.
 
 See: `DEVELOPMENT_WORKFLOW.md`
 

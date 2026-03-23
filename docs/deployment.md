@@ -29,6 +29,7 @@ Documents deployment workflow for the Krish. website on Vercel.
 - Use feature branches for isolated changes.
 - Validate in preview deployment before production merge.
 - Keep production deploys tied to protected main branch flow.
+- Default git push remote is `shotgun-xyz` unless a task explicitly asks for another remote.
 
 ## Rollback Notes
 Use Vercel deployment history to promote a previous stable deployment if needed.

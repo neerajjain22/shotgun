@@ -23,6 +23,11 @@ No files should be changed until explicit confirmation is received.
 - Follow existing folder architecture and naming conventions.
 - Update relevant documentation when introducing new patterns.
 
+## Git Remote Policy
+- Default push target is `shotgun-xyz` remote.
+- Use `git push shotgun-xyz <branch>` for regular publishing.
+- Only push to other remotes when explicitly requested.
+
 ## Task Execution Sequence
 1. Understand request scope and impacted areas.
 2. Read only the minimum required files for context.
