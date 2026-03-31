@@ -6,7 +6,12 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
 import { PageContainer } from "@/components/layout/PageContainer";
-import { getAllBlogPosts, getBlogPostBySlug } from "@/lib/blog-content";
+import {
+  getAllBlogPosts,
+  getBlogPostBySlug,
+  getPillarLabel,
+  getPillarTypeLabel,
+} from "@/lib/blog-content";
 import { siteConfig } from "@/config/site";
 import { createPageMetadata } from "@/seo/metadata";
 import { createArticleStructuredData, serializeJsonLd } from "@/seo/structured-data";
@@ -199,6 +204,14 @@ function toUniqueKeywords(values: string[]): string[] {
   return unique;
 }
 
+function removeChartWord(value: string): string {
+  return value
+    .replace(/\(\s*chart\s*\)/gi, "")
+    .replace(/\bchart\b/gi, "")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+}
+
 function isValidHttpUrl(value: string): boolean {
   try {
     const url = new URL(value);
@@ -299,7 +312,7 @@ function parseChartPayload(raw: string): ChartPayload | null {
     }
 
     return {
-      title: parsed.title.trim(),
+      title: removeChartWord(parsed.title.trim()),
       type: parsed.type as ChartType,
       xKey: parsed.xKey.trim(),
       series,
@@ -333,6 +346,7 @@ function buildAreaPath(points: Array<{ x: number; y: number }>, baseline: number
 }
 
 function renderChart(chart: ChartPayload) {
+  const visibleTitle = removeChartWord(chart.title) || "Data visualization";
   const width = 640;
   const height = 320;
   const padding = { top: 24, right: 16, bottom: 46, left: 44 };
@@ -492,12 +506,12 @@ function renderChart(chart: ChartPayload) {
 
   return (
     <figure className={styles.chartFigure}>
-      <figcaption>{chart.title}</figcaption>
+      <figcaption>{visibleTitle}</figcaption>
       <svg
         className={styles.chartSvg}
         viewBox={`0 0 ${width} ${height}`}
         role="img"
-        aria-label={chart.title}
+        aria-label={visibleTitle}
       >
         {basePlot}
         {bars}
@@ -532,6 +546,47 @@ function renderExpandable(content: ReactNode, label: string) {
       <div className={styles.expandBody}>{content}</div>
     </details>
   );
+}
+
+function collectTableHeaders(node: ReactNode, headers: string[]) {
+  if (headers.length >= 3 || node == null) {
+    return;
+  }
+
+  if (Array.isArray(node)) {
+    for (const child of node) {
+      collectTableHeaders(child, headers);
+      if (headers.length >= 3) {
+        return;
+      }
+    }
+
+    return;
+  }
+
+  if (!isValidElement(node)) {
+    return;
+  }
+
+  const elementType = typeof node.type === "string" ? node.type.toLowerCase() : "";
+  if (elementType === "th") {
+    const text = getNodeText(node.props.children as ReactNode).trim();
+    if (text) {
+      headers.push(text);
+    }
+  }
+
+  collectTableHeaders(node.props.children as ReactNode, headers);
+}
+
+function getTableExpandLabel(children: ReactNode): string {
+  const headers: string[] = [];
+  collectTableHeaders(children, headers);
+  if (headers.length === 0) {
+    return "Expand details: view full table";
+  }
+
+  return `Expand details: ${headers.join(" · ")}`;
 }
 
 export function generateStaticParams() {
@@ -595,7 +650,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
               <span>•</span>
               <span>{formatReadTime(post.readTimeMinutes)}</span>
               <span>•</span>
-              <span>Pillar {post.frontmatter.pillar}</span>
+              <span>{getPillarLabel(post.frontmatter.pillar)}</span>
             </p>
             <h1>{post.frontmatter.title}</h1>
             <p className={styles.description}>{post.frontmatter.description}</p>
@@ -695,6 +750,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                     },
                     table: ({ children, ...props }) => {
                       renderedTableCount += 1;
+                      const expandLabel = getTableExpandLabel(children);
                       const tableNode = (
                         <div className={styles.tableScroll}>
                           <table {...props}>{children}</table>
@@ -702,7 +758,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                       );
 
                       if (renderedTableCount === 1) {
-                        return renderExpandable(tableNode, "Expand view");
+                        return renderExpandable(tableNode, expandLabel);
                       }
 
                       return tableNode;
@@ -744,9 +800,10 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                         );
 
                         if (renderedChartCount === 1) {
+                          const expandLabel = `Expand details: ${removeChartWord(parsedChart.title) || "view full visualization"}`;
                           return (
                             <div data-chart-block="true" className={styles.chartBlock}>
-                              {renderExpandable(chartNode, "Expand view")}
+                              {renderExpandable(chartNode, expandLabel)}
                             </div>
                           );
                         }
@@ -838,9 +895,10 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                       <dd>{formatReadTime(post.readTimeMinutes)}</dd>
                     </div>
                     <div>
-                      <dt>Pillar</dt>
+                      <dt>Topic</dt>
                       <dd>
-                        {post.frontmatter.pillar} · {post.frontmatter.pillarType}
+                        {getPillarLabel(post.frontmatter.pillar)} ·{" "}
+                        {getPillarTypeLabel(post.frontmatter.pillarType)}
                       </dd>
                     </div>
                     <div>

@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { PageContainer } from "@/components/layout/PageContainer";
-import { getAllBlogPosts } from "@/lib/blog-content";
+import { getAllBlogPosts, getPillarLabel } from "@/lib/blog-content";
 import { createPageMetadata } from "@/seo/metadata";
 
 import styles from "./BlogIndexPage.module.css";
@@ -14,17 +14,17 @@ type BlogIndexPageProps = {
 
 const PILLAR_FILTERS = [
   { label: "All", value: null as number | null },
-  { label: "Pillar 1", value: 1 },
-  { label: "Pillar 2", value: 2 },
-  { label: "Pillar 3", value: 3 },
-  { label: "Pillar 4", value: 4 }
+  { label: getPillarLabel(1), value: 1 },
+  { label: getPillarLabel(2), value: 2 },
+  { label: getPillarLabel(3), value: 3 },
+  { label: getPillarLabel(4), value: 4 },
 ];
 
 export const metadata = createPageMetadata({
   title: "Blog",
   description:
     "Read practical Shopify execution guides, troubleshooting breakdowns, and cost-focused articles for operators and DTC teams.",
-  path: "/blog"
+  path: "/blog",
 });
 
 function formatDate(value: string): string {
@@ -32,7 +32,7 @@ function formatDate(value: string): string {
   return new Intl.DateTimeFormat("en-US", {
     year: "numeric",
     month: "short",
-    day: "numeric"
+    day: "numeric",
   }).format(date);
 }
 
@@ -54,7 +54,9 @@ export default function BlogIndexPage({ searchParams }: BlogIndexPageProps) {
   const selectedPillar = parsePillarFilter(searchParams?.pillar);
 
   const filteredPosts =
-    selectedPillar === null ? posts : posts.filter((post) => post.frontmatter.pillar === selectedPillar);
+    selectedPillar === null
+      ? posts
+      : posts.filter((post) => post.frontmatter.pillar === selectedPillar);
 
   const [featuredPost, ...remainingPosts] = filteredPosts;
 
@@ -65,16 +67,16 @@ export default function BlogIndexPage({ searchParams }: BlogIndexPageProps) {
           <p className={styles.eyebrow}>Blog</p>
           <h1 className={styles.title}>Shopify execution insights for operators</h1>
           <p className={styles.description}>
-            Tactical breakdowns for teams that want predictable shipping velocity, clean execution quality, and
-            higher conversion outcomes.
+            Tactical breakdowns for teams that want predictable shipping velocity, clean execution
+            quality, and higher conversion outcomes.
           </p>
           <p className={styles.countLabel}>
             Showing {filteredPosts.length} article{filteredPosts.length === 1 ? "" : "s"}
-            {selectedPillar ? ` in Pillar ${selectedPillar}` : ""}
+            {selectedPillar ? ` in ${getPillarLabel(selectedPillar)}` : ""}
           </p>
         </header>
 
-        <nav aria-label="Filter blog articles by pillar" className={styles.filters}>
+        <nav aria-label="Filter blog articles by topic" className={styles.filters}>
           {PILLAR_FILTERS.map((filter) => {
             const isActive = selectedPillar === filter.value;
             const href = filter.value === null ? "/blog" : `/blog?pillar=${filter.value}`;
@@ -95,7 +97,7 @@ export default function BlogIndexPage({ searchParams }: BlogIndexPageProps) {
         {filteredPosts.length === 0 ? (
           <section className={styles.emptyState}>
             <h2>No published blog articles in this filter yet</h2>
-            <p>Try another pillar filter or check back after the next daily publish cycle.</p>
+            <p>Try another topic filter or check back after the next daily publish cycle.</p>
           </section>
         ) : (
           <>
@@ -107,12 +109,16 @@ export default function BlogIndexPage({ searchParams }: BlogIndexPageProps) {
                     <span>•</span>
                     <span>{featuredPost.readTimeMinutes} min read</span>
                     <span>•</span>
-                    <span>Pillar {featuredPost.frontmatter.pillar}</span>
+                    <span>{getPillarLabel(featuredPost.frontmatter.pillar)}</span>
                   </p>
                   <h2 className={styles.featuredTitle}>
-                    <Link href={`/blog/${featuredPost.frontmatter.slug}`}>{featuredPost.frontmatter.title}</Link>
+                    <Link href={`/blog/${featuredPost.frontmatter.slug}`}>
+                      {featuredPost.frontmatter.title}
+                    </Link>
                   </h2>
-                  <p className={styles.featuredDescription}>{featuredPost.frontmatter.description}</p>
+                  <p className={styles.featuredDescription}>
+                    {featuredPost.frontmatter.description}
+                  </p>
                   <div className={styles.badgeRow}>
                     <span className={styles.badge}>{featuredPost.frontmatter.focusKeyword}</span>
                     <span className={styles.badge}>{featuredPost.frontmatter.priority}</span>
@@ -137,7 +143,7 @@ export default function BlogIndexPage({ searchParams }: BlogIndexPageProps) {
                   </h3>
                   <p className={styles.cardDescription}>{post.frontmatter.description}</p>
                   <div className={styles.badgeRow}>
-                    <span className={styles.badge}>Pillar {post.frontmatter.pillar}</span>
+                    <span className={styles.badge}>{getPillarLabel(post.frontmatter.pillar)}</span>
                     <span className={styles.badge}>{post.frontmatter.focusKeyword}</span>
                   </div>
                   <Link className={styles.readLink} href={`/blog/${post.frontmatter.slug}`}>

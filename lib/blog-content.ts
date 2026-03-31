@@ -28,6 +28,20 @@ export type BlogPost = {
   sectionHeadings: string[];
 };
 
+const PILLAR_LABELS: Record<number, string> = {
+  1: "Store Customizations",
+  2: "Troubleshooting",
+  3: "Alternatives & Comparisons",
+  4: "Costs & How-To",
+};
+
+const PILLAR_TYPE_LABELS: Record<string, string> = {
+  "task-niche": "Use-case execution",
+  "problem-platform": "Platform issue resolution",
+  "alternative-comparison": "Service and vendor comparisons",
+  "cost-howto": "Pricing and implementation guidance",
+};
+
 type SitemapBlogEntry = {
   slug: string;
   updatedAt: string;
@@ -140,6 +154,14 @@ function readBlogPostsFromDisk(): BlogPost[] {
 
 export function getAllBlogPosts(): BlogPost[] {
   return readBlogPostsFromDisk();
+}
+
+export function getPillarLabel(pillar: number): string {
+  return PILLAR_LABELS[pillar] ?? `Topic ${pillar}`;
+}
+
+export function getPillarTypeLabel(pillarType: string): string {
+  return PILLAR_TYPE_LABELS[pillarType] ?? pillarType;
 }
 
 export function getBlogPostBySlug(slug: string): BlogPost | null {
