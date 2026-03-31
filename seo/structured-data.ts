@@ -35,6 +35,26 @@ export type BreadcrumbListStructuredData = {
   }>;
 };
 
+export type ArticleStructuredData = {
+  "@context": "https://schema.org";
+  "@type": "Article";
+  headline: string;
+  description: string;
+  url: string;
+  datePublished: string;
+  dateModified: string;
+  keywords?: string[];
+  author: {
+    "@type": "Organization";
+    name: string;
+  };
+  publisher: {
+    "@type": "Organization";
+    name: string;
+    url: string;
+  };
+};
+
 // Reserved for future schema expansion without changing public helpers.
 export type FutureStructuredDataType = "Article" | "FAQPage" | "Product";
 
@@ -74,6 +94,35 @@ export function createBreadcrumbListStructuredData(items: BreadcrumbListItem[]):
       name: item.name,
       item: new URL(item.url, siteConfig.url).toString()
     }))
+  };
+}
+
+export function createArticleStructuredData(input: {
+  headline: string;
+  description: string;
+  url: string;
+  datePublished: string;
+  dateModified: string;
+  keywords?: string[];
+}): ArticleStructuredData {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: input.headline,
+    description: input.description,
+    url: input.url,
+    datePublished: input.datePublished,
+    dateModified: input.dateModified,
+    keywords: input.keywords,
+    author: {
+      "@type": "Organization",
+      name: siteConfig.legalName
+    },
+    publisher: {
+      "@type": "Organization",
+      name: siteConfig.legalName,
+      url: siteConfig.url
+    }
   };
 }
 

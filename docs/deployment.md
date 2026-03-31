@@ -31,6 +31,11 @@ Documents deployment workflow for the Krish. website on Vercel.
 - Keep production deploys tied to protected main branch flow.
 - Default git push remote is `shotgun-xyz` unless a task explicitly asks for another remote.
 
+## Blog Generation Scheduling
+- Daily article generation runs outside Vercel runtime through GitHub Actions.
+- Scheduled workflow: `.github/workflows/daily-blog-generation.yml`.
+- Workflow runs one generation cycle and commits published Markdown blog content to `main` for Vercel deployment.
+
 ## Rollback Notes
 Use Vercel deployment history to promote a previous stable deployment if needed.
 

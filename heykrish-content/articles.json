@@ -1,0 +1,2043 @@
+[
+  {
+    "id": "p1-01",
+    "pillar": 1,
+    "priority": "high",
+    "title": "Shopify product page customization for skincare brands",
+    "focusKeyword": "Shopify product page customization skincare",
+    "secondaryKeywords": [
+      "skincare Shopify PDP",
+      "Shopify theme customization beauty brand",
+      "Shopify metafields ingredients",
+      "Shopify skincare conversion rate"
+    ],
+    "slug": "shopify-product-page-customization-skincare-brands",
+    "pillarType": "task-niche",
+    "status": "done",
+    "lastRun": "2026-03-30T13:05:38.435Z",
+    "outputPath": "output/shopify-product-page-customization-skincare-brands"
+  },
+  {
+    "id": "p1-02",
+    "pillar": 1,
+    "priority": "high",
+    "title": "Shopify theme changes for apparel brands",
+    "focusKeyword": "Shopify theme changes apparel brand",
+    "secondaryKeywords": [
+      "Shopify apparel store theme",
+      "Shopify fashion brand customization",
+      "Shopify Liquid apparel"
+    ],
+    "slug": "shopify-theme-changes-apparel-brands",
+    "pillarType": "task-niche",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p1-03",
+    "pillar": 1,
+    "priority": "high",
+    "title": "Shopify homepage updates for DTC food brands",
+    "focusKeyword": "Shopify homepage updates DTC food brand",
+    "secondaryKeywords": [
+      "Shopify food store homepage",
+      "DTC food brand Shopify",
+      "Shopify homepage banner update"
+    ],
+    "slug": "shopify-homepage-updates-dtc-food-brands",
+    "pillarType": "task-niche",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p1-04",
+    "pillar": 1,
+    "priority": "high",
+    "title": "Shopify speed optimization for supplement stores",
+    "focusKeyword": "Shopify speed optimization supplement store",
+    "secondaryKeywords": [
+      "Shopify page speed supplements",
+      "Core Web Vitals Shopify supplement",
+      "Shopify LCP fix"
+    ],
+    "slug": "shopify-speed-optimization-supplement-stores",
+    "pillarType": "task-niche",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p1-05",
+    "pillar": 1,
+    "priority": "high",
+    "title": "Shopify mobile fixes for fashion brands",
+    "focusKeyword": "Shopify mobile fixes fashion brand",
+    "secondaryKeywords": [
+      "Shopify mobile layout fashion",
+      "Shopify responsive fashion store",
+      "Shopify mobile checkout fix"
+    ],
+    "slug": "shopify-mobile-fixes-fashion-brands",
+    "pillarType": "task-niche",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p1-06",
+    "pillar": 1,
+    "priority": "high",
+    "title": "Shopify promotions setup for beauty brands",
+    "focusKeyword": "Shopify promotions setup beauty brand",
+    "secondaryKeywords": [
+      "Shopify discount codes beauty",
+      "Shopify sale setup beauty brand",
+      "Shopify promotional banner"
+    ],
+    "slug": "shopify-promotions-setup-beauty-brands",
+    "pillarType": "task-niche",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p1-07",
+    "pillar": 1,
+    "priority": "high",
+    "title": "Shopify speed optimization for apparel stores",
+    "focusKeyword": "Shopify speed optimization apparel store",
+    "secondaryKeywords": [
+      "Shopify apparel store speed",
+      "Shopify fashion store Core Web Vitals",
+      "Shopify image optimization apparel"
+    ],
+    "slug": "shopify-speed-optimization-apparel-stores",
+    "pillarType": "task-niche",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p1-16",
+    "pillar": 1,
+    "priority": "high",
+    "title": "Shopify speed optimization for beauty stores",
+    "focusKeyword": "Shopify page speed optimization beauty store",
+    "secondaryKeywords": [
+      "Shopify beauty store speed",
+      "Shopify skincare store LCP",
+      "Shopify beauty page Core Web Vitals"
+    ],
+    "slug": "shopify-speed-optimization-beauty-stores",
+    "pillarType": "task-niche",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p1-08",
+    "pillar": 1,
+    "priority": "medium",
+    "title": "Shopify bug fixes for pet product stores",
+    "focusKeyword": "Shopify bug fixes pet products store",
+    "secondaryKeywords": [
+      "Shopify pet store bug fix",
+      "Shopify checkout bug pet brand",
+      "Shopify layout fix pet store"
+    ],
+    "slug": "shopify-bug-fixes-pet-product-stores",
+    "pillarType": "task-niche",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p1-09",
+    "pillar": 1,
+    "priority": "medium",
+    "title": "Shopify product page customization for home goods brands",
+    "focusKeyword": "Shopify product page customization home goods",
+    "secondaryKeywords": [
+      "Shopify home goods PDP",
+      "Shopify furniture product page",
+      "Shopify home store customization"
+    ],
+    "slug": "shopify-product-page-customization-home-goods",
+    "pillarType": "task-niche",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p1-10",
+    "pillar": 1,
+    "priority": "medium",
+    "title": "Shopify theme changes for jewelry brands",
+    "focusKeyword": "Shopify theme changes jewelry brand",
+    "secondaryKeywords": [
+      "Shopify jewelry store theme",
+      "Shopify luxury jewelry customization",
+      "Shopify jewelry PDP"
+    ],
+    "slug": "shopify-theme-changes-jewelry-brands",
+    "pillarType": "task-niche",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p1-11",
+    "pillar": 1,
+    "priority": "medium",
+    "title": "Shopify homepage updates for wellness brands",
+    "focusKeyword": "Shopify homepage updates wellness brand",
+    "secondaryKeywords": [
+      "Shopify wellness brand homepage",
+      "Shopify health store homepage update",
+      "Shopify wellness hero banner"
+    ],
+    "slug": "shopify-homepage-updates-wellness-brands",
+    "pillarType": "task-niche",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p1-12",
+    "pillar": 1,
+    "priority": "medium",
+    "title": "Shopify mobile fixes for electronics stores",
+    "focusKeyword": "Shopify mobile fixes electronics store",
+    "secondaryKeywords": [
+      "Shopify electronics mobile layout",
+      "Shopify tech store mobile fix",
+      "Shopify electronics checkout mobile"
+    ],
+    "slug": "shopify-mobile-fixes-electronics-stores",
+    "pillarType": "task-niche",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p1-13",
+    "pillar": 1,
+    "priority": "medium",
+    "title": "Shopify product page customization for baby and kids brands",
+    "focusKeyword": "Shopify product page customization baby kids",
+    "secondaryKeywords": [
+      "Shopify baby brand PDP",
+      "Shopify kids store product page",
+      "Shopify children brand customization"
+    ],
+    "slug": "shopify-product-page-customization-baby-kids-brands",
+    "pillarType": "task-niche",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p1-14",
+    "pillar": 1,
+    "priority": "medium",
+    "title": "Shopify promotions for sports and fitness stores",
+    "focusKeyword": "Shopify promotions setup fitness brand",
+    "secondaryKeywords": [
+      "Shopify fitness store promotions",
+      "Shopify sports brand discount",
+      "Shopify flash sale fitness"
+    ],
+    "slug": "shopify-promotions-sports-fitness-stores",
+    "pillarType": "task-niche",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p1-15",
+    "pillar": 1,
+    "priority": "medium",
+    "title": "Shopify bug fixes for subscription box stores",
+    "focusKeyword": "Shopify bug fixes subscription box store",
+    "secondaryKeywords": [
+      "Shopify subscription box bug",
+      "Shopify recurring billing fix",
+      "Shopify box store checkout bug"
+    ],
+    "slug": "shopify-bug-fixes-subscription-box-stores",
+    "pillarType": "task-niche",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p1-17",
+    "pillar": 1,
+    "priority": "medium",
+    "title": "Shopify product page customization for food and beverage brands",
+    "focusKeyword": "Shopify product page customization food brand",
+    "secondaryKeywords": [
+      "Shopify food brand PDP",
+      "Shopify beverage store product page",
+      "Shopify DTC food customization"
+    ],
+    "slug": "shopify-product-page-customization-food-beverage-brands",
+    "pillarType": "task-niche",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p1-20",
+    "pillar": 1,
+    "priority": "medium",
+    "title": "Shopify mobile fixes for health and wellness stores",
+    "focusKeyword": "Shopify mobile fixes wellness store",
+    "secondaryKeywords": [
+      "Shopify wellness mobile fix",
+      "Shopify health store mobile layout",
+      "Shopify supplement store mobile"
+    ],
+    "slug": "shopify-mobile-fixes-health-wellness-stores",
+    "pillarType": "task-niche",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p1-21",
+    "pillar": 1,
+    "priority": "medium",
+    "title": "Shopify product page customization for electronics brands",
+    "focusKeyword": "Shopify product page customization electronics",
+    "secondaryKeywords": [
+      "Shopify electronics PDP",
+      "Shopify tech brand product page",
+      "Shopify gadget store customization"
+    ],
+    "slug": "shopify-product-page-customization-electronics-brands",
+    "pillarType": "task-niche",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p1-22",
+    "pillar": 1,
+    "priority": "medium",
+    "title": "Shopify promotions for DTC coffee brands",
+    "focusKeyword": "Shopify promotions DTC coffee brand",
+    "secondaryKeywords": [
+      "Shopify coffee brand promotions",
+      "Shopify DTC coffee discount",
+      "Shopify coffee store sale"
+    ],
+    "slug": "shopify-promotions-dtc-coffee-brands",
+    "pillarType": "task-niche",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p1-25",
+    "pillar": 1,
+    "priority": "medium",
+    "title": "Shopify bug fixes for high-traffic flash sale stores",
+    "focusKeyword": "Shopify bug fixes flash sale store",
+    "secondaryKeywords": [
+      "Shopify flash sale bug fix",
+      "Shopify high traffic bug",
+      "Shopify sale day checkout fix"
+    ],
+    "slug": "shopify-bug-fixes-flash-sale-stores",
+    "pillarType": "task-niche",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p1-26",
+    "pillar": 1,
+    "priority": "medium",
+    "title": "Shopify homepage updates for subscription brands",
+    "focusKeyword": "Shopify homepage updates subscription brand",
+    "secondaryKeywords": [
+      "Shopify subscription brand homepage",
+      "Shopify recurring brand homepage",
+      "Shopify subscription homepage banner"
+    ],
+    "slug": "shopify-homepage-updates-subscription-brands",
+    "pillarType": "task-niche",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p1-27",
+    "pillar": 1,
+    "priority": "medium",
+    "title": "Shopify product page customization for footwear brands",
+    "focusKeyword": "Shopify product page customization footwear",
+    "secondaryKeywords": [
+      "Shopify footwear PDP",
+      "Shopify shoe brand product page",
+      "Shopify sneaker store customization"
+    ],
+    "slug": "shopify-product-page-customization-footwear-brands",
+    "pillarType": "task-niche",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p1-18",
+    "pillar": 1,
+    "priority": "low",
+    "title": "Shopify homepage updates for outdoor and camping brands",
+    "focusKeyword": "Shopify homepage updates outdoor brand",
+    "secondaryKeywords": [
+      "Shopify outdoor store homepage",
+      "Shopify camping brand homepage",
+      "Shopify adventure brand update"
+    ],
+    "slug": "shopify-homepage-updates-outdoor-camping-brands",
+    "pillarType": "task-niche",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p1-19",
+    "pillar": 1,
+    "priority": "low",
+    "title": "Shopify theme changes for luxury brands",
+    "focusKeyword": "Shopify theme changes luxury brand",
+    "secondaryKeywords": [
+      "Shopify luxury store theme",
+      "Shopify premium brand customization",
+      "Shopify luxury PDP"
+    ],
+    "slug": "shopify-theme-changes-luxury-brands",
+    "pillarType": "task-niche",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p1-23",
+    "pillar": 1,
+    "priority": "low",
+    "title": "Shopify speed optimization for multi-brand stores",
+    "focusKeyword": "Shopify speed optimization multi-brand store",
+    "secondaryKeywords": [
+      "Shopify multi-brand page speed",
+      "Shopify marketplace speed fix",
+      "Shopify large catalog speed"
+    ],
+    "slug": "shopify-speed-optimization-multi-brand-stores",
+    "pillarType": "task-niche",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p1-24",
+    "pillar": 1,
+    "priority": "low",
+    "title": "Shopify theme changes for sustainable brands",
+    "focusKeyword": "Shopify theme changes sustainable brand",
+    "secondaryKeywords": [
+      "Shopify eco brand theme",
+      "Shopify sustainable store customization",
+      "Shopify green brand theme"
+    ],
+    "slug": "shopify-theme-changes-sustainable-brands",
+    "pillarType": "task-niche",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p1-28",
+    "pillar": 1,
+    "priority": "low",
+    "title": "Shopify mobile fixes for luxury e-commerce stores",
+    "focusKeyword": "Shopify mobile fixes luxury store",
+    "secondaryKeywords": [
+      "Shopify luxury mobile layout",
+      "Shopify premium store mobile fix",
+      "Shopify high-end brand mobile"
+    ],
+    "slug": "shopify-mobile-fixes-luxury-stores",
+    "pillarType": "task-niche",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p1-29",
+    "pillar": 1,
+    "priority": "low",
+    "title": "Shopify theme changes for wholesale Shopify stores",
+    "focusKeyword": "Shopify theme changes wholesale B2B store",
+    "secondaryKeywords": [
+      "Shopify B2B theme customization",
+      "Shopify wholesale store design",
+      "Shopify trade store theme"
+    ],
+    "slug": "shopify-theme-changes-wholesale-b2b-stores",
+    "pillarType": "task-niche",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p1-30",
+    "pillar": 1,
+    "priority": "low",
+    "title": "Shopify theme changes for furniture brands",
+    "focusKeyword": "Shopify theme customization furniture store",
+    "secondaryKeywords": [
+      "Shopify furniture store theme",
+      "Shopify home furniture customization",
+      "Shopify large product store theme"
+    ],
+    "slug": "shopify-theme-changes-furniture-brands",
+    "pillarType": "task-niche",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-01",
+    "pillar": 2,
+    "priority": "high",
+    "title": "Shopify Dawn theme mobile layout broken — how to fix it",
+    "focusKeyword": "Shopify Dawn theme mobile layout broken",
+    "secondaryKeywords": [
+      "Dawn theme mobile fix",
+      "Shopify mobile layout Dawn",
+      "fix Shopify Dawn responsive"
+    ],
+    "slug": "shopify-dawn-theme-mobile-layout-broken-fix",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-02",
+    "pillar": 2,
+    "priority": "high",
+    "title": "Shopify checkout not working on mobile — common fixes",
+    "focusKeyword": "Shopify checkout not working mobile",
+    "secondaryKeywords": [
+      "Shopify mobile checkout bug",
+      "fix Shopify checkout mobile",
+      "Shopify checkout broken mobile"
+    ],
+    "slug": "shopify-checkout-not-working-mobile-fix",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-03",
+    "pillar": 2,
+    "priority": "high",
+    "title": "Shopify Prestige theme slow loading — speed fix guide",
+    "focusKeyword": "Shopify Prestige theme slow loading fix",
+    "secondaryKeywords": [
+      "Prestige theme speed fix",
+      "Shopify Prestige slow",
+      "Prestige theme Core Web Vitals"
+    ],
+    "slug": "shopify-prestige-theme-slow-loading-fix",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-04",
+    "pillar": 2,
+    "priority": "high",
+    "title": "Shopify Dawn theme product page customization guide",
+    "focusKeyword": "Shopify Dawn theme product page customization",
+    "secondaryKeywords": [
+      "Dawn theme PDP customization",
+      "Shopify Dawn product page sections",
+      "Dawn theme Liquid customization"
+    ],
+    "slug": "shopify-dawn-theme-product-page-customization",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-05",
+    "pillar": 2,
+    "priority": "high",
+    "title": "Shopify add to cart button not working — fix guide",
+    "focusKeyword": "Shopify add to cart button not working fix",
+    "secondaryKeywords": [
+      "Shopify ATC button broken",
+      "fix Shopify add to cart",
+      "Shopify cart button not responding"
+    ],
+    "slug": "shopify-add-to-cart-button-not-working-fix",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-06",
+    "pillar": 2,
+    "priority": "high",
+    "title": "Shopify images not loading on product pages — how to fix",
+    "focusKeyword": "Shopify product page images not loading",
+    "secondaryKeywords": [
+      "Shopify product images broken",
+      "Shopify images not showing",
+      "fix Shopify product image loading"
+    ],
+    "slug": "shopify-product-page-images-not-loading-fix",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-07",
+    "pillar": 2,
+    "priority": "high",
+    "title": "Shopify discount code not applying at checkout — fix",
+    "focusKeyword": "Shopify discount code not working checkout",
+    "secondaryKeywords": [
+      "Shopify coupon code not applying",
+      "fix Shopify discount checkout",
+      "Shopify promo code broken"
+    ],
+    "slug": "shopify-discount-code-not-applying-checkout-fix",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-08",
+    "pillar": 2,
+    "priority": "high",
+    "title": "Shopify checkout layout broken after theme update",
+    "focusKeyword": "Shopify checkout layout broken after update",
+    "secondaryKeywords": [
+      "Shopify checkout broken theme update",
+      "Shopify update broke checkout",
+      "Shopify checkout UI broken"
+    ],
+    "slug": "shopify-checkout-layout-broken-after-theme-update",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-09",
+    "pillar": 2,
+    "priority": "high",
+    "title": "Shopify page speed score low — what's causing it",
+    "focusKeyword": "Shopify page speed score low fix",
+    "secondaryKeywords": [
+      "Shopify low speed score",
+      "improve Shopify speed score",
+      "why is Shopify page speed low"
+    ],
+    "slug": "shopify-page-speed-score-low-causes-fix",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-10",
+    "pillar": 2,
+    "priority": "high",
+    "title": "Shopify tracking pixels not firing — fix guide",
+    "focusKeyword": "Shopify tracking pixel not firing fix",
+    "secondaryKeywords": [
+      "Shopify pixel not firing",
+      "fix Shopify Facebook pixel",
+      "Shopify GA4 not tracking"
+    ],
+    "slug": "shopify-tracking-pixels-not-firing-fix",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-11",
+    "pillar": 2,
+    "priority": "medium",
+    "title": "Shopify Debut theme homepage not updating — fix guide",
+    "focusKeyword": "Shopify Debut theme homepage not updating",
+    "secondaryKeywords": [
+      "Debut theme homepage fix",
+      "Shopify Debut homepage not changing",
+      "fix Shopify Debut homepage"
+    ],
+    "slug": "shopify-debut-theme-homepage-not-updating-fix",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-12",
+    "pillar": 2,
+    "priority": "medium",
+    "title": "Shopify Impulse theme banner not showing on mobile",
+    "focusKeyword": "Shopify Impulse theme banner mobile fix",
+    "secondaryKeywords": [
+      "Impulse theme banner fix",
+      "Shopify Impulse mobile banner",
+      "Impulse theme responsive fix"
+    ],
+    "slug": "shopify-impulse-theme-banner-not-showing-mobile",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-13",
+    "pillar": 2,
+    "priority": "medium",
+    "title": "Shopify Dawn theme font not changing — fix guide",
+    "focusKeyword": "Shopify Dawn theme font not changing",
+    "secondaryKeywords": [
+      "Dawn theme font fix",
+      "Shopify Dawn font customization",
+      "change font Shopify Dawn"
+    ],
+    "slug": "shopify-dawn-theme-font-not-changing-fix",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-14",
+    "pillar": 2,
+    "priority": "medium",
+    "title": "Shopify Prestige theme header overlapping content fix",
+    "focusKeyword": "Shopify Prestige theme header overlap fix",
+    "secondaryKeywords": [
+      "Prestige theme header fix",
+      "Shopify Prestige header overlapping",
+      "fix Prestige theme header"
+    ],
+    "slug": "shopify-prestige-theme-header-overlap-fix",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-15",
+    "pillar": 2,
+    "priority": "medium",
+    "title": "Shopify search not returning results — how to fix",
+    "focusKeyword": "Shopify search not working fix",
+    "secondaryKeywords": [
+      "Shopify search broken",
+      "fix Shopify search results",
+      "Shopify predictive search not working"
+    ],
+    "slug": "shopify-search-not-returning-results-fix",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-16",
+    "pillar": 2,
+    "priority": "medium",
+    "title": "Shopify Impulse theme collection page layout fix",
+    "focusKeyword": "Shopify Impulse theme collection page fix",
+    "secondaryKeywords": [
+      "Impulse theme collection fix",
+      "Shopify Impulse collection layout",
+      "fix Impulse collection page"
+    ],
+    "slug": "shopify-impulse-theme-collection-page-layout-fix",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-17",
+    "pillar": 2,
+    "priority": "medium",
+    "title": "Shopify cart page not updating quantity — fix guide",
+    "focusKeyword": "Shopify cart quantity not updating fix",
+    "secondaryKeywords": [
+      "Shopify cart not updating",
+      "fix Shopify cart quantity",
+      "Shopify cart Ajax fix"
+    ],
+    "slug": "shopify-cart-page-not-updating-quantity-fix",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-18",
+    "pillar": 2,
+    "priority": "medium",
+    "title": "Shopify Dawn theme slideshow not working — fix",
+    "focusKeyword": "Shopify Dawn theme slideshow not working",
+    "secondaryKeywords": [
+      "Dawn theme slideshow fix",
+      "Shopify Dawn hero slideshow broken",
+      "fix Dawn theme slideshow"
+    ],
+    "slug": "shopify-dawn-theme-slideshow-not-working-fix",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-19",
+    "pillar": 2,
+    "priority": "medium",
+    "title": "Shopify pop-up not showing on mobile — fix guide",
+    "focusKeyword": "Shopify popup not showing mobile fix",
+    "secondaryKeywords": [
+      "Shopify mobile popup fix",
+      "fix Shopify popup mobile",
+      "Shopify newsletter popup mobile"
+    ],
+    "slug": "shopify-popup-not-showing-mobile-fix",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-20",
+    "pillar": 2,
+    "priority": "medium",
+    "title": "Shopify Dawn theme collection filtering not working",
+    "focusKeyword": "Shopify Dawn theme collection filter not working",
+    "secondaryKeywords": [
+      "Dawn theme filter fix",
+      "Shopify Dawn collection filter broken",
+      "fix Dawn theme product filter"
+    ],
+    "slug": "shopify-dawn-theme-collection-filtering-not-working",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-21",
+    "pillar": 2,
+    "priority": "medium",
+    "title": "Shopify metafields not displaying on product page",
+    "focusKeyword": "Shopify metafields not showing product page",
+    "secondaryKeywords": [
+      "Shopify metafields not displaying",
+      "fix Shopify metafield product page",
+      "Shopify custom data not showing"
+    ],
+    "slug": "shopify-metafields-not-displaying-product-page",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-22",
+    "pillar": 2,
+    "priority": "medium",
+    "title": "Shopify variant image not changing on selection",
+    "focusKeyword": "Shopify variant image not changing fix",
+    "secondaryKeywords": [
+      "Shopify variant image fix",
+      "Shopify product variant image not switching",
+      "fix Shopify variant image"
+    ],
+    "slug": "shopify-variant-image-not-changing-fix",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-23",
+    "pillar": 2,
+    "priority": "medium",
+    "title": "Shopify Ajax cart not working — fix guide",
+    "focusKeyword": "Shopify Ajax cart not working fix",
+    "secondaryKeywords": [
+      "Shopify Ajax cart fix",
+      "fix Shopify slide-out cart",
+      "Shopify drawer cart not working"
+    ],
+    "slug": "shopify-ajax-cart-not-working-fix",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-24",
+    "pillar": 2,
+    "priority": "medium",
+    "title": "Shopify Dawn theme section not showing in editor",
+    "focusKeyword": "Shopify Dawn theme section not showing fix",
+    "secondaryKeywords": [
+      "Dawn theme section editor fix",
+      "Shopify theme editor section missing",
+      "fix Dawn section not appearing"
+    ],
+    "slug": "shopify-dawn-theme-section-not-showing-editor",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-25",
+    "pillar": 2,
+    "priority": "medium",
+    "title": "Shopify Google Shopping feed errors — how to fix",
+    "focusKeyword": "Shopify Google Shopping feed errors fix",
+    "secondaryKeywords": [
+      "Shopify Google Shopping feed fix",
+      "fix Shopify product feed errors",
+      "Shopify Google Merchant Center errors"
+    ],
+    "slug": "shopify-google-shopping-feed-errors-fix",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-26",
+    "pillar": 2,
+    "priority": "medium",
+    "title": "Shopify Debut theme footer links broken — fix guide",
+    "focusKeyword": "Shopify Debut theme footer links broken",
+    "secondaryKeywords": [
+      "Debut theme footer fix",
+      "Shopify Debut footer broken links",
+      "fix Debut theme footer"
+    ],
+    "slug": "shopify-debut-theme-footer-links-broken-fix",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-30",
+    "pillar": 2,
+    "priority": "medium",
+    "title": "Shopify Debut theme mobile menu not opening — fix",
+    "focusKeyword": "Shopify Debut theme mobile menu not opening",
+    "secondaryKeywords": [
+      "Debut theme mobile menu fix",
+      "Shopify Debut hamburger menu broken",
+      "fix Debut mobile navigation"
+    ],
+    "slug": "shopify-debut-theme-mobile-menu-not-opening",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-27",
+    "pillar": 2,
+    "priority": "low",
+    "title": "Shopify Symmetry theme product variants not loading",
+    "focusKeyword": "Shopify Symmetry theme variants not loading",
+    "secondaryKeywords": [
+      "Symmetry theme variant fix",
+      "Shopify Symmetry variant broken",
+      "fix Symmetry theme product variants"
+    ],
+    "slug": "shopify-symmetry-theme-variants-not-loading",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-28",
+    "pillar": 2,
+    "priority": "low",
+    "title": "Shopify Prestige theme announcement bar not showing",
+    "focusKeyword": "Shopify Prestige theme announcement bar fix",
+    "secondaryKeywords": [
+      "Prestige theme announcement bar",
+      "fix Prestige announcement bar",
+      "Shopify Prestige top bar not showing"
+    ],
+    "slug": "shopify-prestige-theme-announcement-bar-fix",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p2-29",
+    "pillar": 2,
+    "priority": "low",
+    "title": "Shopify Impulse theme sale badge not showing — fix",
+    "focusKeyword": "Shopify Impulse theme sale badge not showing",
+    "secondaryKeywords": [
+      "Impulse theme sale badge fix",
+      "Shopify Impulse discount badge",
+      "fix Impulse theme badge"
+    ],
+    "slug": "shopify-impulse-theme-sale-badge-not-showing",
+    "pillarType": "problem-platform",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-01",
+    "pillar": 3,
+    "priority": "high",
+    "title": "Krish vs hiring a Shopify freelancer — full comparison",
+    "focusKeyword": "Krish vs Shopify freelancer",
+    "secondaryKeywords": [
+      "Shopify freelancer vs subscription",
+      "Krish Shopify service review",
+      "on-demand Shopify developer vs freelancer"
+    ],
+    "slug": "krish-vs-shopify-freelancer",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-02",
+    "pillar": 3,
+    "priority": "high",
+    "title": "Krish vs Storetasker — which is better for Shopify tasks",
+    "focusKeyword": "Krish vs Storetasker",
+    "secondaryKeywords": [
+      "Storetasker alternative",
+      "Storetasker vs on-demand Shopify",
+      "Krish Storetasker comparison"
+    ],
+    "slug": "krish-vs-storetasker",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-03",
+    "pillar": 3,
+    "priority": "high",
+    "title": "Krish vs a Shopify agency retainer — cost and speed breakdown",
+    "focusKeyword": "Krish vs Shopify agency retainer",
+    "secondaryKeywords": [
+      "Shopify agency vs subscription",
+      "Krish vs Shopify agency",
+      "agency retainer alternative Shopify"
+    ],
+    "slug": "krish-vs-shopify-agency-retainer",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-04",
+    "pillar": 3,
+    "priority": "high",
+    "title": "Krish vs hiring an in-house Shopify developer",
+    "focusKeyword": "Krish vs in-house Shopify developer",
+    "secondaryKeywords": [
+      "in-house Shopify developer vs service",
+      "hire Shopify developer vs subscription",
+      "Krish vs full-time Shopify dev"
+    ],
+    "slug": "krish-vs-in-house-shopify-developer",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-05",
+    "pillar": 3,
+    "priority": "high",
+    "title": "Storetasker alternative for unlimited Shopify tasks",
+    "focusKeyword": "Storetasker alternative unlimited tasks",
+    "secondaryKeywords": [
+      "Storetasker alternative 2026",
+      "unlimited Shopify tasks alternative",
+      "Storetasker competitor"
+    ],
+    "slug": "storetasker-alternative-unlimited-shopify-tasks",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-06",
+    "pillar": 3,
+    "priority": "high",
+    "title": "Shopify agency alternative for small and mid-size brands",
+    "focusKeyword": "Shopify agency alternative small brands",
+    "secondaryKeywords": [
+      "Shopify agency alternative DTC",
+      "small brand Shopify support alternative",
+      "Shopify partner alternative"
+    ],
+    "slug": "shopify-agency-alternative-small-brands",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-07",
+    "pillar": 3,
+    "priority": "high",
+    "title": "Best Shopify development services for DTC brands in 2026",
+    "focusKeyword": "best Shopify development service DTC brands",
+    "secondaryKeywords": [
+      "Shopify development service 2026",
+      "best Shopify dev service DTC",
+      "top Shopify development options"
+    ],
+    "slug": "best-shopify-development-services-dtc-brands-2026",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-08",
+    "pillar": 3,
+    "priority": "high",
+    "title": "Shopify freelancer vs subscription service — which is cheaper",
+    "focusKeyword": "Shopify freelancer vs subscription service cost",
+    "secondaryKeywords": [
+      "Shopify freelancer cost vs subscription",
+      "cheaper Shopify development option",
+      "Shopify freelance vs retainer cost"
+    ],
+    "slug": "shopify-freelancer-vs-subscription-service-cost",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-09",
+    "pillar": 3,
+    "priority": "high",
+    "title": "Shopify developer rates 2026 — freelancer vs agency vs subscription",
+    "focusKeyword": "Shopify developer rates 2026",
+    "secondaryKeywords": [
+      "how much Shopify developer charge 2026",
+      "Shopify dev hourly rate",
+      "Shopify agency cost 2026"
+    ],
+    "slug": "shopify-developer-rates-2026",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-10",
+    "pillar": 3,
+    "priority": "high",
+    "title": "How much does a Shopify agency cost vs a subscription service",
+    "focusKeyword": "Shopify agency cost vs subscription",
+    "secondaryKeywords": [
+      "Shopify agency monthly cost",
+      "Shopify agency retainer price",
+      "Shopify service vs agency cost"
+    ],
+    "slug": "shopify-agency-cost-vs-subscription",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-14",
+    "pillar": 3,
+    "priority": "high",
+    "title": "How to get Shopify help without hiring a full-time developer",
+    "focusKeyword": "Shopify help without hiring developer",
+    "secondaryKeywords": [
+      "Shopify help no developer",
+      "get Shopify tasks done without hiring",
+      "Shopify support without full-time dev"
+    ],
+    "slug": "shopify-help-without-hiring-developer",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-20",
+    "pillar": 3,
+    "priority": "high",
+    "title": "Should you hire a Shopify developer or use a service?",
+    "focusKeyword": "hire Shopify developer or use service",
+    "secondaryKeywords": [
+      "Shopify developer hire vs service",
+      "Shopify dev service decision",
+      "when to hire Shopify developer"
+    ],
+    "slug": "hire-shopify-developer-or-use-service",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-21",
+    "pillar": 3,
+    "priority": "high",
+    "title": "Shopify development subscription — is it worth it?",
+    "focusKeyword": "Shopify development subscription worth it",
+    "secondaryKeywords": [
+      "Shopify dev subscription review",
+      "is Shopify subscription service good",
+      "Shopify unlimited tasks worth it"
+    ],
+    "slug": "shopify-development-subscription-worth-it",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-28",
+    "pillar": 3,
+    "priority": "high",
+    "title": "Shopify developer subscription vs hourly billing — full breakdown",
+    "focusKeyword": "Shopify developer subscription vs hourly",
+    "secondaryKeywords": [
+      "Shopify dev hourly vs subscription",
+      "subscription vs hourly Shopify",
+      "Shopify flat rate vs hourly billing"
+    ],
+    "slug": "shopify-developer-subscription-vs-hourly-billing",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-11",
+    "pillar": 3,
+    "priority": "medium",
+    "title": "Upwork Shopify developer alternative — flat rate vs hourly",
+    "focusKeyword": "Upwork Shopify developer alternative",
+    "secondaryKeywords": [
+      "Upwork Shopify alternative",
+      "Shopify developer not Upwork",
+      "Upwork vs Shopify subscription"
+    ],
+    "slug": "upwork-shopify-developer-alternative",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-12",
+    "pillar": 3,
+    "priority": "medium",
+    "title": "Shopify Plus agency vs on-demand Shopify team",
+    "focusKeyword": "Shopify Plus agency vs on-demand team",
+    "secondaryKeywords": [
+      "Shopify Plus agency alternative",
+      "on-demand Shopify Plus support",
+      "Shopify Plus vs subscription"
+    ],
+    "slug": "shopify-plus-agency-vs-on-demand-team",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-13",
+    "pillar": 3,
+    "priority": "medium",
+    "title": "Codeable alternative for Shopify development",
+    "focusKeyword": "Codeable alternative Shopify development",
+    "secondaryKeywords": [
+      "Codeable vs Krish",
+      "Codeable Shopify alternative",
+      "alternative to Codeable for Shopify"
+    ],
+    "slug": "codeable-alternative-shopify-development",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-15",
+    "pillar": 3,
+    "priority": "medium",
+    "title": "Shopify maintenance plan — agency vs subscription comparison",
+    "focusKeyword": "Shopify maintenance plan comparison",
+    "secondaryKeywords": [
+      "Shopify maintenance plan options",
+      "Shopify ongoing support plan",
+      "Shopify retainer vs subscription"
+    ],
+    "slug": "shopify-maintenance-plan-comparison",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-16",
+    "pillar": 3,
+    "priority": "medium",
+    "title": "Is a Shopify retainer worth it for small brands?",
+    "focusKeyword": "Shopify retainer worth it small brand",
+    "secondaryKeywords": [
+      "Shopify agency retainer small brand",
+      "worth paying Shopify retainer",
+      "Shopify retainer vs on-demand"
+    ],
+    "slug": "shopify-retainer-worth-it-small-brands",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-17",
+    "pillar": 3,
+    "priority": "medium",
+    "title": "Best Shopify support plans for growing brands",
+    "focusKeyword": "Shopify support plan growing brand",
+    "secondaryKeywords": [
+      "Shopify growth support plan",
+      "ongoing Shopify help growing store",
+      "Shopify brand support options"
+    ],
+    "slug": "best-shopify-support-plans-growing-brands",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-18",
+    "pillar": 3,
+    "priority": "medium",
+    "title": "Shopify Partner agency vs dedicated Shopify team",
+    "focusKeyword": "Shopify Partner agency vs dedicated team",
+    "secondaryKeywords": [
+      "Shopify Partner vs subscription",
+      "Shopify certified agency alternative",
+      "Shopify Partner alternative"
+    ],
+    "slug": "shopify-partner-agency-vs-dedicated-team",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-19",
+    "pillar": 3,
+    "priority": "medium",
+    "title": "Fiverr Shopify developer vs professional Shopify service",
+    "focusKeyword": "Fiverr Shopify developer alternative",
+    "secondaryKeywords": [
+      "Fiverr Shopify alternative",
+      "professional Shopify dev vs Fiverr",
+      "Fiverr vs Shopify service"
+    ],
+    "slug": "fiverr-shopify-developer-vs-professional-service",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-22",
+    "pillar": 3,
+    "priority": "medium",
+    "title": "Ongoing Shopify support — best options for DTC brands",
+    "focusKeyword": "ongoing Shopify support DTC brand",
+    "secondaryKeywords": [
+      "ongoing Shopify help DTC",
+      "continuous Shopify support options",
+      "Shopify support plan DTC brand"
+    ],
+    "slug": "ongoing-shopify-support-dtc-brands",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-23",
+    "pillar": 3,
+    "priority": "medium",
+    "title": "Shopify task management — agency vs in-house vs service",
+    "focusKeyword": "Shopify task management options",
+    "secondaryKeywords": [
+      "manage Shopify dev tasks",
+      "Shopify task backlog options",
+      "Shopify task management service"
+    ],
+    "slug": "shopify-task-management-agency-vs-service",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-24",
+    "pillar": 3,
+    "priority": "medium",
+    "title": "Best alternative to Shopify agency for fast execution",
+    "focusKeyword": "best Shopify agency alternative fast",
+    "secondaryKeywords": [
+      "fast Shopify development alternative",
+      "Shopify agency alternative fast turnaround",
+      "quick Shopify execution service"
+    ],
+    "slug": "best-shopify-agency-alternative-fast-execution",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-25",
+    "pillar": 3,
+    "priority": "medium",
+    "title": "On-demand Shopify developer vs project-based freelancer",
+    "focusKeyword": "on-demand Shopify developer vs freelancer",
+    "secondaryKeywords": [
+      "on-demand vs project Shopify dev",
+      "Shopify on-demand developer",
+      "project vs subscription Shopify dev"
+    ],
+    "slug": "on-demand-shopify-developer-vs-freelancer",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-26",
+    "pillar": 3,
+    "priority": "medium",
+    "title": "Shopify unlimited tasks service — how does it work?",
+    "focusKeyword": "Shopify unlimited tasks service",
+    "secondaryKeywords": [
+      "unlimited Shopify tasks explained",
+      "how Shopify subscription works",
+      "Shopify unlimited dev service"
+    ],
+    "slug": "shopify-unlimited-tasks-service-how-it-works",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-27",
+    "pillar": 3,
+    "priority": "medium",
+    "title": "Why Shopify brands switch from agencies to subscriptions",
+    "focusKeyword": "why switch from Shopify agency to subscription",
+    "secondaryKeywords": [
+      "leaving Shopify agency for subscription",
+      "Shopify agency to subscription switch",
+      "why brands leave Shopify agencies"
+    ],
+    "slug": "why-shopify-brands-switch-agency-to-subscription",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-29",
+    "pillar": 3,
+    "priority": "low",
+    "title": "Toptal Shopify developer alternative — cost comparison",
+    "focusKeyword": "Toptal Shopify developer alternative",
+    "secondaryKeywords": [
+      "Toptal vs Krish Shopify",
+      "Toptal alternative Shopify",
+      "Toptal Shopify developer cost"
+    ],
+    "slug": "toptal-shopify-developer-alternative",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p3-30",
+    "pillar": 3,
+    "priority": "low",
+    "title": "Shopify development for bootstrapped DTC brands — best approach",
+    "focusKeyword": "Shopify development bootstrapped brand",
+    "secondaryKeywords": [
+      "bootstrapped Shopify dev options",
+      "budget Shopify development",
+      "cheap Shopify development approach"
+    ],
+    "slug": "shopify-development-bootstrapped-dtc-brands",
+    "pillarType": "alternative-comparison",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-01",
+    "pillar": 4,
+    "priority": "high",
+    "title": "How much does Shopify development cost in 2026?",
+    "focusKeyword": "how much does Shopify development cost",
+    "secondaryKeywords": [
+      "Shopify development pricing 2026",
+      "Shopify dev cost breakdown",
+      "Shopify development rates"
+    ],
+    "slug": "how-much-does-shopify-development-cost-2026",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-02",
+    "pillar": 4,
+    "priority": "high",
+    "title": "How much does a Shopify theme customization cost?",
+    "focusKeyword": "Shopify theme customization cost",
+    "secondaryKeywords": [
+      "Shopify theme customization pricing",
+      "cost to customize Shopify theme",
+      "Shopify theme edit cost"
+    ],
+    "slug": "shopify-theme-customization-cost",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-03",
+    "pillar": 4,
+    "priority": "high",
+    "title": "How to change your Shopify theme without losing data",
+    "focusKeyword": "how to change Shopify theme without losing data",
+    "secondaryKeywords": [
+      "change Shopify theme safely",
+      "Shopify theme migration",
+      "switch Shopify theme without data loss"
+    ],
+    "slug": "how-to-change-shopify-theme-without-losing-data",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-04",
+    "pillar": 4,
+    "priority": "high",
+    "title": "How to fix Shopify page speed — step by step guide",
+    "focusKeyword": "how to fix Shopify page speed",
+    "secondaryKeywords": [
+      "improve Shopify page speed",
+      "Shopify speed fix guide",
+      "Shopify LCP fix step by step"
+    ],
+    "slug": "how-to-fix-shopify-page-speed",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-05",
+    "pillar": 4,
+    "priority": "high",
+    "title": "How much does a Shopify developer cost per month?",
+    "focusKeyword": "Shopify developer cost per month",
+    "secondaryKeywords": [
+      "monthly Shopify developer cost",
+      "Shopify dev monthly rate",
+      "ongoing Shopify developer pricing"
+    ],
+    "slug": "shopify-developer-cost-per-month",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-06",
+    "pillar": 4,
+    "priority": "high",
+    "title": "How to customize a Shopify product page without code",
+    "focusKeyword": "customize Shopify product page without code",
+    "secondaryKeywords": [
+      "Shopify product page no code",
+      "Shopify PDP customization no developer",
+      "Shopify product page editor"
+    ],
+    "slug": "how-to-customize-shopify-product-page-without-code",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-07",
+    "pillar": 4,
+    "priority": "high",
+    "title": "How to add a custom section to a Shopify theme",
+    "focusKeyword": "how to add custom section Shopify theme",
+    "secondaryKeywords": [
+      "Shopify custom section Liquid",
+      "add section Shopify OS 2.0",
+      "Shopify theme custom block"
+    ],
+    "slug": "how-to-add-custom-section-shopify-theme",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-08",
+    "pillar": 4,
+    "priority": "high",
+    "title": "How to fix Shopify mobile layout issues",
+    "focusKeyword": "how to fix Shopify mobile layout",
+    "secondaryKeywords": [
+      "Shopify mobile layout fix guide",
+      "fix Shopify responsive design",
+      "Shopify mobile CSS fix"
+    ],
+    "slug": "how-to-fix-shopify-mobile-layout",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-09",
+    "pillar": 4,
+    "priority": "high",
+    "title": "How to improve Shopify Core Web Vitals score",
+    "focusKeyword": "improve Shopify Core Web Vitals",
+    "secondaryKeywords": [
+      "Shopify Core Web Vitals fix",
+      "Shopify CWV improvement",
+      "Shopify LCP CLS FID fix"
+    ],
+    "slug": "how-to-improve-shopify-core-web-vitals",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-10",
+    "pillar": 4,
+    "priority": "high",
+    "title": "How much does Shopify speed optimization cost?",
+    "focusKeyword": "Shopify speed optimization cost",
+    "secondaryKeywords": [
+      "cost of Shopify speed fix",
+      "Shopify page speed service price",
+      "Shopify speed optimization pricing"
+    ],
+    "slug": "shopify-speed-optimization-cost",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-11",
+    "pillar": 4,
+    "priority": "high",
+    "title": "How to fix a broken Shopify checkout",
+    "focusKeyword": "how to fix broken Shopify checkout",
+    "secondaryKeywords": [
+      "Shopify checkout fix guide",
+      "broken Shopify checkout repair",
+      "Shopify checkout not working fix"
+    ],
+    "slug": "how-to-fix-broken-shopify-checkout",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-12",
+    "pillar": 4,
+    "priority": "high",
+    "title": "How much does Shopify product page customization cost?",
+    "focusKeyword": "Shopify product page customization cost",
+    "secondaryKeywords": [
+      "cost to customize Shopify PDP",
+      "Shopify product page custom pricing",
+      "Shopify PDP build cost"
+    ],
+    "slug": "shopify-product-page-customization-cost",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-13",
+    "pillar": 4,
+    "priority": "high",
+    "title": "What is Shopify Liquid and why does it matter?",
+    "focusKeyword": "what is Shopify Liquid",
+    "secondaryKeywords": [
+      "Shopify Liquid explained",
+      "Shopify Liquid template language",
+      "Liquid Shopify developer"
+    ],
+    "slug": "what-is-shopify-liquid",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-14",
+    "pillar": 4,
+    "priority": "high",
+    "title": "How to get Shopify development done faster — practical guide",
+    "focusKeyword": "how to get Shopify development done faster",
+    "secondaryKeywords": [
+      "speed up Shopify development",
+      "faster Shopify task completion",
+      "Shopify dev turnaround time"
+    ],
+    "slug": "how-to-get-shopify-development-done-faster",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-15",
+    "pillar": 4,
+    "priority": "high",
+    "title": "What does a Shopify developer do — and do you need one?",
+    "focusKeyword": "what does a Shopify developer do",
+    "secondaryKeywords": [
+      "Shopify developer role",
+      "do I need a Shopify developer",
+      "what Shopify developer builds"
+    ],
+    "slug": "what-does-a-shopify-developer-do",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-16",
+    "pillar": 4,
+    "priority": "high",
+    "title": "How to outsource Shopify development tasks effectively",
+    "focusKeyword": "how to outsource Shopify development",
+    "secondaryKeywords": [
+      "outsource Shopify tasks",
+      "Shopify development outsourcing guide",
+      "delegate Shopify dev work"
+    ],
+    "slug": "how-to-outsource-shopify-development",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-17",
+    "pillar": 4,
+    "priority": "high",
+    "title": "How to audit your Shopify store for performance issues",
+    "focusKeyword": "Shopify store performance audit",
+    "secondaryKeywords": [
+      "Shopify performance audit guide",
+      "audit Shopify store speed",
+      "Shopify store health check"
+    ],
+    "slug": "shopify-store-performance-audit",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-24",
+    "pillar": 4,
+    "priority": "high",
+    "title": "How to make Shopify images load faster",
+    "focusKeyword": "how to make Shopify images load faster",
+    "secondaryKeywords": [
+      "Shopify image speed fix",
+      "Shopify image optimization guide",
+      "speed up Shopify product images"
+    ],
+    "slug": "how-to-make-shopify-images-load-faster",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-18",
+    "pillar": 4,
+    "priority": "medium",
+    "title": "How to set up Shopify discount codes for a promotion",
+    "focusKeyword": "how to set up Shopify discount codes",
+    "secondaryKeywords": [
+      "Shopify discount code setup",
+      "create Shopify promo code",
+      "Shopify coupon code guide"
+    ],
+    "slug": "how-to-set-up-shopify-discount-codes",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-19",
+    "pillar": 4,
+    "priority": "medium",
+    "title": "How long does Shopify development take?",
+    "focusKeyword": "how long does Shopify development take",
+    "secondaryKeywords": [
+      "Shopify development timeline",
+      "how fast Shopify dev",
+      "Shopify task turnaround time"
+    ],
+    "slug": "how-long-does-shopify-development-take",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-20",
+    "pillar": 4,
+    "priority": "medium",
+    "title": "How to update your Shopify homepage for a campaign",
+    "focusKeyword": "how to update Shopify homepage campaign",
+    "secondaryKeywords": [
+      "update Shopify homepage campaign",
+      "Shopify homepage banner campaign",
+      "Shopify campaign homepage update"
+    ],
+    "slug": "how-to-update-shopify-homepage-campaign",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-21",
+    "pillar": 4,
+    "priority": "medium",
+    "title": "How to add metafields to Shopify product pages",
+    "focusKeyword": "how to add metafields Shopify product page",
+    "secondaryKeywords": [
+      "Shopify metafield product page guide",
+      "add custom data Shopify product",
+      "Shopify metafield setup"
+    ],
+    "slug": "how-to-add-metafields-shopify-product-pages",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-22",
+    "pillar": 4,
+    "priority": "medium",
+    "title": "How to reduce Shopify app bloat and improve performance",
+    "focusKeyword": "reduce Shopify app bloat performance",
+    "secondaryKeywords": [
+      "Shopify app bloat fix",
+      "remove Shopify apps performance",
+      "Shopify app performance cleanup"
+    ],
+    "slug": "how-to-reduce-shopify-app-bloat",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-23",
+    "pillar": 4,
+    "priority": "medium",
+    "title": "How to set up a Shopify flash sale — step by step",
+    "focusKeyword": "how to set up Shopify flash sale",
+    "secondaryKeywords": [
+      "Shopify flash sale setup guide",
+      "run Shopify flash sale",
+      "Shopify sale event setup"
+    ],
+    "slug": "how-to-set-up-shopify-flash-sale",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-25",
+    "pillar": 4,
+    "priority": "medium",
+    "title": "How to brief a Shopify developer (and what goes wrong)",
+    "focusKeyword": "how to brief Shopify developer",
+    "secondaryKeywords": [
+      "writing Shopify dev brief",
+      "Shopify developer brief guide",
+      "how to write Shopify task brief"
+    ],
+    "slug": "how-to-brief-shopify-developer",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-26",
+    "pillar": 4,
+    "priority": "medium",
+    "title": "How to track Shopify task progress without a project manager",
+    "focusKeyword": "track Shopify development tasks",
+    "secondaryKeywords": [
+      "Shopify task tracking",
+      "manage Shopify dev without PM",
+      "Shopify project tracking no PM"
+    ],
+    "slug": "how-to-track-shopify-task-progress",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-27",
+    "pillar": 4,
+    "priority": "medium",
+    "title": "How to prioritize a Shopify backlog effectively",
+    "focusKeyword": "how to prioritize Shopify backlog",
+    "secondaryKeywords": [
+      "Shopify backlog prioritization",
+      "Shopify task backlog management",
+      "prioritize Shopify dev work"
+    ],
+    "slug": "how-to-prioritize-shopify-backlog",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-28",
+    "pillar": 4,
+    "priority": "medium",
+    "title": "How much does fixing a Shopify bug cost?",
+    "focusKeyword": "how much does fixing Shopify bug cost",
+    "secondaryKeywords": [
+      "Shopify bug fix pricing",
+      "cost of Shopify bug repair",
+      "Shopify bug fix cost"
+    ],
+    "slug": "shopify-bug-fix-cost",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-29",
+    "pillar": 4,
+    "priority": "medium",
+    "title": "How to launch a Shopify promotion without a developer",
+    "focusKeyword": "launch Shopify promotion without developer",
+    "secondaryKeywords": [
+      "Shopify promotion no developer",
+      "run Shopify promo without dev",
+      "Shopify promotion self-serve"
+    ],
+    "slug": "how-to-launch-shopify-promotion-without-developer",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  },
+  {
+    "id": "p4-30",
+    "pillar": 4,
+    "priority": "medium",
+    "title": "How to test Shopify changes before going live",
+    "focusKeyword": "how to test Shopify changes before going live",
+    "secondaryKeywords": [
+      "Shopify theme preview test",
+      "test Shopify before publishing",
+      "Shopify staging test"
+    ],
+    "slug": "how-to-test-shopify-changes-before-going-live",
+    "pillarType": "cost-howto",
+    "status": "pending",
+    "lastRun": null,
+    "outputPath": null
+  }
+]

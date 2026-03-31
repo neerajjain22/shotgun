@@ -84,7 +84,7 @@ export const navigation = {
       label: "Resources",
       href: "/resources",
       pages: [
-        { label: "Blog", href: "/resources/blog" },
+        { label: "Blog", href: "/blog" },
         { label: "Use Cases", href: "/use-cases" },
         { label: "Documentation", href: "/resources/docs" }
       ]
@@ -94,7 +94,8 @@ export const navigation = {
     product: [
       { label: "How Krish. Works", href: "/product/how-krish-works" },
       { label: "What Krish. Can Do", href: "/product/what-krish-can-do" },
-      { label: "Pricing", href: "/product/pricing" }
+      { label: "Pricing", href: "/product/pricing" },
+      { label: "Blog", href: "/blog" }
     ],
     useCases: [
       { label: "Theme Changes", href: "/use-cases/shopify-theme-changes" },
@@ -107,7 +108,7 @@ export const navigation = {
     ],
     resources: [
       { label: "Guides", href: "/guides" },
-      { label: "Blog", href: "/resources/blog" },
+      { label: "Blog", href: "/blog" },
       { label: "Use Cases", href: "/use-cases" }
     ],
     company: [

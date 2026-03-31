@@ -101,6 +101,15 @@ Primary subpages:
 Purpose:
 - Group editorial, proof, and product education content in one discoverable cluster.
 
+### Blog
+Hub: `/blog`
+
+Subpages:
+- `/blog/[slug]`
+
+Purpose:
+- Publish long-form SEO articles generated from the content pipeline and rendered as static pages.
+
 ## Navigation System
 Source of truth:
 - `config/navigation.ts`
@@ -116,6 +125,7 @@ Key objects:
 Route implementation pattern:
 - Hub pages use static routes (for example `/use-cases`).
 - Subpages are rendered from dynamic route segments (for example `/use-cases/[slug]`) backed by content maps.
+- Blog subpages are rendered from Markdown files in `content/blog`.
 
 This enables consistent navigation rendering and internal linking across templates.
 

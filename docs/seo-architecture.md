@@ -74,13 +74,13 @@ Central builder:
 Includes:
 - Homepage
 - Core static pages
-- Future blog entries
+- Blog entries from `content/blog/*.md`
 - Future guide entries
 
 Dynamic extension pattern:
 - `buildSitemap` accepts optional `blogEntries` and `guideEntries` inputs.
-- Until content integration is added, fallback providers return empty arrays.
-- When blog/guides content sources are implemented, connect them to these inputs or replace fallback providers.
+- `app/sitemap.ts` injects `blogEntries` from `lib/blog-content.ts`.
+- `guideEntries` remain optional extension input for future guide content sources.
 
 ## Robots Configuration
 Central builder:

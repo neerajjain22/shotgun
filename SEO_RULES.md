@@ -3,9 +3,8 @@
 ## Purpose
 Defines non-negotiable SEO standards for all Krish. website pages and content additions.
 
-## Copywriting Source Of Truth
-For writing style, ICP alignment, and page messaging standards, follow:
-- `docs/seo-copywriting-guidelines.md`
+## Copywriting Standard
+Use direct, practical language for Shopify operators and founders. Favor clarity over cleverness.
 
 ## Metadata Rules
 - Every indexable page must define metadata via shared helper (`createPageMetadata`).
@@ -60,4 +59,4 @@ Any new route/content template should include an SEO checklist in implementation
 4. Internal links added
 5. Structured data considered
 6. Sitemap/robots impact reviewed
-7. Copy reviewed against `docs/seo-copywriting-guidelines.md`
+7. Copy reviewed for clarity, intent-match, and ICP relevance

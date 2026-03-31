@@ -1,0 +1,16 @@
+{
+  "name": "heykrish-content",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node article-generator.js",
+    "run-once": "node article-generator.js --once",
+    "status": "node article-generator.js --status"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "latest",
+    "dotenv": "latest",
+    "node-cron": "latest"
+  }
+}

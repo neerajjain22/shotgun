@@ -39,7 +39,8 @@ function mapContentEntries(basePath: "/blog" | "/guides", entries: ContentEntry[
 }
 
 function getFutureBlogEntries(): ContentEntry[] {
-  // Replace with content source integration when blog content is added.
+  // Blog entries can be injected from app/sitemap.ts via BuildSitemapInput.
+  // This fallback keeps the helper safe when no source is provided.
   return [];
 }
 

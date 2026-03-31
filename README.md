@@ -26,6 +26,7 @@ This repository is intentionally scaffolded for long-term SEO content growth and
 - `config/`: Site constants, navigation, global metadata defaults
 - `scripts/`: Dev tooling/automation scripts
 - `types/`: Shared TypeScript types
+- `heykrish-content/`: Automated SEO article generation workspace
 
 ## Coding Conventions
 

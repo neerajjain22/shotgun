@@ -29,6 +29,7 @@ Routing strategy:
   - `app/guides/[slug]/page.tsx`
   - `app/compare/[slug]/page.tsx`
   - `app/resources/[slug]/page.tsx`
+  - `app/blog/[slug]/page.tsx`
 - Route names use kebab-case.
 
 ## Component Hierarchy
@@ -77,6 +78,7 @@ Rules:
 ## Content Strategy Foundation
 - `content/site-content.ts` is the source of truth for page copy and section composition across hubs and dynamic subpages.
 - Route files should read page definitions from content maps rather than duplicating copy inline.
+- Long-form blog posts are stored as Markdown files in `content/blog/*.md` with JSON frontmatter and rendered by `/blog/[slug]`.
 - Content model types are defined in `types/marketing-page.ts`.
 - `MarketingPageTemplate` renders a fixed section order to keep page narrative and CTA flow consistent across hubs.
 - CTA wording and response-time microcopy should use `config/cta.ts` values for buyer-intent pages.

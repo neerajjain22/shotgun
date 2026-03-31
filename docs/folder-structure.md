@@ -15,6 +15,7 @@ Documents the repository layout and ownership boundaries for scalable implementa
 - `config/`: centralized site config
 - `scripts/`: development automation scripts
 - `types/`: shared TypeScript definitions
+- `heykrish-content/`: Node.js article-generation workspace (queue, prompts, scheduler runner)
 - `docs/`: long-form project documentation
 
 ## App Directory Guidelines
@@ -37,6 +38,7 @@ Recommended grouping:
 ## Ownership Rules
 - Avoid duplicating helper logic across route files.
 - Keep marketing page copy in `content/site-content.ts` (single source of truth).
+- Keep published blog articles in `content/blog/*.md` (JSON frontmatter + Markdown body).
 - Promote reused logic to `lib/`, `config/`, `seo/`, or `types/`.
 - Keep folder responsibilities stable over time.
 
