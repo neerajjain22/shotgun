@@ -1,0 +1,391 @@
+.section {
+  padding: clamp(4rem, 8vw, 6.5rem) 1.5rem;
+}
+
+.container {
+  width: min(100%, 76rem);
+  margin: 0 auto;
+  display: grid;
+  gap: 1.4rem;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: clamp(2.1rem, 6vw, 3.4rem);
+  letter-spacing: -0.03em;
+}
+
+.header p {
+  margin: 0.85rem 0 0;
+  max-width: 46rem;
+  color: var(--color-muted);
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--color-muted);
+}
+
+.inputCard,
+.summaryCard,
+.progressCard,
+.sectionBlock,
+.nextSteps {
+  border: 1px solid var(--color-neutral-200);
+  border-radius: 1.5rem;
+  background: #fff;
+  padding: 1.2rem;
+}
+
+.inputForm {
+  display: grid;
+  gap: 1rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.field label {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.tierSelector {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.tierOption {
+  display: grid;
+  gap: 0.2rem;
+  border: 1px solid var(--color-neutral-200);
+  border-radius: 0.85rem;
+  padding: 0.78rem 0.9rem;
+  background: #fff;
+}
+
+.tierOption input {
+  margin: 0 0 0.35rem;
+}
+
+.tierOptionActive {
+  border-color: var(--color-neutral-900);
+  box-shadow: inset 0 0 0 1px var(--color-neutral-900);
+}
+
+.tierOptionDisabled {
+  opacity: 0.72;
+  cursor: pointer;
+}
+
+.tierOptionDisabled:focus-visible {
+  outline: 2px solid rgba(16, 185, 129, 0.28);
+  outline-offset: 2px;
+}
+
+.tierTitle {
+  font-weight: 700;
+  color: #111827;
+  font-size: 0.92rem;
+}
+
+.tierMeta {
+  font-size: 0.8rem;
+  color: #52525b;
+  font-weight: 600;
+}
+
+.tierDescription {
+  margin-top: 0.25rem;
+  color: #52525b;
+  font-size: 0.82rem;
+}
+
+.field input,
+.field select,
+.emailRow input {
+  width: 100%;
+  border: 1px solid var(--color-neutral-200);
+  border-radius: 0.8rem;
+  padding: 0.72rem 0.85rem;
+  font: inherit;
+  background: #fff;
+}
+
+.field input:focus-visible,
+.field select:focus-visible,
+.emailRow input:focus-visible {
+  outline: 2px solid rgba(16, 185, 129, 0.28);
+  outline-offset: 1px;
+  border-color: var(--color-execution);
+}
+
+.inputActions {
+  display: flex;
+}
+
+.progressCard h2,
+.summaryCard h2,
+.sectionBlock h2,
+.nextSteps h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.progressLabel {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.progressCard ul {
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.progressCard li {
+  color: #71717a;
+}
+
+.progressActive {
+  color: #0f172a !important;
+  font-weight: 600;
+}
+
+.results {
+  display: grid;
+  gap: 1rem;
+}
+
+.summaryCard p {
+  margin: 0.7rem 0 0;
+}
+
+.metaText {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.sectionBlock > p,
+.nextSteps > p {
+  margin: 0.65rem 0 0.9rem;
+  color: var(--color-muted);
+}
+
+.cardGrid {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.findingsList {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: #27272a;
+  display: grid;
+  gap: 0.42rem;
+  font-size: 0.92rem;
+}
+
+.recommendationCard {
+  border: 1px solid var(--color-neutral-200);
+  border-radius: 1rem;
+  padding: 1rem;
+  background: #fff;
+  display: grid;
+  gap: 0.68rem;
+}
+
+.lockedCard {
+  opacity: 0.6;
+}
+
+.cardTop {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.cardTop h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.26rem 0.58rem;
+  font-size: 0.74rem;
+  font-weight: 600;
+}
+
+.pillHigh {
+  color: #065f46;
+  background: #d1fae5;
+}
+
+.pillMed {
+  color: #92400e;
+  background: #fef3c7;
+}
+
+.pillLow {
+  color: #1e40af;
+  background: #dbeafe;
+}
+
+.pillNeutral {
+  color: #1f2937;
+  background: #f3f4f6;
+}
+
+.cardParagraph {
+  margin: 0;
+  color: #18181b;
+  font-size: 0.95rem;
+}
+
+.cardParagraph strong {
+  color: #09090b;
+}
+
+.promptBlock {
+  border-radius: 0.85rem;
+  border: 1px dashed #d4d4d8;
+  background: #fafafa;
+  padding: 0.75rem;
+}
+
+.promptLabel {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #3f3f46;
+}
+
+.promptBlock pre {
+  margin: 0.5rem 0 0;
+  font-family:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+    monospace;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: 0.82rem;
+  color: #18181b;
+}
+
+.cardActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.inlineAction,
+.primaryAction,
+.secondaryAction,
+.emailRow button {
+  border-radius: 999px;
+  border: 1px solid var(--color-neutral-200);
+  padding: 0.52rem 0.9rem;
+  font-weight: 600;
+  font-size: 0.86rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 160ms ease;
+}
+
+.inlineAction {
+  background: #fff;
+  color: #111827;
+}
+
+.inlineAction:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.primaryAction,
+.emailRow button {
+  background: var(--color-neutral-900);
+  color: #fff;
+  border-color: var(--color-neutral-900);
+}
+
+.secondaryAction {
+  background: #fff;
+  color: #111827;
+}
+
+.inlineAction:hover,
+.primaryAction:hover,
+.secondaryAction:hover,
+.emailRow button:hover {
+  transform: translateY(-1px);
+}
+
+.nextActions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.emailForm {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.emailForm label {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.emailRow {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.55rem;
+}
+
+.errorText {
+  margin: 0;
+  color: #b91c1c;
+  font-size: 0.86rem;
+}
+
+.successText {
+  margin: 0.55rem 0 0;
+  color: #065f46;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+  .emailRow {
+    grid-template-columns: 1fr;
+  }
+
+  .primaryAction,
+  .secondaryAction,
+  .emailRow button {
+    width: 100%;
+  }
+}

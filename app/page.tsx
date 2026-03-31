@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "Get help with Shopify theme changes, product page updates, bug fixes, and other Shopify development tasks without hiring or managing developers.",
   alternates: {
-    canonical: "/"
+    canonical: "/",
   },
   openGraph: {
     type: "website",
@@ -18,14 +18,14 @@ export const metadata: Metadata = {
     url: siteConfig.url,
     title: "Shopify development help for small tasks | Krish.",
     description:
-      "Get help with Shopify theme changes, product page updates, bug fixes, and other Shopify development tasks without hiring or managing developers."
+      "Get help with Shopify theme changes, product page updates, bug fixes, and other Shopify development tasks without hiring or managing developers.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Shopify development help for small tasks | Krish.",
     description:
-      "Get help with Shopify theme changes, product page updates, bug fixes, and other Shopify development tasks without hiring or managing developers."
-  }
+      "Get help with Shopify theme changes, product page updates, bug fixes, and other Shopify development tasks without hiring or managing developers.",
+  },
 };
 
 export default function HomePage() {
@@ -39,8 +39,8 @@ export default function HomePage() {
             you will ever need.
           </h1>
           <p className={styles.heroSubtitle}>
-            Stop chasing freelancers and managing scattered workflows. Send Shopify requests in one chat and
-            get execution completed with AI systems plus experienced developers.
+            Stop chasing freelancers and managing scattered workflows. Send Shopify requests in one
+            chat and get execution completed with AI systems plus experienced developers.
           </p>
 
           <div className={styles.chatCard}>
@@ -66,8 +66,8 @@ export default function HomePage() {
               <div className={`${styles.message} ${styles.agentMessage} ${styles.agentOne}`}>
                 <span className={styles.agentPulse} />
                 <p>
-                  Done. The page is live, mobile-optimized, and tracking pixels are configured for your ad
-                  campaigns.
+                  Done. The page is live, mobile-optimized, and tracking pixels are configured for
+                  your ad campaigns.
                 </p>
               </div>
 
@@ -83,7 +83,9 @@ export default function HomePage() {
 
               <div className={`${styles.message} ${styles.agentMessage} ${styles.agentTwo}`}>
                 <span className={styles.agentPulse} />
-                <p>Updated all products. Discount badges are now visible and synced with your theme.</p>
+                <p>
+                  Updated all products. Discount badges are now visible and synced with your theme.
+                </p>
               </div>
             </div>
 
@@ -116,15 +118,17 @@ export default function HomePage() {
           <div>
             <h2 className={styles.sectionTitleLight}>The Shopify execution bottleneck.</h2>
             <p className={styles.sectionBodyLight}>
-              Your team knows what to change, but execution gets stuck. Briefs, follow-ups, and QA loops
-              slow every launch. Small tasks pile up while revenue-impacting work waits.
+              Your team knows what to change, but execution gets stuck. Briefs, follow-ups, and QA
+              loops slow every launch. Small tasks pile up while revenue-impacting work waits.
             </p>
           </div>
 
           <div className={styles.metricStack}>
             <article className={styles.metricBlockDanger}>
               <p className={styles.metricValue}>10+ tasks</p>
-              <p className={styles.metricDescription}>usually waiting in the average Shopify backlog.</p>
+              <p className={styles.metricDescription}>
+                usually waiting in the average Shopify backlog.
+              </p>
             </article>
             <article className={styles.metricBlockMuted}>
               <p className={styles.metricValue}>100+ hrs/month</p>
@@ -179,7 +183,8 @@ export default function HomePage() {
         <div className={styles.sectionIntro}>
           <h2 className={styles.sectionTitle}>The old way is broken.</h2>
           <p className={styles.sectionBody}>
-            Compare fragmented agency delivery with a single execution workspace built for Shopify teams.
+            Compare fragmented agency delivery with a single execution workspace built for Shopify
+            teams.
           </p>
         </div>
 
@@ -215,10 +220,25 @@ export default function HomePage() {
               </li>
               <li>
                 <strong>Lower overhead</strong>
-                <span>Build needed functionality directly into your store with less tool sprawl.</span>
+                <span>
+                  Build needed functionality directly into your store with less tool sprawl.
+                </span>
               </li>
             </ul>
           </article>
+        </div>
+      </section>
+
+      <section className={styles.analyzeSection}>
+        <div className={styles.analyzeCard}>
+          <h2>Analyze My Website</h2>
+          <p className={styles.analyzeSubtitle}>
+            Share your store URL and get a 10-minute action plan focused on conversion bottlenecks
+            and quick wins.
+          </p>
+          <Link className={styles.analyzeButton} href="/analyze">
+            Analyze My Website
+          </Link>
         </div>
       </section>
 
