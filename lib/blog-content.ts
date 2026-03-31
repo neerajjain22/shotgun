@@ -2,6 +2,12 @@ import fs from "node:fs";
 import path from "node:path";
 
 export type BlogPostFrontmatter = {
+  author?: {
+    name: string;
+    role: string;
+    linkedin: string;
+    avatar?: string;
+  };
   title: string;
   seoTitle?: string;
   description: string;
@@ -100,7 +106,9 @@ function extractFrontmatter(raw: string): { frontmatter: BlogPostFrontmatter; bo
 
 function sortByPublishedDateDesc(posts: BlogPost[]): BlogPost[] {
   return [...posts].sort((a, b) => {
-    return new Date(b.frontmatter.publishedAt).getTime() - new Date(a.frontmatter.publishedAt).getTime();
+    return (
+      new Date(b.frontmatter.publishedAt).getTime() - new Date(a.frontmatter.publishedAt).getTime()
+    );
   });
 }
 
@@ -119,11 +127,11 @@ function readBlogPostsFromDisk(): BlogPost[] {
     return {
       frontmatter: {
         ...frontmatter,
-        slug: frontmatter.slug || fileName.replace(/\.md$/, "")
+        slug: frontmatter.slug || fileName.replace(/\.md$/, ""),
       },
       content: body,
       readTimeMinutes: estimateReadTimeMinutes(body),
-      sectionHeadings: extractSectionHeadings(body)
+      sectionHeadings: extractSectionHeadings(body),
     };
   });
 
@@ -142,6 +150,6 @@ export function getBlogPostBySlug(slug: string): BlogPost | null {
 export function getBlogSitemapEntries(): SitemapBlogEntry[] {
   return readBlogPostsFromDisk().map((post) => ({
     slug: post.frontmatter.slug,
-    updatedAt: post.frontmatter.updatedAt ?? post.frontmatter.publishedAt
+    updatedAt: post.frontmatter.updatedAt ?? post.frontmatter.publishedAt,
   }));
 }

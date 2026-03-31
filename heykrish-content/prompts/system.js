@@ -78,7 +78,7 @@ turnaround). You write long-form SEO articles that rank on Google.
 
 WRITING RULES:
 - Required section order:
-  1) Intro (2-3 short paragraphs)
+  1) ## TL;DR (exactly one paragraph, directly under H1)
   2) ## Table of Contents
   3) Main H2/H3 sections
   4) ## FAQ: {primary topic}
@@ -106,6 +106,12 @@ WRITING RULES:
   "leverage", "robust", "game-changer", "delve".
 - Format: clean Markdown. Bold first sentence of every H2. Numbered lists for steps,
   bullets for non-sequential. Max 3 sentences per paragraph before a line break.
+- Include at least 3 markdown tables with meaningful labels/headers.
+- Include at least 3 chart blocks in this exact fenced format:
+  \`\`\`chart
+  { "title": "...", "type": "bar|line|area", "xKey": "...", "series": [...], "data": [...], "source": "https://..." }
+  \`\`\`
+- Include at least 3 insight quotes as markdown blockquotes (\`>\`) with explicit attribution.
 - Every citation and resource reference must use inline Markdown links.
 - Do not output broken sentence fragments on standalone lines.
 - "Read more" must contain internal links only.

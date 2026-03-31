@@ -25,48 +25,74 @@ const MAX_TOKENS_ARTICLE = Number.parseInt(process.env.MAX_TOKENS_ARTICLE ?? "80
 const ANTHROPIC_MODEL = process.env.ANTHROPIC_MODEL ?? "claude-sonnet-4-20250514";
 const MIN_INTERNAL_LINKS = 3;
 const MIN_EXTERNAL_LINKS = 5;
+const MIN_TABLE_COUNT = 3;
+const MIN_CHART_COUNT = 3;
+const MIN_QUOTE_COUNT = 3;
 const INLINE_LINK_EXCLUDED_H2_PATTERNS = [
   /^##\s+table of contents/i,
   /^##\s+read more/i,
   /^##\s+sources/i,
   /^##\s+related guides/i,
-  /^##\s+ready to stop managing shopify tasks/i
+  /^##\s+ready to stop managing shopify tasks/i,
 ];
 const REQUIRED_ARTICLE_SECTION_PATTERNS = [
+  { label: "TL;DR", pattern: /^##\s+tl;dr\s*$/im },
   { label: "Table of Contents", pattern: /^##\s+table of contents\s*$/im },
   { label: "FAQ", pattern: /^##\s+faq:\s+.+$/im },
   { label: "Summary", pattern: /^##\s+summary\s*$/im },
   { label: "Read more", pattern: /^##\s+read more\s*$/im },
   { label: "Sources", pattern: /^##\s+sources\s*$/im },
-  { label: "Related Guides", pattern: /^##\s+related guides\s*$/im }
+  { label: "Related Guides", pattern: /^##\s+related guides\s*$/im },
 ];
 const BRIEF_TAIL_SECTION_TEMPLATES = [
   {
     key: "faq",
     buildH2: (brief) => `FAQ: ${brief?.meta?.primaryKeyword ?? "Primary topic"}`,
-    intent: "Address high-intent questions in concise answers tied to the article topic."
+    intent: "Address high-intent questions in concise answers tied to the article topic.",
   },
   {
     key: "summary",
     buildH2: () => "Summary",
-    intent: "Summarize key takeaways and implementation priorities."
+    intent: "Summarize key takeaways and implementation priorities.",
   },
   {
     key: "read_more",
     buildH2: () => "Read more",
-    intent: "List internal links for deeper related reading."
+    intent: "List internal links for deeper related reading.",
   },
   {
     key: "sources",
     buildH2: () => "Sources",
-    intent: "List external verified sources used in the article."
+    intent: "List external verified sources used in the article.",
   },
   {
     key: "related_guides",
     buildH2: () => "Related Guides",
-    intent: "List additional internal guides relevant to adjacent topics."
-  }
+    intent: "List additional internal guides relevant to adjacent topics.",
+  },
 ];
+const AUTHOR_ROSTER_BY_PILLAR = {
+  1: {
+    name: "Neeraj Jain",
+    role: "Shopify Execution Lead",
+    linkedin: "https://www.linkedin.com/in/neerajjain22/",
+  },
+  2: {
+    name: "Aarav Mehta",
+    role: "Shopify Troubleshooting Specialist",
+    linkedin: "https://www.linkedin.com/company/heykrish/",
+  },
+  3: {
+    name: "Riya Kapoor",
+    role: "Ecommerce Strategy Lead",
+    linkedin: "https://www.linkedin.com/company/heykrish/",
+  },
+  4: {
+    name: "Karan Sethi",
+    role: "Shopify Growth Advisor",
+    linkedin: "https://www.linkedin.com/company/heykrish/",
+  },
+};
 
 let anthropicClient = null;
 let isProcessing = false;
@@ -81,7 +107,7 @@ function getAnthropicClient() {
   }
 
   anthropicClient = new Anthropic({
-    apiKey: process.env.ANTHROPIC_API_KEY
+    apiKey: process.env.ANTHROPIC_API_KEY,
   });
 
   return anthropicClient;
@@ -154,7 +180,7 @@ async function updateArticle(articles, articleId, updates) {
   articles[index] = {
     ...articles[index],
     ...updates,
-    lastRun: new Date().toISOString()
+    lastRun: new Date().toISOString(),
   };
 
   await writeArticles(articles);
@@ -188,9 +214,9 @@ async function callClaude({ articleId, system, prompt, maxTokens }) {
     tools: [
       {
         type: "web_search_20250305",
-        name: "web_search"
-      }
-    ]
+        name: "web_search",
+      },
+    ],
   });
 
   return extractTextResponse(response.content);
@@ -294,7 +320,7 @@ function ensureBriefCanonicalTailSections(brief) {
       intent: template.intent,
       eeatSignal: "trustworthiness",
       h3s: [],
-      notes: "Required utility section for publishing contract."
+      notes: "Required utility section for publishing contract.",
     };
   });
 
@@ -302,8 +328,8 @@ function ensureBriefCanonicalTailSections(brief) {
     ...brief,
     structure: {
       ...structure,
-      sections: [...baseSections, ...tailSections]
-    }
+      sections: [...baseSections, ...tailSections],
+    },
   };
 }
 
@@ -327,13 +353,13 @@ function getBriefLinkStats(brief) {
     : [];
   const externalLinks = Array.isArray(brief?.verifiedLinks)
     ? uniqueLinksByUrl(
-        brief.verifiedLinks.filter((item) => item?.url && item?.anchor && item.type === "external")
+        brief.verifiedLinks.filter((item) => item?.url && item?.anchor && item.type === "external"),
       )
     : [];
 
   return {
     internal: internalLinks.length,
-    external: externalLinks.length
+    external: externalLinks.length,
   };
 }
 
@@ -342,8 +368,19 @@ function assertBriefLinkMinimums(brief) {
 
   if (linkStats.external < MIN_EXTERNAL_LINKS || linkStats.internal < MIN_INTERNAL_LINKS) {
     throw new Error(
-      `Brief link minimums not met (external: ${linkStats.external}/${MIN_EXTERNAL_LINKS}, internal: ${linkStats.internal}/${MIN_INTERNAL_LINKS})`
+      `Brief link minimums not met (external: ${linkStats.external}/${MIN_EXTERNAL_LINKS}, internal: ${linkStats.internal}/${MIN_INTERNAL_LINKS})`,
     );
+  }
+}
+
+function assertBriefTailSectionPresence(brief) {
+  const sections = Array.isArray(brief?.structure?.sections) ? brief.structure.sections : [];
+  const headings = sections.map((section) => normalizeHeading(section?.h2 ?? ""));
+  const hasSources = headings.includes("sources");
+  const hasRelatedGuides = headings.includes("related guides");
+
+  if (!hasSources || !hasRelatedGuides) {
+    throw new Error("Brief utility sections missing (Sources and Related Guides are required)");
   }
 }
 
@@ -381,12 +418,19 @@ function findFirstH2Index(markdown, matcher) {
 }
 
 function getArticleContractIssues(markdown) {
-  const missingSections = REQUIRED_ARTICLE_SECTION_PATTERNS
-    .filter((section) => !section.pattern.test(markdown))
-    .map((section) => section.label);
+  const missingSections = REQUIRED_ARTICLE_SECTION_PATTERNS.filter(
+    (section) => !section.pattern.test(markdown),
+  ).map((section) => section.label);
 
   const issues = [...missingSections];
-  const tableOfContentsIndex = findFirstH2Index(markdown, (heading) => heading === "table of contents");
+  const tldrIndex = findFirstH2Index(
+    markdown,
+    (heading) => heading === "tl:dr" || heading === "tldr",
+  );
+  const tableOfContentsIndex = findFirstH2Index(
+    markdown,
+    (heading) => heading === "table of contents",
+  );
   const faqIndex = findFirstH2Index(markdown, (heading) => heading.startsWith("faq:"));
   const summaryIndex = findFirstH2Index(markdown, (heading) => heading === "summary");
   const readMoreIndex = findFirstH2Index(markdown, (heading) => heading === "read more");
@@ -394,6 +438,7 @@ function getArticleContractIssues(markdown) {
   const relatedGuidesIndex = findFirstH2Index(markdown, (heading) => heading === "related guides");
 
   if (
+    tldrIndex !== -1 &&
     tableOfContentsIndex !== -1 &&
     faqIndex !== -1 &&
     summaryIndex !== -1 &&
@@ -402,6 +447,7 @@ function getArticleContractIssues(markdown) {
     relatedGuidesIndex !== -1
   ) {
     const validOrder =
+      tableOfContentsIndex > tldrIndex &&
       faqIndex > tableOfContentsIndex &&
       summaryIndex > faqIndex &&
       readMoreIndex > summaryIndex &&
@@ -409,8 +455,247 @@ function getArticleContractIssues(markdown) {
       relatedGuidesIndex > sourcesIndex;
 
     if (!validOrder) {
-      issues.push("Section order (FAQ -> Summary -> Read more -> Sources -> Related Guides)");
+      issues.push(
+        "Section order (TL;DR -> TOC -> FAQ -> Summary -> Read more -> Sources -> Related Guides)",
+      );
     }
+  }
+
+  if (tldrIndex > 0) {
+    issues.push("TL;DR placement (must be the first H2 section)");
+  }
+
+  return issues;
+}
+
+function countMarkdownTables(markdown) {
+  const lines = markdown.split("\n");
+  let inCodeFence = false;
+  let tableCount = 0;
+
+  for (let index = 0; index < lines.length - 1; index += 1) {
+    const current = lines[index].trim();
+    const next = lines[index + 1].trim();
+
+    if (current.startsWith("```")) {
+      inCodeFence = !inCodeFence;
+      continue;
+    }
+
+    if (inCodeFence) {
+      continue;
+    }
+
+    const isHeaderRow = /^\|.+\|$/.test(current);
+    const isDividerRow = /^\|[\s:-|]+\|$/.test(next);
+    if (isHeaderRow && isDividerRow) {
+      tableCount += 1;
+    }
+  }
+
+  return tableCount;
+}
+
+function getChartBlocks(markdown) {
+  const blocks = [];
+  const chartRegex = /```chart\s*([\s\S]*?)```/gi;
+  let match = chartRegex.exec(markdown);
+
+  while (match) {
+    blocks.push(match[1].trim());
+    match = chartRegex.exec(markdown);
+  }
+
+  return blocks;
+}
+
+function isValidHttpUrl(value) {
+  try {
+    const url = new URL(value);
+    return url.protocol === "http:" || url.protocol === "https:";
+  } catch {
+    return false;
+  }
+}
+
+function isValidChartBlock(raw) {
+  try {
+    const parsed = JSON.parse(raw);
+    const hasValidType = ["bar", "line", "area"].includes(parsed?.type);
+    const hasXKey = typeof parsed?.xKey === "string" && parsed.xKey.trim().length > 0;
+    const hasSeries = Array.isArray(parsed?.series) && parsed.series.length > 0;
+    const hasData = Array.isArray(parsed?.data) && parsed.data.length > 0;
+    const hasSource = typeof parsed?.source === "string" && isValidHttpUrl(parsed.source);
+
+    return hasValidType && hasXKey && hasSeries && hasData && hasSource;
+  } catch {
+    return false;
+  }
+}
+
+function countInsightQuotes(markdown) {
+  const lines = markdown.split("\n");
+  let inCodeFence = false;
+  let inQuoteBlock = false;
+  let currentQuote = "";
+  let count = 0;
+
+  const flushQuote = () => {
+    if (!currentQuote.trim()) {
+      currentQuote = "";
+      inQuoteBlock = false;
+      return;
+    }
+
+    const hasAttribution = /(\[[^\]]+\]\(https?:\/\/[^)]+\)|\s[-–—]\s|source:)/i.test(currentQuote);
+    if (hasAttribution) {
+      count += 1;
+    }
+
+    currentQuote = "";
+    inQuoteBlock = false;
+  };
+
+  for (const line of lines) {
+    const trimmed = line.trim();
+
+    if (trimmed.startsWith("```")) {
+      if (inQuoteBlock) {
+        flushQuote();
+      }
+
+      inCodeFence = !inCodeFence;
+      continue;
+    }
+
+    if (inCodeFence) {
+      continue;
+    }
+
+    if (trimmed.startsWith(">")) {
+      inQuoteBlock = true;
+      currentQuote += `${trimmed.replace(/^>\s?/, "")}\n`;
+      continue;
+    }
+
+    if (inQuoteBlock) {
+      flushQuote();
+    }
+  }
+
+  if (inQuoteBlock) {
+    flushQuote();
+  }
+
+  return count;
+}
+
+function getTldrSectionAnalysis(markdown) {
+  const lines = markdown.split("\n");
+  let inCodeFence = false;
+  let tldrStart = -1;
+
+  for (let index = 0; index < lines.length; index += 1) {
+    const trimmed = lines[index].trim();
+
+    if (trimmed.startsWith("```")) {
+      inCodeFence = !inCodeFence;
+      continue;
+    }
+
+    if (inCodeFence) {
+      continue;
+    }
+
+    if (/^##\s+tl;dr\s*$/i.test(trimmed)) {
+      tldrStart = index;
+      break;
+    }
+  }
+
+  if (tldrStart === -1) {
+    return { present: false, paragraphCount: 0, hasInvalidBlocks: false };
+  }
+
+  const sectionLines = [];
+  inCodeFence = false;
+
+  for (let index = tldrStart + 1; index < lines.length; index += 1) {
+    const rawLine = lines[index];
+    const trimmed = rawLine.trim();
+
+    if (trimmed.startsWith("```")) {
+      break;
+    }
+
+    if (/^##\s+/.test(trimmed)) {
+      break;
+    }
+
+    sectionLines.push(rawLine);
+  }
+
+  const sectionBody = sectionLines.join("\n").trim();
+  const paragraphs = sectionBody
+    .split(/\n\s*\n/)
+    .map((item) => item.trim())
+    .filter(Boolean);
+
+  const hasInvalidBlocks = sectionLines.some((line) => {
+    const trimmed = line.trim();
+    if (!trimmed) {
+      return false;
+    }
+
+    return (
+      trimmed.startsWith("#") ||
+      trimmed.startsWith("- ") ||
+      trimmed.startsWith("* ") ||
+      /^\d+\.\s/.test(trimmed) ||
+      trimmed.startsWith(">") ||
+      trimmed.startsWith("|")
+    );
+  });
+
+  return {
+    present: true,
+    paragraphCount: paragraphs.length,
+    hasInvalidBlocks,
+  };
+}
+
+function getDataRichContractIssues(markdown) {
+  const issues = [];
+  const tableCount = countMarkdownTables(markdown);
+  const chartBlocks = getChartBlocks(markdown);
+  const validChartCount = chartBlocks.filter((block) => isValidChartBlock(block)).length;
+  const quoteCount = countInsightQuotes(markdown);
+  const tldr = getTldrSectionAnalysis(markdown);
+
+  if (!tldr.present) {
+    issues.push("TL;DR heading");
+  } else {
+    if (tldr.paragraphCount !== 1) {
+      issues.push("TL;DR one-paragraph limit");
+    }
+
+    if (tldr.hasInvalidBlocks) {
+      issues.push("TL;DR content format");
+    }
+  }
+
+  if (tableCount < MIN_TABLE_COUNT) {
+    issues.push(`Markdown tables (${tableCount}/${MIN_TABLE_COUNT})`);
+  }
+
+  if (chartBlocks.length < MIN_CHART_COUNT) {
+    issues.push(`Chart blocks (${chartBlocks.length}/${MIN_CHART_COUNT})`);
+  } else if (validChartCount < MIN_CHART_COUNT) {
+    issues.push(`Valid chart blocks with source URL (${validChartCount}/${MIN_CHART_COUNT})`);
+  }
+
+  if (quoteCount < MIN_QUOTE_COUNT) {
+    issues.push(`Insight quotes with attribution (${quoteCount}/${MIN_QUOTE_COUNT})`);
   }
 
   return issues;
@@ -461,7 +746,7 @@ function toSectionsMarkdown(sections = []) {
         `- EEAT Signal: ${section.eeatSignal}`,
         "- H3s:",
         h3s,
-        `- Notes: ${section.notes}`
+        `- Notes: ${section.notes}`,
       ].join("\n");
     })
     .join("\n\n");
@@ -520,7 +805,11 @@ ${brief.toneNotes ?? ""}
 }
 
 function sanitizeSlug(slug) {
-  return slug.trim().toLowerCase().replace(/[^a-z0-9-]+/g, "-").replace(/^-+|-+$/g, "");
+  return slug
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9-]+/g, "-")
+    .replace(/^-+|-+$/g, "");
 }
 
 function isStructuralBlock(block) {
@@ -677,7 +966,7 @@ function getLinkStats(markdown) {
     }
 
     const inExcludedSection = INLINE_LINK_EXCLUDED_H2_PATTERNS.some((pattern) =>
-      pattern.test(currentH2Heading)
+      pattern.test(currentH2Heading),
     );
     const linkRegex = /\[[^\]]+\]\((https?:\/\/[^)\s]+)\)/gi;
     let match = linkRegex.exec(line);
@@ -706,7 +995,7 @@ function getLinkStats(markdown) {
     internal: totalInternal.size,
     external: totalExternal.size,
     inlineInternal: inlineInternal.size,
-    inlineExternal: inlineExternal.size
+    inlineExternal: inlineExternal.size,
   };
 }
 
@@ -778,10 +1067,12 @@ function injectInlineLinks(markdown, links, type, needed, existingUrls) {
       continue;
     }
 
-    const sentence = linksForSection.map((link) => {
-      existingUrls.add(link.url);
-      return buildInlineLinkSentence(link, type);
-    }).join(" ");
+    const sentence = linksForSection
+      .map((link) => {
+        existingUrls.add(link.url);
+        return buildInlineLinkSentence(link, type);
+      })
+      .join(" ");
 
     lines.splice(target + 1, 0, "", sentence);
   }
@@ -799,7 +1090,7 @@ function ensureLinkCoverage(markdown, brief) {
     : [];
   const externalCandidates = Array.isArray(brief?.verifiedLinks)
     ? uniqueLinksByUrl(
-        brief.verifiedLinks.filter((item) => item?.url && item?.anchor && item.type === "external")
+        brief.verifiedLinks.filter((item) => item?.url && item?.anchor && item.type === "external"),
       )
     : [];
 
@@ -811,7 +1102,9 @@ function ensureLinkCoverage(markdown, brief) {
   const externalStatsAfterInline = getLinkStats(output);
   if (externalStatsAfterInline.inlineExternal < MIN_EXTERNAL_LINKS) {
     const needed = MIN_EXTERNAL_LINKS - externalStatsAfterInline.inlineExternal;
-    const linksToAdd = externalCandidates.filter((item) => !existingUrls.has(item.url)).slice(0, needed + 2);
+    const linksToAdd = externalCandidates
+      .filter((item) => !existingUrls.has(item.url))
+      .slice(0, needed + 2);
 
     if (linksToAdd.length > 0) {
       output += "\n\n## Sources\n\n";
@@ -832,7 +1125,9 @@ function ensureLinkCoverage(markdown, brief) {
   const internalStatsAfterInline = getLinkStats(output);
   if (internalStatsAfterInline.inlineInternal < MIN_INTERNAL_LINKS) {
     const needed = MIN_INTERNAL_LINKS - internalStatsAfterInline.inlineInternal;
-    const linksToAdd = internalCandidates.filter((item) => !existingUrls.has(item.url)).slice(0, needed + 2);
+    const linksToAdd = internalCandidates
+      .filter((item) => !existingUrls.has(item.url))
+      .slice(0, needed + 2);
 
     if (linksToAdd.length > 0) {
       output += "\n\n## Read more\n\n";
@@ -847,7 +1142,9 @@ function ensureLinkCoverage(markdown, brief) {
   const finalInternalStats = getLinkStats(output);
   if (finalInternalStats.inlineInternal < MIN_INTERNAL_LINKS) {
     const needed = MIN_INTERNAL_LINKS - finalInternalStats.inlineInternal;
-    const linksToAdd = internalCandidates.filter((item) => !existingUrls.has(item.url)).slice(0, needed + 2);
+    const linksToAdd = internalCandidates
+      .filter((item) => !existingUrls.has(item.url))
+      .slice(0, needed + 2);
 
     if (linksToAdd.length > 0) {
       output += "\n\n## Related Guides\n\n";
@@ -865,10 +1162,20 @@ function ensureLinkCoverage(markdown, brief) {
 function assertArticleLinkMinimums(markdown) {
   const linkStats = getLinkStats(markdown);
 
-  if (linkStats.inlineExternal < MIN_EXTERNAL_LINKS || linkStats.inlineInternal < MIN_INTERNAL_LINKS) {
+  if (
+    linkStats.inlineExternal < MIN_EXTERNAL_LINKS ||
+    linkStats.inlineInternal < MIN_INTERNAL_LINKS
+  ) {
     throw new Error(
-      `Article link minimums not met (inline external: ${linkStats.inlineExternal}/${MIN_EXTERNAL_LINKS}, inline internal: ${linkStats.inlineInternal}/${MIN_INTERNAL_LINKS})`
+      `Article link minimums not met (inline external: ${linkStats.inlineExternal}/${MIN_EXTERNAL_LINKS}, inline internal: ${linkStats.inlineInternal}/${MIN_INTERNAL_LINKS})`,
     );
+  }
+}
+
+function assertArticleDataRichMinimums(markdown) {
+  const dataRichIssues = getDataRichContractIssues(markdown);
+  if (dataRichIssues.length > 0) {
+    throw new Error(`Article data-rich contract not met: ${dataRichIssues.join(", ")}`);
   }
 }
 
@@ -897,6 +1204,12 @@ async function writeArticleFile(article, markdown) {
 
 function buildPublishedFrontmatter(article, brief) {
   const now = new Date().toISOString();
+  const author = AUTHOR_ROSTER_BY_PILLAR[article.pillar] ?? {
+    name: "Krish Editorial Team",
+    role: "Shopify Content Team",
+    linkedin: "https://www.linkedin.com/company/heykrish/",
+  };
+
   return {
     title: article.title,
     seoTitle: brief.meta?.titleTag ?? article.title,
@@ -907,8 +1220,9 @@ function buildPublishedFrontmatter(article, brief) {
     pillar: article.pillar,
     pillarType: article.pillarType,
     priority: article.priority,
+    author,
     publishedAt: now,
-    updatedAt: now
+    updatedAt: now,
   };
 }
 
@@ -937,19 +1251,24 @@ async function createBrief(article) {
       articleId: article.id,
       system: BRIEF_SYSTEM_PROMPT,
       prompt,
-      maxTokens: MAX_TOKENS_BRIEF
+      maxTokens: MAX_TOKENS_BRIEF,
     });
 
     try {
       const brief = ensureBriefCanonicalTailSections(parseBriefJson(rawResponse));
       assertBriefLinkMinimums(brief);
+      assertBriefTailSectionPresence(brief);
       return brief;
     } catch (error) {
       if (attempt === 2) {
         throw error;
       }
 
-      await logEvent(article.id, "retry", `Brief validation failed: ${error.message}. Retrying once.`);
+      await logEvent(
+        article.id,
+        "retry",
+        `Brief validation failed: ${error.message}. Retrying once.`,
+      );
       prompt = `${basePrompt}
 
 Your previous response failed validation: ${error.message}
@@ -971,32 +1290,39 @@ async function createArticle(article, brief) {
       articleId: article.id,
       system: ARTICLE_SYSTEM_PROMPT,
       prompt,
-      maxTokens: MAX_TOKENS_ARTICLE
+      maxTokens: MAX_TOKENS_ARTICLE,
     });
 
     const normalizedArticle = normalizeArticleMarkdown(articleMarkdown);
     const articleWithValidatedLinks = ensureLinkCoverage(normalizedArticle, brief);
-    const missingSections = getArticleContractIssues(articleWithValidatedLinks);
+    const sectionIssues = getArticleContractIssues(articleWithValidatedLinks);
+    const dataRichIssues = getDataRichContractIssues(articleWithValidatedLinks);
+    const contractIssues = [...sectionIssues, ...dataRichIssues];
 
-    if (missingSections.length === 0) {
+    if (contractIssues.length === 0) {
       assertArticleLinkMinimums(articleWithValidatedLinks);
+      assertArticleDataRichMinimums(articleWithValidatedLinks);
       return articleWithValidatedLinks;
     }
 
     if (attempt === 2) {
-      throw new Error(`Article contract missing sections: ${missingSections.join(", ")}`);
+      throw new Error(`Article contract validation failed: ${contractIssues.join(", ")}`);
     }
 
     await logEvent(
       article.id,
       "retry",
-      `Article contract missing sections (${missingSections.join(", ")}). Retrying once.`
+      `Article contract validation failed (${contractIssues.join(", ")}). Retrying once.`,
     );
 
     prompt = `${basePrompt}
 
-Your previous draft is missing required sections: ${missingSections.join(", ")}.
-Regenerate the full article with the required section order and exact headings where specified.`;
+Your previous draft failed contract validation: ${contractIssues.join(", ")}.
+Regenerate the full article with all required sections and these minimums:
+- at least ${MIN_TABLE_COUNT} markdown tables
+- at least ${MIN_CHART_COUNT} valid chart fenced blocks with source URLs
+- at least ${MIN_QUOTE_COUNT} insight quotes with attribution
+- ## TL;DR with exactly one paragraph under the H1.`;
   }
 
   throw new Error("Unexpected article generation flow");
@@ -1022,14 +1348,14 @@ async function processNextArticle() {
 
     await updateArticle(articles, nextArticle.id, {
       status: "brief_done",
-      outputPath
+      outputPath,
     });
 
     await logEvent(nextArticle.id, "brief_done", "Brief generated and saved");
   } catch (error) {
     await updateArticle(articles, nextArticle.id, {
       status: "error",
-      outputPath
+      outputPath,
     });
 
     await logEvent(nextArticle.id, "error", `Brief generation failed: ${error.message}`);
@@ -1039,20 +1365,21 @@ async function processNextArticle() {
   try {
     const articleWithValidatedLinks = await createArticle(nextArticle, brief);
     assertArticleLinkMinimums(articleWithValidatedLinks);
+    assertArticleDataRichMinimums(articleWithValidatedLinks);
 
     await writeArticleFile(nextArticle, articleWithValidatedLinks);
     await publishArticleToSite(nextArticle, brief, articleWithValidatedLinks);
 
     await updateArticle(articles, nextArticle.id, {
       status: "done",
-      outputPath
+      outputPath,
     });
 
     await logEvent(nextArticle.id, "done", "Article generated, published, and marked complete");
   } catch (error) {
     await updateArticle(articles, nextArticle.id, {
       status: "error",
-      outputPath
+      outputPath,
     });
 
     await logEvent(nextArticle.id, "error", `Article generation failed: ${error.message}`);
@@ -1073,7 +1400,7 @@ function printStatus(articles) {
       id: item.id,
       pillar: item.pillar,
       priority: item.priority,
-      title: item.title
+      title: item.title,
     }));
 
   console.table([
@@ -1081,7 +1408,7 @@ function printStatus(articles) {
     { metric: "done", value: done },
     { metric: "pending", value: pending },
     { metric: "brief_done", value: briefDone },
-    { metric: "error", value: errors }
+    { metric: "error", value: errors },
   ]);
 
   console.table(nextThree);
