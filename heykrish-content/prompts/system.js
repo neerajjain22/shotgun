@@ -112,6 +112,7 @@ WRITING RULES:
   { "title": "...", "type": "bar|line|area", "xKey": "...", "series": [...], "data": [...], "source": "https://..." }
   \`\`\`
 - Include at least 3 insight quotes as markdown blockquotes (\`>\`) with explicit attribution.
+- Do not use the word "chart" in visible prose headings, labels, or captions.
 - Every citation and resource reference must use inline Markdown links.
 - Do not output broken sentence fragments on standalone lines.
 - "Read more" must contain internal links only.

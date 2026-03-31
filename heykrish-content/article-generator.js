@@ -71,28 +71,28 @@ const BRIEF_TAIL_SECTION_TEMPLATES = [
     intent: "List additional internal guides relevant to adjacent topics.",
   },
 ];
-const AUTHOR_ROSTER_BY_PILLAR = {
-  1: {
+const AUTHOR_ROSTER = [
+  {
     name: "Neeraj Jain",
-    role: "Shopify Execution Lead",
-    linkedin: "https://www.linkedin.com/in/neerajjain22/",
+    role: "Co-founder, Readable.",
+    linkedin: "https://www.linkedin.com/in/nj123/",
   },
-  2: {
-    name: "Aarav Mehta",
-    role: "Shopify Troubleshooting Specialist",
-    linkedin: "https://www.linkedin.com/company/heykrish/",
+  {
+    name: "Rajeev Kumar",
+    role: "Co-founder, Readable.",
+    linkedin: "https://www.linkedin.com/in/rajeevku02/",
   },
-  3: {
-    name: "Riya Kapoor",
-    role: "Ecommerce Strategy Lead",
-    linkedin: "https://www.linkedin.com/company/heykrish/",
+  {
+    name: "Kaushik B",
+    role: "Founding member, Readable.",
+    linkedin: "https://www.linkedin.com/in/vkaushikbalasubramanian/",
   },
-  4: {
-    name: "Karan Sethi",
-    role: "Shopify Growth Advisor",
-    linkedin: "https://www.linkedin.com/company/heykrish/",
+  {
+    name: "Ankit Biyani",
+    role: "Founding member, Readable.",
+    linkedin: "https://www.linkedin.com/in/biyaniankit/",
   },
-};
+];
 
 let anthropicClient = null;
 let isProcessing = false;
@@ -1204,11 +1204,7 @@ async function writeArticleFile(article, markdown) {
 
 function buildPublishedFrontmatter(article, brief) {
   const now = new Date().toISOString();
-  const author = AUTHOR_ROSTER_BY_PILLAR[article.pillar] ?? {
-    name: "Krish Editorial Team",
-    role: "Shopify Content Team",
-    linkedin: "https://www.linkedin.com/company/heykrish/",
-  };
+  const author = AUTHOR_ROSTER[Math.floor(Math.random() * AUTHOR_ROSTER.length)];
 
   return {
     title: article.title,

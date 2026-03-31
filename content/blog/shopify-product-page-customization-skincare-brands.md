@@ -15,9 +15,9 @@
   "pillarType": "task-niche",
   "priority": "high",
   "author": {
-    "name": "Neeraj Jain",
-    "role": "Shopify Execution Lead",
-    "linkedin": "https://www.linkedin.com/in/neerajjain22/"
+    "name": "Rajeev Kumar",
+    "role": "Co-founder, Readable.",
+    "linkedin": "https://www.linkedin.com/in/rajeevku02/"
   },
   "publishedAt": "2026-03-30T13:05:38.432Z",
   "updatedAt": "2026-03-31T09:55:00.000Z"
@@ -101,7 +101,7 @@ Start with Shopify's official custom data model so your PDP logic scales cleanly
 
 Use a single component contract so the same fields render consistently across template variants. For implementation depth, align this with your [product page customization workflow](https://www.heykrish.ai/use-cases/shopify-product-page-customization).
 
-### Core Web Vitals Threshold Reference (Chart)
+### Core Web Vitals Threshold Reference
 
 ```chart
 {
@@ -141,7 +141,7 @@ Google's page experience and vitals guidance is explicit: poor loading and inter
 
 For store-wide execution support, teams usually combine this with [Shopify speed optimization](https://www.heykrish.ai/use-cases/shopify-speed-optimization) and regular release QA.
 
-### Abandonment Friction Snapshot (Chart)
+### Abandonment Friction Snapshot
 
 ```chart
 {
@@ -161,7 +161,7 @@ For store-wide execution support, teams usually combine this with [Shopify speed
 }
 ```
 
-### Speed-to-Conversion Pattern (Chart)
+### Speed-to-Conversion Pattern
 
 ```chart
 {
